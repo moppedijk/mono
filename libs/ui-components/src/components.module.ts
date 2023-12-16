@@ -5,13 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ButtonComponent } from './button/button.component';
-import { ColComponent } from './col/col.component';
-import { ContainerComponent } from './container/container.component';
-import { FooterComponent } from './footer/footer.component';
-import { HeaderComponent } from './header/header.component';
-import { RowComponent } from './row/row.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
-import { SectionComponent } from './section/section.component';
 import { InputComponent } from './input/input.component';
 import { ModalComponent } from './modal/modal.component';
 import { CreatorComponent } from './creator/creator.component';
@@ -29,13 +23,7 @@ import { ErrorComponent } from './error/error.component';
 
 const COMPONENTS = [
   ButtonComponent,
-  ColComponent,
-  ContainerComponent,
-  FooterComponent,
-  HeaderComponent,
-  RowComponent,
   UserProfileComponent,
-  SectionComponent,
   InputComponent,
   ModalComponent,
   CreatorComponent,
