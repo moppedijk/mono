@@ -16,7 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@mo/ui-base": ["libs/ui-base/src/index.ts"],
-      "@mo/ui-components": ["libs/ui-components/src/index.ts"],
+      "@mo/ui-common": ["libs/ui-common/src/index.ts"],
       "@mo/ui-layout": ["libs/ui-layout/src/index.ts"],
       "@mo/util-core": ["libs/util-core/src/index.ts"]
     }
