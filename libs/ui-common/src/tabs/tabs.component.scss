@@ -1,7 +1,7 @@
-@import "tokens";
+@use "/libs/ui-base/src/tools/";
 
 .tabs {
-    margin-bottom: $unit-default;
+    margin-bottom: units.$unit-default;
 }
 
 .tabs__header {
@@ -10,9 +10,9 @@
 
 .tabs__button {
     display: inline-block;
-    margin-left: $unit-default;
+    margin-left: units.$unit-default;
 }
 
 .tabs__content {
-    margin: $unit-default 0;
+    margin: units.$unit-default 0;
 }

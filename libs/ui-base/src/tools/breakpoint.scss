@@ -1,13 +1,13 @@
-@import 'settings/viewport';
+@use '../tokens/viewport';
 
 @mixin breakpoint($size) {
     @if $size == small {
-        @media (min-width: $small) { @content; }
+        @media (min-width: viewport.$small) { @content; }
     }
     @if $size == medium {
-        @media (min-width: $medium) { @content; }
+        @media (min-width: viewport.$medium) { @content; }
     }
     @if $size == large {
-        @media (min-width: $large) { @content; }
+        @media (min-width: viewport.$large) { @content; }
     }
 }

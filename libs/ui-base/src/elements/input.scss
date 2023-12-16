@@ -1,10 +1,12 @@
+@use '../tokens/font-sizes';
+
 input {
     background: transparent;
     border: 0;
     margin: 0;
     padding: 0;
     width: 100%;
-    font-size: $font-size-default;
+    font-size: font-sizes.$font-size-default;
 }
 
 input:focus {

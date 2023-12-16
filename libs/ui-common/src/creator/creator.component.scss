@@ -1,11 +1,11 @@
-@import 'settings';
-@import 'tools';
+@use '/libs/ui-base/src/tokens/';
+@use '/libs/ui-base/src/tools/';
 
 $size-mobile: 4rem;
 $size-desktop: 6rem;
 
 .creator {
-    margin: $unit-default;
+    margin: units.$unit-default;
     position: relative;
 
     @include breakpoint('small') {
@@ -51,6 +51,6 @@ $size-desktop: 6rem;
     @include breakpoint('small') {
         text-align: left;
         margin-left: $size-desktop;
-        padding-left: $unit-default;
+        padding-left: units.$unit-default;
     }
 }

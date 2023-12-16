@@ -1,4 +1,4 @@
-@import 'settings';
+@use '/libs/ui-base/src/tokens/';
 
 .button {
 	border: none;
@@ -6,12 +6,12 @@
 	display: inline-block;
 	text-decoration: none;
 	background-color: $color-primary;
-	color: $color-light;
+	color: colors.$color-light;
 	font-size: $font-size-default;
 	line-height: $font-size-default;
-	padding: $unit-default;
-	border-radius: $border-radius;
-	margin-bottom: $unit-default;
+	padding: units.$unit-default;
+	border-radius: border-radius.$border-radius;
+	margin-bottom: units.$unit-default;
 	position: relative;
 }
 

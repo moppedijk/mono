@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ColComponent } from './col/col.component';
@@ -10,6 +9,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { RowComponent } from './row/row.component';
 import { SectionComponent } from './section/section.component';
+import { ToasterComponent } from './toaster/toaster.component';
+import { LoaderComponent } from './loader/loader.component';
 
 const COMPONENTS = [
   ColComponent,
@@ -17,7 +18,9 @@ const COMPONENTS = [
   FooterComponent,
   HeaderComponent,
   RowComponent,
-  SectionComponent
+  SectionComponent,
+  ToasterComponent,
+  LoaderComponent,
 ];
 
 @NgModule({
@@ -26,9 +29,8 @@ const COMPONENTS = [
   imports: [
     CommonModule,
     FormsModule,
-    BrowserModule,
     RouterModule,
     FontAwesomeModule,
   ],
 })
-export class ComponentsModule {}
+export class UiLayoutModule {}

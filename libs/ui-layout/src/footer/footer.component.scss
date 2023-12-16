@@ -1,13 +1,15 @@
-@import 'settings';
+@use '../../../ui-base/src/tokens/units';
+@use '../../../ui-base/src/tokens/colors';
+@use '../../../ui-base/src/tokens/viewport';
 
 .footer {
-    background-color: $color-dark;
-    color: $color-light;
+    background-color: colors.$color-dark;
+    color: colors.$color-light;
 }
 
 .footer__container {
     margin: 0 auto;
-    max-width: $max-screen;
+    max-width: viewport.$max-screen;
     display: flex;
     align-items: center;
     height: 60px; // sticky footer
@@ -15,7 +17,7 @@
 
 .footer__brand {
     flex: 1;
-    margin: 0 $unit-default;
+    margin: 0 units.$unit-default;
 
     h1 {
         margin: 0;

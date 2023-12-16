@@ -1,14 +1,15 @@
-@import 'settings';
-@import 'tools';
+@use '../../../ui-base/src/tokens/colors';
+@use '../../../ui-base/src/tokens/viewport';
+@use '../../../ui-base/src/tokens/units';
 
 .header {
-    background-color: $color-dark;
-    color: $color-light;
+    background-color: colors.$color-dark;
+    color: colors.$color-light;
 }
 
 .header__container {
     margin: 0 auto;
-    max-width: $max-screen;
+    max-width: viewport.$max-screen;
     display: flex;
     align-items: center;
     height: 60px; // sticky footer
@@ -16,10 +17,10 @@
 
 .header__brand {
     flex: 1;
-    margin: 0 $unit-default;
+    margin: 0 units.$unit-default;
     
     a {
-        color: $color-light;
+        color: colors.$color-light;
         text-decoration: none;
     }
 }
@@ -27,7 +28,7 @@
 .header__login {
     flex: 1;
     text-align: right;
-    margin: 0 $unit-default;
+    margin: 0 units.$unit-default;
 }
 
 // Little hack for button margin in header.

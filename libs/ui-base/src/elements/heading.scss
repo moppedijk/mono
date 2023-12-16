@@ -1,10 +1,12 @@
+@use '../tokens/font-sizes';
+
 $font-size: (
-    $font-size-large,
-    $font-size-default,
-    $font-size-small,
-    $font-size-small,
-    $font-size-small,
-    $font-size-small
+    font-sizes.$font-size-large,
+    font-sizes.$font-size-default,
+    font-sizes.$font-size-small,
+    font-sizes.$font-size-small,
+    font-sizes.$font-size-small,
+    font-sizes.$font-size-small
 );
 
 @for $i from 1 through 4 {

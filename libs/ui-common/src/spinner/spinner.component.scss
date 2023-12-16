@@ -1,8 +1,8 @@
 
-@import 'settings';
+@use '/libs/ui-base/src/tokens/';
 
 .spinner {
-    color: $color-light;
+    color: colors.$color-light;
     width: 24px;
     height: 24px;
     overflow: hidden;

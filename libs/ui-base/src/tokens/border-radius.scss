@@ -1,3 +1,3 @@
-@import 'units';
+@use './units';
 
-$border-radius: $unit-default;
+$border-radius: units.$unit-default;

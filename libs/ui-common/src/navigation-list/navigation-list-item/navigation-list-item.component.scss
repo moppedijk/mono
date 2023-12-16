@@ -1,4 +1,4 @@
-@import 'settings';
+@use '/libs/ui-base/src/tokens/';
 
 .navigation-list-item {
     margin-bottom: $unit-small;
@@ -11,7 +11,7 @@
 	display: inline-block;
 	text-decoration: none;
 	background-color: $color-mid;
-	color: $color-light;
+	color: colors.$color-light;
 	font-size: $font-size-small;
 	line-height: $font-size-small;
 	padding: $unit-small;

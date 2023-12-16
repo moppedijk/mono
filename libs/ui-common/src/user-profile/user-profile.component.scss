@@ -1,4 +1,4 @@
-@import 'tools';
+@use '../../../ui-base/src/tools/breakpoint';
 
 .user-profile {
     display: flex;
@@ -10,7 +10,7 @@
     text-align: right;
     display: none;
 
-    @include breakpoint('small') {
+    @include breakpoint.breakpoint('small') {
         display: block;
     }
 }

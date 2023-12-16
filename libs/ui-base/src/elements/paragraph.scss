@@ -1,5 +1,8 @@
+@use '../tokens/font-sizes';
+@use '../tokens/units';
+
 p {
-    font-size: $font-size-default;
-    line-height: $font-size-default;
-    margin-bottom: $unit-default;
+    font-size: font-sizes.$font-size-default;
+    line-height: font-sizes.$font-size-default;
+    margin-bottom: units.$unit-default;
 }

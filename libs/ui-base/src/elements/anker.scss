@@ -1,11 +1,14 @@
+@use '../tokens/easings';
+@use '../tokens/border-radius';
+
 a {
 	text-decoration: none;
 	transition-property: color;
 	transition-duration: .3s;
-	transition-timing-function: $ease-in-out-quad;
-	border-radius: $border-radius;
+	transition-timing-function: easings.$ease-in-out-quad;
+	border-radius: border-radius.$border-radius;
 }
 
-a:hover {
-	color: darken($color-light, 5%);
-}
+// a:hover {
+// 	color: darken(tokens.$color-light, 5%);
+// }

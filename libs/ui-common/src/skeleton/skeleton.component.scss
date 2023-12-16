@@ -1,12 +1,12 @@
-@import 'settings';
+@use '/libs/ui-base/src/tokens/';
 
 :host {
-    margin-right: $unit-default;
-    margin-bottom: $unit-default;
+    margin-right: units.$unit-default;
+    margin-bottom: units.$unit-default;
 }
 
 .skeleton {
-    border-radius: $border-radius;
+    border-radius: border-radius.$border-radius;
     background: linear-gradient(-45deg, $color-dark, $color-mid);
     background-size: 200% 100%;
     animation: gradient 3s ease infinite;

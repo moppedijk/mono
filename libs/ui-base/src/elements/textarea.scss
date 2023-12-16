@@ -1,9 +1,11 @@
+@use '../tokens/font-sizes';
+
 textarea {
     background: transparent;
     width: 100%;
     border: none;
     resize: none;
-    font-size: $font-size-default;
+    font-size: font-sizes.$font-size-default;
 
     &:focus {
         outline: none;

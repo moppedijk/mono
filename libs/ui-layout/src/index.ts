@@ -1,1 +1,1 @@
-export * from './layout.module';
+export * from './ui-layout.module';

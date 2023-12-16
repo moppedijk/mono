@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ButtonComponent } from './button/button.component';
@@ -15,8 +14,6 @@ import { TextareaComponent } from './textarea/textarea.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { TabsContentComponent } from './tabs/tabs-content/tabs-content.component';
 import { CodeComponent } from './code/code.component';
-import { ToasterComponent } from './toaster/toaster.component';
-import { LoaderComponent } from './loader/loader.component';
 import { SpinnerComponent } from './spinner/spinner.component';
 import { SkeletonComponent } from './skeleton/skeleton.component';
 import { ErrorComponent } from './error/error.component';
@@ -33,8 +30,6 @@ const COMPONENTS = [
   TabsComponent,
   TabsContentComponent,
   CodeComponent,
-  ToasterComponent,
-  LoaderComponent,
   SpinnerComponent,
   SkeletonComponent,
   ErrorComponent,
@@ -46,9 +41,8 @@ const COMPONENTS = [
   imports: [
     CommonModule,
     FormsModule,
-    BrowserModule,
     RouterModule,
     FontAwesomeModule,
   ],
 })
-export class ComponentsModule {}
+export class UiCommonModule {}

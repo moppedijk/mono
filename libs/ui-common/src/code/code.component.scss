@@ -1,7 +1,7 @@
-@import 'settings';
+@use '/libs/ui-base/src/tokens/';
 
 .code {
-    color: $color-light;
+    color: colors.$color-light;
     user-select: none;
     min-height: 21.6rem;
 }

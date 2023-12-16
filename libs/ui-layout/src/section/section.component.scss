@@ -1,14 +1,16 @@
-@import 'settings';
+@use '../../../ui-base/src/tokens/units';
+@use '../../../ui-base/src/tokens/colors';
+@use '../../../ui-base/src/tokens/viewport';
 
 .section {
-    padding: $unit-default 0;
+    padding: units.$unit-default 0;
 }
 
 .section--mid {
-    background-color: $color-mid;
+    background-color: colors.$color-mid;
 }
 
 .section__container {
-    max-width: $max-screen;
+    max-width: viewport.$max-screen;
     margin: 0 auto;
 }

@@ -1,11 +1,11 @@
-@import 'settings';
-@import 'tools';
+@use '../../../ui-base/src/tokens/units';
+@use '../../../ui-base/src/tools/breakpoint';
 
 :host {
     display: block;
-    margin-bottom: $unit-default;
+    margin-bottom: units.$unit-default;
     
-    @include breakpoint('small') {
+    @include breakpoint.breakpoint('small') {
         display: flex;
     }
 }

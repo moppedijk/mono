@@ -1,5 +1,5 @@
-@import 'settings';
-@import 'tools';
+@use '/libs/ui-base/src/tokens/';
+@use '/libs/ui-base/src/tools/';
 
 .modal {
     position: fixed;
@@ -45,7 +45,7 @@
     justify-content: center;
     padding: $unit-large;
     background-color: darken($color-dark, 10%);
-	color: $color-light;
+	color: colors.$color-light;
 
 	@include breakpoint('large') {
 		border-top-left-radius: $unit-large; 
@@ -67,7 +67,7 @@
 }
 
 .modal__content {
-	margin: $unit-default;
+	margin: units.$unit-default;
 	overflow-y: scroll;
 }
 

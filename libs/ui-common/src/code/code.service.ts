@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 
-import 'prismjs';
-import 'prismjs/components/prism-css';
-import 'prismjs/components/prism-javascript';
+// import 'prismjs';
+// import 'prismjs/components/prism-css';
+// import 'prismjs/components/prism-javascript';
 
 /* eslint-disable */
 declare let Prism: any;
@@ -13,10 +13,11 @@ declare let Prism: any;
 })
 export class CodeService {
   public highlightAll(): void {
-    Prism.highlightAll();
+    // Prism.highlightAll();
   }
 
   public highlight(code: string): string {
-    return Prism.highlight(code, Prism.languages.javascript, 'javascript');
+    // return Prism.highlight(code, Prism.languages.javascript, 'javascript');
+    return code;
   }
 }
