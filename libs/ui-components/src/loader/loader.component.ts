@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, OnDestroy } from '@angular/core';
-import { LoaderService } from '@app/core/services';
+import { LoaderService } from '@mo/util-core';
 
 @Component({
   selector: 'mo-loader',

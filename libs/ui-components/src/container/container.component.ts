@@ -1,5 +1,5 @@
 import { Component, HostListener } from '@angular/core';
-import { ScreensizeService } from '@app/core';
+import { ScreensizeService } from '@mo/util-core';
 
 @Component({
   selector: 'mo-container',

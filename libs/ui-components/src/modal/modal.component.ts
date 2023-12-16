@@ -8,8 +8,8 @@ import {
   Output,
   Renderer2,
 } from '@angular/core';
-import { ScreensizeService } from '@app/core';
 import { faSlash, IconDefinition } from '@fortawesome/free-solid-svg-icons';
+import { ScreensizeService } from '@mo/util-core';
 
 const BODY_CSS_CLASS = 'body-freeze';
 
@@ -23,7 +23,7 @@ export class ModalComponent {
   public maxHeight!: string;
 
   @Input() title = '';
-  @Output() close = new EventEmitter<void>();
+  @Output() closed = new EventEmitter<void>();
 
   @HostListener('window:resize', ['$event']) onResize() {
     this.setMaxHeight();
@@ -47,7 +47,7 @@ export class ModalComponent {
   }
 
   public onClose(): void {
-    this.close.emit();
+    this.closed.emit();
   }
 
   private freezeBody(): void {

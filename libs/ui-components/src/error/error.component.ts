@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { ErrorInterface } from '@app/core';
 
 @Component({
   selector: 'mo-error',
@@ -7,5 +6,5 @@ import { ErrorInterface } from '@app/core';
   styleUrls: ['./error.component.scss'],
 })
 export class ErrorComponent {
-  @Input() errors!: ErrorInterface[];
+  @Input() errors!: unknown[];
 }

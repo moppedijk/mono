@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { MeInterface } from '@app/data/authentication/interfaces';
 
 @Component({
   selector: 'mo-user-profile',
@@ -7,6 +6,5 @@ import { MeInterface } from '@app/data/authentication/interfaces';
   styleUrls: ['./user-profile.component.scss'],
 })
 export class UserProfileComponent {
-  @Input() me: MeInterface | null = null;
+  @Input() me: unknown | null = null;
 }
-// todo: profile picture

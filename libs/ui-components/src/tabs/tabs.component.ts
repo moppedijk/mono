@@ -4,7 +4,7 @@ import {
   ContentChildren,
   QueryList,
 } from '@angular/core';
-import { TabsContentComponent } from './tabs-content';
+import { TabsContentComponent } from './tabs-content/tabs-content.component';
 import { TabInterface } from './tabs.interface';
 
 @Component({
