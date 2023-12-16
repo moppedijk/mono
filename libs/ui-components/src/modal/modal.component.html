@@ -1,0 +1,15 @@
+<div class="modal">
+    <div class="modal__container" [style.maxHeight]="maxHeight">
+        <div class="modal__header">
+            <div class="modal__title">
+                <strong>{{ title }}</strong>
+            </div>
+            <div class="modal__close">
+                <mo-button size="small" (click)="onClose()"><fa-icon [icon]="faSlash"></fa-icon></mo-button>
+            </div>
+        </div>
+        <div class="modal__content">
+            <ng-content></ng-content>
+        </div>
+    </div>
+</div>

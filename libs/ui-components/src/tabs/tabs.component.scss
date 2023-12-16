@@ -1,0 +1,18 @@
+@import "settings";
+
+.tabs {
+    margin-bottom: $unit-default;
+}
+
+.tabs__header {
+    border-bottom: solid 2px $color-mid;
+}
+
+.tabs__button {
+    display: inline-block;
+    margin-left: $unit-default;
+}
+
+.tabs__content {
+    margin: $unit-default 0;
+}

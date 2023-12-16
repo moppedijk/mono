@@ -1,0 +1,36 @@
+@import 'settings';
+@import 'tools';
+
+.header {
+    background-color: $color-dark;
+    color: $color-light;
+}
+
+.header__container {
+    margin: 0 auto;
+    max-width: $max-screen;
+    display: flex;
+    align-items: center;
+    height: 60px; // sticky footer
+}
+
+.header__brand {
+    flex: 1;
+    margin: 0 $unit-default;
+    
+    a {
+        color: $color-light;
+        text-decoration: none;
+    }
+}
+
+.header__login {
+    flex: 1;
+    text-align: right;
+    margin: 0 $unit-default;
+}
+
+// Little hack for button margin in header.
+.header__login ::ng-deep .button {
+    margin: 0;
+}

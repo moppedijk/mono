@@ -1,0 +1,53 @@
+@import 'settings';
+
+.button {
+	border: none;
+	cursor: pointer;
+	display: inline-block;
+	text-decoration: none;
+	background-color: $color-primary;
+	color: $color-light;
+	font-size: $font-size-default;
+	line-height: $font-size-default;
+	padding: $unit-default;
+	border-radius: $border-radius;
+	margin-bottom: $unit-default;
+	position: relative;
+}
+
+.button:disabled {
+	background-color: $color-dark;
+	cursor: not-allowed;
+}
+
+.button__spinner {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	visibility: hidden;
+}
+
+.button--loading .button__spinner {
+	visibility: visible;
+}
+
+.button--loading .button__content {
+	visibility: hidden;
+}
+
+.button--small {
+	font-size: $font-size-small;
+	line-height: $font-size-small;
+	padding: $unit-small;
+	border-radius: $unit-small;
+	margin-bottom: $unit-small;
+}
+
+.button--large {
+	font-size: $font-size-small;
+	line-height: $font-size-small;
+	padding: $unit-small;
+	border-radius: $unit-small;
+	margin-bottom: $unit-small;
+}

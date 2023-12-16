@@ -1,0 +1,14 @@
+@import 'settings';
+
+.section {
+    padding: $unit-default 0;
+}
+
+.section--mid {
+    background-color: $color-mid;
+}
+
+.section__container {
+    max-width: $max-screen;
+    margin: 0 auto;
+}
