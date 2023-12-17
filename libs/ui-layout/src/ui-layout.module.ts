@@ -11,6 +11,7 @@ import { RowComponent } from './row/row.component';
 import { SectionComponent } from './section/section.component';
 import { ToasterComponent } from './toaster/toaster.component';
 import { LoaderComponent } from './loader/loader.component';
+import { UiCommonModule } from '@mo/ui-common';
 
 const COMPONENTS = [
   ColComponent,
@@ -31,6 +32,7 @@ const COMPONENTS = [
     FormsModule,
     RouterModule,
     FontAwesomeModule,
+    UiCommonModule,
   ],
 })
 export class UiLayoutModule {}

@@ -1,14 +1,17 @@
-@use '/libs/ui-base/src/tokens/';
+@use '../../../ui-base/src/tokens/colors';
+@use '../../../ui-base/src/tokens/font-sizes';
+@use '../../../ui-base/src/tokens/units';
+@use '../../../ui-base/src/tokens/border-radius';
 
 .button {
 	border: none;
 	cursor: pointer;
 	display: inline-block;
 	text-decoration: none;
-	background-color: $color-primary;
+	background-color: colors.$color-primary;
 	color: colors.$color-light;
-	font-size: $font-size-default;
-	line-height: $font-size-default;
+	font-size: font-sizes.$font-size-default;
+	line-height: font-sizes.$font-size-default;
 	padding: units.$unit-default;
 	border-radius: border-radius.$border-radius;
 	margin-bottom: units.$unit-default;
@@ -16,7 +19,7 @@
 }
 
 .button:disabled {
-	background-color: $color-dark;
+	background-color: colors.$color-dark;
 	cursor: not-allowed;
 }
 
@@ -37,17 +40,17 @@
 }
 
 .button--small {
-	font-size: $font-size-small;
-	line-height: $font-size-small;
-	padding: $unit-small;
-	border-radius: $unit-small;
-	margin-bottom: $unit-small;
+	font-size: font-sizes.$font-size-small;
+	line-height: font-sizes.$font-size-small;
+	padding: units.$unit-small;
+	border-radius: units.$unit-small;
+	margin-bottom: units.$unit-small;
 }
 
 .button--large {
-	font-size: $font-size-small;
-	line-height: $font-size-small;
-	padding: $unit-small;
-	border-radius: $unit-small;
-	margin-bottom: $unit-small;
+	font-size: font-sizes.$font-size-small;
+	line-height: font-sizes.$font-size-small;
+	padding: units.$unit-small;
+	border-radius: units.$unit-small;
+	margin-bottom: units.$unit-small;
 }
