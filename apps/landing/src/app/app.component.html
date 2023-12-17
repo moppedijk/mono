@@ -3,7 +3,28 @@
         <mo-row>
             <mo-col>
                 <h1>Martijn Oppedijk - Software Architect</h1>
-                <p>Frontend developer met een achtergrond in digital advertisement en software development. Hij is leergierig, resultaatgericht en houdt van problemen oplossen. Door zijn achtergrond (werkervaring en studie) heeft hij kennis van digitale producten met een sterke focus op Javascript.</p>
+                <p>Frontend developer met een achtergrond in digital advertisement en software development. Martijn is leergierig, resultaatgericht en houdt van problemen oplossen. Door zijn achtergrond (werkervaring en studie) heeft hij kennis van digitale producten met een sterke focus op Javascript.</p>
+            </mo-col>
+        </mo-row>
+    </mo-section>
+    <mo-section color="medium">
+        <mo-row>
+            <mo-col>
+                <h2>Things I like</h2>
+                <p>
+                    <ng-container
+                        *ngFor="let interest of interests">
+                        {{ interest }}
+                    </ng-container>
+                </p>
+            </mo-col>
+        </mo-row>
+    </mo-section>
+    <mo-section>
+        <mo-row>
+            <mo-col>
+                <h2>Social</h2>
+                <p>Linkedin</p>
             </mo-col>
         </mo-row>
     </mo-section>

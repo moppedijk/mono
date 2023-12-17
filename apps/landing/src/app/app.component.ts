@@ -1,11 +1,11 @@
+import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-// import { UiCommonModule } from '@mo/ui-common';
 import { ContainerConfig, UiLayoutModule } from '@mo/ui-layout';
 
 @Component({
   standalone: true,
-  imports: [RouterModule, UiLayoutModule],
+  imports: [RouterModule, UiLayoutModule, NgFor],
   selector: 'mo-root',
   templateUrl: './app.component.html',
 })
@@ -17,4 +17,18 @@ export class AppComponent {
     organization: 'Moppedijk',
     project: 'Mono'
   }
+
+  public interests: string [] = [
+    'Javascript',
+    'HTML',
+    'CSS',
+    'Crypto',
+    'Nodejs',
+    'Angular',
+    'Typescript',
+    'Visual Design',
+    'RXJS',
+    'Scrum',
+    'Unit testing',
+  ];
 }
