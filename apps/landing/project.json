@@ -16,7 +16,7 @@
         "polyfills": ["zone.js"],
         "tsConfig": "apps/landing/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": ["apps/landing/src/favicon.ico", "apps/landing/src/assets"],
+        "assets": ["apps/landing/src/assets"],
         "styles": ["libs/ui-base/src/base.scss"],
         "scripts": []
       },

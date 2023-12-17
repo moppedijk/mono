@@ -6,6 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./user-profile.component.scss'],
 })
 export class UserProfileComponent {
-  @Input() name: string = '';
-  @Input() imageUrl: string = '';
+  @Input() creator: string = '';
+  @Input() logoUrl: string = '';
 }

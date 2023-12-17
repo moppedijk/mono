@@ -2,13 +2,13 @@
     <div class="header__container">
         <div class="header__brand">
             <a routerLink="/">
-                <strong>Moppedijk.nl</strong>
+                <strong>{{ organization }}</strong>
             </a>
         </div>
         <div class="header__login">
             <mo-user-profile
-                name="@mo"
-                imageUrl="/">
+                [creator]="creator"
+                [logoUrl]="logoUrl">
             </mo-user-profile>
         </div>
     </div>

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 // import { UiCommonModule } from '@mo/ui-common';
-import { UiLayoutModule } from '@mo/ui-layout';
+import { ContainerConfig, UiLayoutModule } from '@mo/ui-layout';
 
 @Component({
   standalone: true,
@@ -10,5 +10,11 @@ import { UiLayoutModule } from '@mo/ui-layout';
   templateUrl: './app.component.html',
 })
 export class AppComponent {
-  title = 'Moppedijk - Landing';
+  public config: ContainerConfig = {
+    title: 'Moppedijk - Landing',
+    creator: '@mo',
+    logoUrl: 'assets/logos/logo.svg',
+    organization: 'Moppedijk',
+    project: 'Mono'
+  }
 }

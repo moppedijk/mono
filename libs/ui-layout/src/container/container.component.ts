@@ -1,5 +1,6 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, Input } from '@angular/core';
 import { ScreensizeService } from '@mo/util-core';
+import { ContainerConfig } from './container.interface';
 
 @Component({
   selector: 'mo-container',
@@ -8,6 +9,14 @@ import { ScreensizeService } from '@mo/util-core';
 })
 export class ContainerComponent {
   public minHeight = 'auto';
+
+  @Input() config: ContainerConfig = {
+    title: '',
+    organization: '',
+    creator: '',
+    logoUrl: '',
+    project: '',
+  };
 
   @HostListener('window:resize', ['$event']) onResize() {
     this.setMinHeight();

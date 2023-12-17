@@ -1,7 +1,13 @@
 <mo-loader></mo-loader>
-<mo-header></mo-header>
+<mo-header
+    [organization]="config.organization"
+    [creator]="config.creator"
+    [logoUrl]="config.logoUrl">
+</mo-header>
 <div class="container" [style.minHeight]="minHeight">
     <ng-content></ng-content>
 </div>
-<mo-footer></mo-footer>
+<mo-footer
+    [project]="config.project">
+</mo-footer>
 <mo-toaster></mo-toaster>

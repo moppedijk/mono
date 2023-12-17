@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'mo-header',
@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   public isAuthenticated: boolean = false;
+
+  @Input() organization: string = '';
+  @Input() creator: string = '';
+  @Input() logoUrl: string = '';
 }
