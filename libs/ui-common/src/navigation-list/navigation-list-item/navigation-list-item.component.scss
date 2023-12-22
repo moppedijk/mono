@@ -1,7 +1,9 @@
-@use '/libs/ui-base/src/tokens/';
+@use '../../../../ui-base/src/tokens/units';
+@use '../../../../ui-base/src/tokens/colors';
+@use '../../../../ui-base/src/tokens/font-sizes';
 
 .navigation-list-item {
-    margin-bottom: $unit-small;
+    margin-bottom: units.$unit-small;
 }
 
 .navigation-list-item__url {
@@ -10,10 +12,10 @@
 	cursor: pointer;
 	display: inline-block;
 	text-decoration: none;
-	background-color: $color-mid;
+	background-color: colors.$color-default;
 	color: colors.$color-light;
-	font-size: $font-size-small;
-	line-height: $font-size-small;
-	padding: $unit-small;
-	border-radius: $unit-small;
+	font-size: font-sizes.$font-size-small;
+	line-height: font-sizes.$font-size-small;
+	padding: units.$unit-small;
+	border-radius: units.$unit-small;
 }

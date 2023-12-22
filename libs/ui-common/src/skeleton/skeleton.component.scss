@@ -1,4 +1,6 @@
-@use '/libs/ui-base/src/tokens/';
+@use '../../../ui-base/src/tokens/units';
+@use '../../../ui-base/src/tokens/border-radius';
+@use '../../../ui-base/src/tokens/colors';
 
 :host {
     margin-right: units.$unit-default;
@@ -7,7 +9,7 @@
 
 .skeleton {
     border-radius: border-radius.$border-radius;
-    background: linear-gradient(-45deg, $color-dark, $color-mid);
+    background: linear-gradient(-45deg, colors.$color-dark, colors.$color-default);
     background-size: 200% 100%;
     animation: gradient 3s ease infinite;
 }
