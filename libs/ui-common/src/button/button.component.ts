@@ -10,5 +10,5 @@ export class ButtonComponent {
   @Input() loading = false;
   @Input() disabled = false;
   @Input() size: Sizes = 'default';
-  @Input() color: Colors = 'primary';
+  @Input() color: Colors = 'default';
 }

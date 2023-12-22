@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Colors } from '@mo/ui-base';
 
 @Component({
   selector: 'mo-section',
@@ -6,5 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./section.component.scss'],
 })
 export class SectionComponent {
-  @Input() color = '';
+  @Input() color: Colors = 'default';
 }

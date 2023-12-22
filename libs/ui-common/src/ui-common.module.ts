@@ -18,6 +18,7 @@ import { SpinnerComponent } from './spinner/spinner.component';
 import { SkeletonComponent } from './skeleton/skeleton.component';
 import { ErrorComponent } from './error/error.component';
 import { TagComponent } from './tag/tag.component';
+import { ClassColorDirective, ClassSizeDirective } from '@mo/util-core';
 
 const COMPONENTS = [
   ButtonComponent,
@@ -45,6 +46,8 @@ const COMPONENTS = [
     FormsModule,
     RouterModule,
     FontAwesomeModule,
+    ClassSizeDirective,
+    ClassColorDirective,
   ],
 })
 export class UiCommonModule {}

@@ -8,7 +8,7 @@
 	cursor: pointer;
 	display: inline-block;
 	text-decoration: none;
-	background-color: colors.$color-primary;
+	background-color: colors.$color-default;
 	color: colors.$color-light;
 	font-size: font-sizes.$font-size-default;
 	line-height: font-sizes.$font-size-default;
@@ -48,13 +48,12 @@
 }
 
 .button--large {
-	font-size: font-sizes.$font-size-small;
-	line-height: font-sizes.$font-size-small;
-	padding: units.$unit-small;
-	border-radius: units.$unit-small;
-	margin-bottom: units.$unit-small;
+	font-size: font-sizes.$font-size-large;
+	line-height: font-sizes.$font-size-large;
+	padding: units.$unit-large;
+	border-radius: units.$unit-large;
+	margin-bottom: units.$unit-large;
 }
-
 
 .button--primary {
     background-color: colors.$color-primary;
@@ -70,11 +69,6 @@
     color: colors.$color-light;
 }
 
-.button--medium {
-    background-color: colors.$color-medium;
-    color: colors.$color-dark;
-}
-
-.footer--light {
+.button--light {
     background-color: colors.$color-light;
 }

@@ -8,5 +8,5 @@ import { Colors } from '@mo/ui-base';
 })
 export class FooterComponent {
   @Input() project: string = '';
-  @Input() color: Colors = 'primary';
+  @Input() color: Colors = 'default';
 }

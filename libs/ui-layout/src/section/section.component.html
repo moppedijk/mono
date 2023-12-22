@@ -1,10 +1,5 @@
-<section class="section" [ngClass]="{
-    'section--primary': color === 'primary',
-    'section--secondary': color === 'secondary',
-    'section--dark': color === 'dark',
-    'section--medium': color === 'medium',
-    'section--light': color === 'light'
-}">
+<section class="section"
+    [moClassColor]="{ className: 'section', color: color }">
     <div class="section__container">
         <ng-content></ng-content>
     </div>

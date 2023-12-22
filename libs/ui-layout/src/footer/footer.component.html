@@ -1,10 +1,5 @@
-<div class="footer" [ngClass]="{
-    'footer--primary': color === 'primary',
-    'footer--secondary': color === 'secondary',
-    'footer--dark': color === 'dark',
-    'footer--medium': color === 'medium',
-    'footer--light': color === 'light'
-}">
+<div class="footer"
+    [moClassColor]="{ className: 'footer', color: color }">
     <div class="footer__container">
         <div class="footer__brand">
             <strong>{{ project }}</strong>

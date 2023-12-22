@@ -12,6 +12,7 @@ import { SectionComponent } from './section/section.component';
 import { ToasterComponent } from './toaster/toaster.component';
 import { LoaderComponent } from './loader/loader.component';
 import { UiCommonModule } from '@mo/ui-common';
+import { ClassColorDirective } from '@mo/util-core';
 
 const COMPONENTS = [
   ColComponent,
@@ -33,6 +34,7 @@ const COMPONENTS = [
     RouterModule,
     FontAwesomeModule,
     UiCommonModule,
+    ClassColorDirective,
   ],
 })
 export class UiLayoutModule {}

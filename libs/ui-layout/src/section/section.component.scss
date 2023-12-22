@@ -4,6 +4,7 @@
 
 .section {
     padding: units.$unit-default 0;
+    background-color: colors.$color-default;
 }
 
 .section--primary {
@@ -16,10 +17,6 @@
 
 .section--dark {
     background-color: colors.$color-dark;
-}
-
-.section--medium {
-    background-color: colors.$color-medium;
 }
 
 .section--light {
