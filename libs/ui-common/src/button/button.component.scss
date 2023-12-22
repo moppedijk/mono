@@ -54,3 +54,27 @@
 	border-radius: units.$unit-small;
 	margin-bottom: units.$unit-small;
 }
+
+
+.button--primary {
+    background-color: colors.$color-primary;
+}
+
+.button--secondary {
+    background-color: colors.$color-secondary;
+	color: colors.$color-dark;
+}
+
+.button--dark {
+    background-color: colors.$color-dark;
+    color: colors.$color-light;
+}
+
+.button--medium {
+    background-color: colors.$color-medium;
+    color: colors.$color-dark;
+}
+
+.footer--light {
+    background-color: colors.$color-light;
+}

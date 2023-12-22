@@ -1,0 +1,36 @@
+@use '../../../ui-base/src/tokens/colors';
+@use '../../../ui-base/src/tokens/font-sizes';
+@use '../../../ui-base/src/tokens/units';
+@use '../../../ui-base/src/tokens/border-radius';
+
+.tag {
+	border: none;
+	cursor: default;
+	display: inline-block;
+	text-decoration: none;
+	background-color: colors.$color-light;
+	color: colors.$color-dark;
+	font-size: font-sizes.$font-size-default;
+	line-height: font-sizes.$font-size-default;
+	padding: units.$unit-default;
+	border-radius: border-radius.$border-radius;
+	margin-bottom: units.$unit-default;
+	margin-right: units.$unit-default;
+	position: relative;
+}
+
+.tag--small {
+	font-size: font-sizes.$font-size-small;
+	line-height: font-sizes.$font-size-small;
+	padding: units.$unit-small;
+	border-radius: units.$unit-small;
+	margin-bottom: units.$unit-small;
+}
+
+.tag--large {
+	font-size: font-sizes.$font-size-small;
+	line-height: font-sizes.$font-size-small;
+	padding: units.$unit-small;
+	border-radius: units.$unit-small;
+	margin-bottom: units.$unit-small;
+}

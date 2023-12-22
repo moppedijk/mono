@@ -7,15 +7,15 @@
             </mo-col>
         </mo-row>
     </mo-section>
-    <mo-section color="medium">
+    <mo-section color="primary">
         <mo-row>
             <mo-col>
-                <h2>Things I like</h2>
+                <h2 class="text-light">Things I like</h2>
                 <p>
-                    <ng-container
+                    <mo-tag
                         *ngFor="let interest of interests">
                         {{ interest }}
-                    </ng-container>
+                    </mo-tag>
                 </p>
             </mo-col>
         </mo-row>
@@ -24,7 +24,7 @@
         <mo-row>
             <mo-col>
                 <h2>Social</h2>
-                <p>Linkedin</p>
+                <mo-button color="medium">Linkedin</mo-button>
             </mo-col>
         </mo-row>
     </mo-section>

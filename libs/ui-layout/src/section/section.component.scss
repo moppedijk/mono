@@ -6,8 +6,24 @@
     padding: units.$unit-default 0;
 }
 
+.section--primary {
+    background-color: colors.$color-primary;
+}
+
+.section--secondary {
+    background-color: colors.$color-secondary;
+}
+
+.section--dark {
+    background-color: colors.$color-dark;
+}
+
 .section--medium {
     background-color: colors.$color-medium;
+}
+
+.section--light {
+    background-color: colors.$color-light;
 }
 
 .section__container {

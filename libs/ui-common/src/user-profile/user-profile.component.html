@@ -1,5 +1,6 @@
 <div class="user-profile">
-    <div class="user-profile__username">
+    <div class="user-profile__username"
+        *ngIf="creator">
         <strong>{{ creator }}</strong>
     </div>
     <div class="user-profile__image">

@@ -1,11 +1,13 @@
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { UiCommonModule } from '@mo/ui-common';
 import { ContainerConfig, UiLayoutModule } from '@mo/ui-layout';
+import { shuffle } from '@mo/util-core';
 
 @Component({
   standalone: true,
-  imports: [RouterModule, UiLayoutModule, NgFor],
+  imports: [RouterModule, UiLayoutModule, UiCommonModule, NgFor],
   selector: 'mo-root',
   templateUrl: './app.component.html',
 })
@@ -18,7 +20,7 @@ export class AppComponent {
     project: 'Mono'
   }
 
-  public interests: string [] = [
+  private realInterests: string [] = [
     'Javascript',
     'HTML',
     'CSS',
@@ -30,5 +32,13 @@ export class AppComponent {
     'RXJS',
     'Scrum',
     'Unit testing',
+    'Web 3.0',
+    'Visual Design',
+    'UX Design',
+    'SOLID',
+    'DRY',
+    'DevOps'
   ];
+
+  public interests = shuffle(this.realInterests);
 }

@@ -1,11 +1,12 @@
-@use "/libs/ui-base/src/tools/";
+@use "../../../ui-base/src/tokens/units";
+@use "../../../ui-base/src/tokens/colors";
 
 .tabs {
     margin-bottom: units.$unit-default;
 }
 
 .tabs__header {
-    border-bottom: solid 2px $color-mid;
+    border-bottom: solid 2px colors.$color-medium;
 }
 
 .tabs__button {

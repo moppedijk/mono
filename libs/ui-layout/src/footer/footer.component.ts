@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Colors } from '@mo/ui-base';
 
 @Component({
   selector: 'mo-footer',
@@ -7,4 +8,5 @@ import { Component, Input } from '@angular/core';
 })
 export class FooterComponent {
   @Input() project: string = '';
+  @Input() color: Colors = 'primary';
 }

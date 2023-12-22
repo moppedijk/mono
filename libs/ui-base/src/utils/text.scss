@@ -1,0 +1,21 @@
+@use '../../../ui-base/src/tokens/colors';
+
+.text-primary {
+    color: colors.$color-primary;
+}
+
+.text-secondary {
+    color: colors.$color-secondary;
+}
+
+.text-dark {
+    color: colors.$color-dark;
+}
+
+.text-medium {
+    color: colors.$color-medium;
+}
+
+.text-light {
+    color: colors.$color-light;
+}

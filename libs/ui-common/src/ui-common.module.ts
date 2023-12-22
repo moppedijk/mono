@@ -17,6 +17,7 @@ import { CodeComponent } from './code/code.component';
 import { SpinnerComponent } from './spinner/spinner.component';
 import { SkeletonComponent } from './skeleton/skeleton.component';
 import { ErrorComponent } from './error/error.component';
+import { TagComponent } from './tag/tag.component';
 
 const COMPONENTS = [
   ButtonComponent,
@@ -26,6 +27,7 @@ const COMPONENTS = [
   CreatorComponent,
   NavigationListComponent,
   NavigationListItemComponent,
+  TagComponent,
   TextareaComponent,
   TabsComponent,
   TabsContentComponent,

@@ -1,7 +1,9 @@
-@use "/libs/ui-base/src/tools/";
+@use "../../../ui-base/src/tokens/colors";
+@use "../../../ui-base/src/tokens/border-radius";
+@use "../../../ui-base/src/tokens/units";
 
 .input {
-    border: solid 2px $color-dark;
+    border: solid 2px colors.$color-dark;
     border-radius: border-radius.$border-radius;
     padding: units.$unit-default;
     margin-bottom: units.$unit-default;

@@ -5,7 +5,7 @@ a {
 	text-decoration: none;
 	transition-property: color;
 	transition-duration: .3s;
-	transition-timing-function: easings.$ease-in-out-quad;
+	transition-timing-function: easings.$ease-in-out;
 	border-radius: border-radius.$border-radius;
 }
 

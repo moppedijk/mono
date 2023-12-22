@@ -1,5 +1,7 @@
-@use '/libs/ui-base/src/tokens/';
-@use '/libs/ui-base/src/tools/';
+@use "../../../ui-base/src/tokens/units";
+@use "../../../ui-base/src/tokens/colors";
+@use "../../../ui-base/src/tokens/font-sizes";
+@use "../../../ui-base/src/tools/breakpoint";
 
 $size-mobile: 4rem;
 $size-desktop: 6rem;
@@ -8,7 +10,7 @@ $size-desktop: 6rem;
     margin: units.$unit-default;
     position: relative;
 
-    @include breakpoint('small') {
+    @include breakpoint.breakpoint('small') {
         display: flex;
         align-items: center;
     }
@@ -26,7 +28,7 @@ $size-desktop: 6rem;
         max-width: 100%;
     }
 
-    @include breakpoint('small') {
+    @include breakpoint.breakpoint('small') {
         margin: 0;
         position: absolute;
         top: 0;
@@ -45,10 +47,10 @@ $size-desktop: 6rem;
 
     p {
         margin: 0;
-        font-size: $font-size-small;
+        font-size: font-sizes.$font-size-small;
     }
 
-    @include breakpoint('small') {
+    @include breakpoint.breakpoint('small') {
         text-align: left;
         margin-left: $size-desktop;
         padding-left: units.$unit-default;

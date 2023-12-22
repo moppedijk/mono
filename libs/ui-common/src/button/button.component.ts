@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Colors, Sizes } from '@mo/ui-base';
 
 @Component({
   selector: 'mo-button',
@@ -8,5 +9,6 @@ import { Component, Input } from '@angular/core';
 export class ButtonComponent {
   @Input() loading = false;
   @Input() disabled = false;
-  @Input() size: 'small' | 'default' | 'large' = 'default';
+  @Input() size: Sizes = 'default';
+  @Input() color: Colors = 'primary';
 }
