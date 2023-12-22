@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Colors, Sizes } from '@mo/ui-base';
 
 @Component({
   selector: 'mo-tag',
@@ -6,5 +7,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./tag.component.scss'],
 })
 export class TagComponent {
-  @Input() size: 'small' | 'default' | 'large' = 'default';
+  @Input() size: Sizes = 'default';
+  @Input() color: Colors = 'default';
 }

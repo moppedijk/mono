@@ -11,4 +11,5 @@ export class HeaderComponent {
   @Input() organization: string = '';
   @Input() creator: string = '';
   @Input() logoUrl: string = '';
+  @Input() profileImage: string = '';
 }

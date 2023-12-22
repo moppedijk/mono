@@ -17,10 +17,18 @@
 
 .user-profile__image {
     height: 3rem;
-    width: 3rem;
     flex: 1;
+    overflow: hidden;
 
     img {
         max-height: 100%;
     }
+}
+
+.user-profile__circle {
+    overflow: hidden;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    float: right;
 }

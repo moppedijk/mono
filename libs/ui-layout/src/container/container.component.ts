@@ -15,6 +15,7 @@ export class ContainerComponent {
     organization: '',
     creator: '',
     logoUrl: '',
+    profileImage: '',
     project: '',
   };
 

@@ -19,6 +19,7 @@ import { SkeletonComponent } from './skeleton/skeleton.component';
 import { ErrorComponent } from './error/error.component';
 import { TagComponent } from './tag/tag.component';
 import { ClassColorDirective, ClassSizeDirective } from '@mo/util-core';
+import { ButtonAnkerComponent } from './button-anker/button-anker.component';
 
 const COMPONENTS = [
   ButtonComponent,
@@ -36,6 +37,7 @@ const COMPONENTS = [
   SpinnerComponent,
   SkeletonComponent,
   ErrorComponent,
+  ButtonAnkerComponent,
 ];
 
 @NgModule({

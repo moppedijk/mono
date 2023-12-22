@@ -18,6 +18,8 @@
 .header__brand {
     flex: 1;
     margin: 0 units.$unit-default;
+    display: flex;
+    align-items: center;
     
     a {
         color: colors.$color-light;
@@ -34,4 +36,20 @@
 // Little hack for button margin in header.
 .header__login ::ng-deep .button {
     margin: 0;
+}
+
+.header__logo {
+    height: 3rem;
+    width: 3rem;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: units.$unit-default;
+    background-color: colors.$color-light;
+    padding: units.$unit-small / 2;
+    border-radius: 50%;
+    text-align: center;
+
+    img {
+        max-height: 100%;
+    }
 }

@@ -1,13 +1,14 @@
 <div class="header">
     <div class="header__container">
         <div class="header__brand">
-            <a routerLink="/">
-                <strong>{{ organization }}</strong>
+            <a routerLink="/" class="header__logo">
+                <img [src]="logoUrl">
             </a>
+            <strong>{{ organization }}</strong>
         </div>
         <div class="header__login">
             <mo-user-profile
-                [logoUrl]="logoUrl">
+                [profileImage]="profileImage">
             </mo-user-profile>
         </div>
     </div>

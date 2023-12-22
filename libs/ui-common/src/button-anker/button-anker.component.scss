@@ -4,23 +4,27 @@
 @use '../../../ui-base/src/tokens/border-radius';
 @use '../../../ui-base/src/tokens/line-height';
 
-.tag {
+.button-anker {
 	border: none;
-	cursor: default;
+	cursor: pointer;
 	display: inline-block;
 	text-decoration: none;
-	background-color: colors.$color-light;
-	color: colors.$color-dark;
+	background-color: colors.$color-default;
+	color: colors.$color-light;
 	font-size: font-sizes.$font-size-default;
 	line-height: line-height.$line-height-default;
 	padding: units.$unit-default;
 	border-radius: border-radius.$border-radius;
 	margin-bottom: units.$unit-default;
-	margin-right: units.$unit-default;
 	position: relative;
 }
 
-.tag--small {
+.button-anker:disabled {
+	background-color: colors.$color-dark;
+	cursor: not-allowed;
+}
+
+.button-anker--small {
 	font-size: font-sizes.$font-size-small;
 	line-height: line-height.$line-height-small;
 	padding: units.$unit-small;
@@ -28,10 +32,28 @@
 	margin-bottom: units.$unit-small;
 }
 
-.tag--large {
+.button-anker--large {
 	font-size: font-sizes.$font-size-large;
 	line-height: line-height.$line-height-large;
 	padding: units.$unit-large;
 	border-radius: units.$unit-large;
 	margin-bottom: units.$unit-large;
+}
+
+.button-anker--primary {
+    background-color: colors.$color-primary;
+}
+
+.button-anker--secondary {
+    background-color: colors.$color-secondary;
+	color: colors.$color-dark;
+}
+
+.button-anker--dark {
+    background-color: colors.$color-dark;
+    color: colors.$color-light;
+}
+
+.button-anker--light {
+    background-color: colors.$color-light;
 }

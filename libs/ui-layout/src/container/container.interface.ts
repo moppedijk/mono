@@ -3,5 +3,6 @@ export interface ContainerConfig {
     organization: string;
     creator: string;
     logoUrl: string;
+    profileImage: string;
     project: string;
 }

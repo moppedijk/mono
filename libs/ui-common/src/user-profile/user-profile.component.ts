@@ -7,5 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class UserProfileComponent {
   @Input() creator?: string;
-  @Input() logoUrl: string = '';
+  @Input() profileImage: string = '';
 }

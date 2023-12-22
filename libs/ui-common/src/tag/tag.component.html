@@ -1,7 +1,6 @@
 <div class="tag"
-    [class.tag--small]="size === 'small'"
-    [class.tag--default]="size === 'default'"
-    [class.tag--large]="size === 'large'"
+    [moClassSize]="{ className: 'tag', size: size }"
+    [moClassColor]="{ className: 'button', color: color }"
 >
     <div class="tag__content">
         <ng-content></ng-content>
