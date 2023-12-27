@@ -4,7 +4,6 @@
 
 .footer {
     background-color: colors.$color-primary;
-    color: colors.$color-light;
 }
 
 .footer__container {
@@ -19,9 +18,14 @@
     flex: 1;
     margin: 0 units.$unit-default;
 
-    h1 {
-        margin: 0;
+    a {
+        font-weight: bold;
+        text-decoration: none;
     }
+}
+
+.footer__icon {
+    margin-right: units.$unit-small;
 }
 
 .footer--primary {

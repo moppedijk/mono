@@ -59,6 +59,7 @@ export class AppComponent {
     logoUrl: 'assets/logos/logo.svg',
     profileImage: 'assets/profile/1000x1000.jpg',
     organization: 'Moppedijk',
-    project: 'Mono'
+    project: 'Mono',
+    projectLink: 'https://github.com/moppedijk/mono',
   }
 }

@@ -21,6 +21,7 @@ export class ContainerComponent implements OnInit {
     logoUrl: '',
     profileImage: '',
     project: '',
+    projectLink: '',
   };
 
   @HostListener('window:resize', ['$event']) onResize() {

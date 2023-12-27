@@ -5,4 +5,5 @@ export interface ContainerConfig {
     logoUrl: string;
     profileImage: string;
     project: string;
+    projectLink: string;
 }
