@@ -1,0 +1,27 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ClassColorDirective, ClassSizeDirective } from '@mo/util-core';
+import { TagSearchComponent } from './tag-search/tag-search.component';
+import { UiCommonModule } from '@mo/ui-common';
+
+const COMPONENTS = [
+    TagSearchComponent
+];
+
+@NgModule({
+  declarations: [...COMPONENTS],
+  exports: [...COMPONENTS],
+  imports: [
+    CommonModule,
+    FormsModule,
+    RouterModule,
+    FontAwesomeModule,
+    ClassSizeDirective,
+    ClassColorDirective,
+    UiCommonModule,
+  ],
+})
+export class UiLandingModule {}
