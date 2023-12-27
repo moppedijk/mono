@@ -1,0 +1,69 @@
+@use '../../../ui-base/src/tokens/colors';
+@use '../../../ui-base/src/tokens/font-sizes';
+@use '../../../ui-base/src/tokens/units';
+@use '../../../ui-base/src/tokens/border-radius';
+@use '../../../ui-base/src/tokens/line-height';
+@use "../../../ui-base/src/tools/breakpoint";
+
+.introduction {
+    margin: units.$unit-small 0;
+    padding: units.$unit-small 0;
+    border-bottom: solid 2px colors.$color-default;
+
+    @include breakpoint.breakpoint('small') {
+        margin: units.$unit-small;
+        padding: units.$unit-small;
+    }
+    
+    @include breakpoint.breakpoint('medium') {
+        margin: units.$unit-default;
+        padding: units.$unit-default;
+    }
+}
+
+.introduction-title {
+    font-size: font-sizes.$font-size-large;
+    margin-top: 0;
+
+    @include breakpoint.breakpoint('small') {
+        font-size: font-sizes.$font-size-large + .4;
+    }
+    
+    @include breakpoint.breakpoint('medium') {
+        font-size: font-sizes.$font-size-large + .8;
+    }
+}
+
+.introduction-lead {
+    font-weight: bold;
+    font-size: font-sizes.$font-size-default;
+    line-height: line-height.$line-height-default;
+    margin-top: 0;
+
+    @include breakpoint.breakpoint('small') {
+        font-size: font-sizes.$font-size-default + .4;
+        line-height: line-height.$line-height-default + .4;
+    }
+    
+    @include breakpoint.breakpoint('medium') {
+        font-size: font-sizes.$font-size-default + .8;
+        line-height: line-height.$line-height-default + .8;
+    }
+}
+
+.introduction-summary {
+    color: lighten(colors.$color-dark, 15%);
+    font-size: font-sizes.$font-size-default - .4;
+    line-height: line-height.$line-height-default - .4;
+    margin-top: 0;
+
+    @include breakpoint.breakpoint('small') {
+        font-size: font-sizes.$font-size-default;
+        line-height: line-height.$line-height-default;
+    }
+    
+    @include breakpoint.breakpoint('medium') {
+        font-size: font-sizes.$font-size-default + .4;
+        line-height: line-height.$line-height-default + .4;
+    }
+}

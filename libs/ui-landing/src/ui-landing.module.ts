@@ -6,9 +6,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ClassColorDirective, ClassSizeDirective } from '@mo/util-core';
 import { TagSearchComponent } from './tag-search/tag-search.component';
 import { UiCommonModule } from '@mo/ui-common';
+import { IntrodctionComponent } from './introduction/introduction.component';
 
 const COMPONENTS = [
-    TagSearchComponent
+    TagSearchComponent,
+    IntrodctionComponent
 ];
 
 @NgModule({
