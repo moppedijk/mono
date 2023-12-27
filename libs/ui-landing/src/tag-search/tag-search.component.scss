@@ -1,0 +1,33 @@
+@use '../../../ui-base/src/tokens/colors';
+@use '../../../ui-base/src/tokens/font-sizes';
+@use '../../../ui-base/src/tokens/units';
+@use '../../../ui-base/src/tokens/border-radius';
+@use '../../../ui-base/src/tokens/line-height';
+@use "../../../ui-base/src/tools/breakpoint";
+
+.tag-search-item {
+    border: none;
+	cursor: default;
+	display: inline-block;
+	text-decoration: none;
+	background-color: colors.$color-light;
+	color: colors.$color-dark;
+	line-height: line-height.$line-height-default;
+	border-radius: border-radius.$border-radius;
+	position: relative;
+	padding: units.$unit-small;
+	margin-bottom: units.$unit-small;
+	margin-right: units.$unit-small;
+    font-size: font-sizes.$font-size-default;
+
+    @include breakpoint.breakpoint('small') {
+        padding: units.$unit-default;
+        margin-bottom: units.$unit-default;
+        margin-right: units.$unit-default;
+    }
+    
+    @include breakpoint.breakpoint('medium') {
+        margin-bottom: units.$unit-large;
+        margin-right: units.$unit-large;
+    }
+}

@@ -4,6 +4,7 @@ import { Tag } from './tag';
 @Component({
   selector: 'mo-tag-search',
   templateUrl: './tag-search.component.html',
+  styleUrl: './tag-search.component.scss',
 })
 export class TagSearchComponent implements OnInit {
   

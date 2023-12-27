@@ -1,6 +1,6 @@
-<mo-tag
+<div class="tag-search-item"
     *ngFor="let visibleTag of visibleTags">
     {{ visibleTag.name }}
-</mo-tag>
-<p class="text-light" *ngIf="!allTags">En {{ hiddenTags.length }} andere interesses... <a class="link-light" href="#" (click)="showAllTags()">Laat zien!</a></p>
+</div>
+<p class="text-light" *ngIf="!allTags">En nog {{ hiddenTags.length }} andere interesses... <a class="link-light" href="#" (click)="showAllTags()">Laat zien!</a></p>
 <p class="text-light" *ngIf="allTags"><a class="link-light" href="#" (click)="showAllTags()">Minder...</a></p>
