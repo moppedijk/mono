@@ -1,5 +1,5 @@
-@use '@mo/ui-base/tokens/colors';
-@use '@mo/ui-base/tokens/font-sizes';
+@use '@mo/ui-base/tokens/color';
+@use '@mo/ui-base/tokens/font-size';
 @use '@mo/ui-base/tokens/units';
 @use '@mo/ui-base/tokens/border-radius';
 
@@ -8,18 +8,18 @@
 	cursor: pointer;
 	display: inline-block;
 	text-decoration: none;
-	background-color: colors.$color-default;
-	color: colors.$color-light;
-	font-size: font-sizes.$font-size-default;
-	line-height: font-sizes.$font-size-default;
-	padding: units.$unit-default;
-	border-radius: border-radius.$border-radius;
-	margin-bottom: units.$unit-default;
+	background-color: color.$default;
+	color: color.$light;
+	font-size: font-size.$default;
+	line-height: font-size.$default;
+	padding: units.$default;
+	border-radius: border-radius.$default;
+	margin-bottom: units.$default;
 	position: relative;
 }
 
 .button:disabled {
-	background-color: colors.$color-dark;
+	background-color: color.$dark;
 	cursor: not-allowed;
 }
 
@@ -40,35 +40,35 @@
 }
 
 .button--small {
-	font-size: font-sizes.$font-size-small;
-	line-height: font-sizes.$font-size-small;
-	padding: units.$unit-small;
-	border-radius: units.$unit-small;
-	margin-bottom: units.$unit-small;
+	font-size: font-size.$small;
+	line-height: font-size.$small;
+	padding: units.$small;
+	border-radius: units.$small;
+	margin-bottom: units.$small;
 }
 
 .button--large {
-	font-size: font-sizes.$font-size-large;
-	line-height: font-sizes.$font-size-large;
-	padding: units.$unit-large;
-	border-radius: units.$unit-large;
-	margin-bottom: units.$unit-large;
+	font-size: font-size.$large;
+	line-height: font-size.$large;
+	padding: units.$large;
+	border-radius: units.$large;
+	margin-bottom: units.$large;
 }
 
 .button--primary {
-    background-color: colors.$color-primary;
+    background-color: color.$primary;
 }
 
 .button--secondary {
-    background-color: colors.$color-secondary;
-	color: colors.$color-dark;
+    background-color: color.$secondary;
+	color: color.$dark;
 }
 
 .button--dark {
-    background-color: colors.$color-dark;
-    color: colors.$color-light;
+    background-color: color.$dark;
+    color: color.$light;
 }
 
 .button--light {
-    background-color: colors.$color-light;
+    background-color: color.$light;
 }

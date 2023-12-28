@@ -1,26 +1,26 @@
 @use '@mo/ui-base/tokens/units';
-@use '@mo/ui-base/tokens/colors';
+@use '@mo/ui-base/tokens/color';
 @use '@mo/ui-base/tokens/viewport';
 
 .section {
-    padding: units.$unit-default 0;
-    background-color: colors.$color-default;
+    padding: units.$default 0;
+    background-color: color.$default;
 }
 
 .section--primary {
-    background-color: colors.$color-primary;
+    background-color: color.$primary;
 }
 
 .section--secondary {
-    background-color: colors.$color-secondary;
+    background-color: color.$secondary;
 }
 
 .section--dark {
-    background-color: colors.$color-dark;
+    background-color: color.$dark;
 }
 
 .section--light {
-    background-color: colors.$color-light;
+    background-color: color.$light;
 }
 
 .section__container {

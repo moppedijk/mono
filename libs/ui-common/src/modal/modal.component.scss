@@ -1,4 +1,4 @@
-@use "@mo/ui-base/tokens/colors";
+@use "@mo/ui-base/tokens/color";
 @use "@mo/ui-base/tokens/border-radius";
 @use "@mo/ui-base/tokens/box-shadow";
 @use "@mo/ui-base/tokens/units";
@@ -11,7 +11,7 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-color: colors.$color-dark;
+	background-color: color.$dark;
     z-index: 100;
     opacity: 0; // initial animation state
 	animation-name: fade-in;
@@ -19,12 +19,12 @@
 	animation-fill-mode: forwards;
 
 	@include breakpoint.breakpoint('large') {
-		background-color: rgba(colors.$color-light, .5);
+		background-color: rgba(color.$light, .5);
 	}
 }
 
 .modal__container {
-    background-color: colors.$color-dark;
+    background-color: color.$dark;
     transform: scale(0); // initial animation state
 	animation: scale-in .3s .3s;
 	animation-name: scale-in;
@@ -35,9 +35,9 @@
 	flex-direction: column;
 
 	@include breakpoint.breakpoint('large') {
-		border-radius: border-radius.$border-radius;
-		box-shadow: box-shadow.$box-shadow;
-		margin: units.$unit-large auto;
+		border-radius: border-radius.$default;
+		box-shadow: box-shadow.$default;
+		margin: units.$large auto;
 		max-width: viewport.$large;
 		width: 100%;
     }
@@ -47,13 +47,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: units.$unit-large;
-    background-color: darken(colors.$color-dark, 10%);
-	color: colors.$color-light;
+    padding: units.$large;
+    background-color: darken(color.$dark, 10%);
+	color: color.$light;
 
 	@include breakpoint.breakpoint('large') {
-		border-top-left-radius: units.$unit-large; 
-    	border-top-right-radius: units.$unit-large;
+		border-top-left-radius: units.$large; 
+    	border-top-right-radius: units.$large;
 	}
 }
 
@@ -71,7 +71,7 @@
 }
 
 .modal__content {
-	margin: units.$unit-default;
+	margin: units.$default;
 	overflow-y: scroll;
 }
 

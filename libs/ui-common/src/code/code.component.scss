@@ -1,7 +1,7 @@
-@use '@mo/ui-base/tokens/colors';
+@use '@mo/ui-base/tokens/color';
 
 .code {
-    color: colors.$color-light;
+    color: color.$light;
     user-select: none;
     min-height: 21.6rem;
 }

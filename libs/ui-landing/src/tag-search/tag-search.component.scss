@@ -1,5 +1,5 @@
-@use '@mo/ui-base/tokens/colors';
-@use '@mo/ui-base/tokens/font-sizes';
+@use '@mo/ui-base/tokens/color';
+@use '@mo/ui-base/tokens/font-size';
 @use '@mo/ui-base/tokens/units';
 @use '@mo/ui-base/tokens/border-radius';
 @use '@mo/ui-base/tokens/line-height';
@@ -10,24 +10,24 @@
 	cursor: default;
 	display: inline-block;
 	text-decoration: none;
-	background-color: colors.$color-light;
-	color: colors.$color-dark;
-	line-height: line-height.$line-height-default;
-	border-radius: border-radius.$border-radius;
+	background-color: color.$light;
+	color: color.$dark;
+	line-height: line-height.$default;
+	border-radius: border-radius.$default;
 	position: relative;
-	padding: units.$unit-small;
-	margin-bottom: units.$unit-small;
-	margin-right: units.$unit-small;
-    font-size: font-sizes.$font-size-default;
+	padding: units.$small;
+	margin-bottom: units.$small;
+	margin-right: units.$small;
+    font-size: font-size.$default;
 
     @include breakpoint.breakpoint('small') {
-        padding: units.$unit-default;
-        margin-bottom: units.$unit-default;
-        margin-right: units.$unit-default;
+        padding: units.$default;
+        margin-bottom: units.$default;
+        margin-right: units.$default;
     }
     
     @include breakpoint.breakpoint('medium') {
-        margin-bottom: units.$unit-large;
-        margin-right: units.$unit-large;
+        margin-bottom: units.$large;
+        margin-right: units.$large;
     }
 }

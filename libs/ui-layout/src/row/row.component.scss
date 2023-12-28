@@ -3,7 +3,7 @@
 
 :host {
     display: block;
-    margin-bottom: units.$unit-default;
+    margin-bottom: units.$default;
     
     @include breakpoint.breakpoint('small') {
         display: flex;

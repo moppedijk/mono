@@ -1,31 +1,31 @@
-@use '@mo/ui-base/tokens/colors';
-@use '@mo/ui-base/tokens/font-sizes';
+@use '@mo/ui-base/tokens/color';
+@use '@mo/ui-base/tokens/font-size';
 @use '@mo/ui-base/tokens/line-height';
 @use '@mo/ui-base/tokens/units';
 
 .text-small {
-    font-size: font-sizes.$font-size-small;
-    line-height: line-height.$line-height-small;
+    font-size: font-size.$small;
+    line-height: line-height.$small;
 }
 
 .text-large {
-    font-size: font-sizes.$font-size-large;
-    line-height: line-height.$line-height-large;
-    margin-bottom: units.$unit-large;
+    font-size: font-size.$large;
+    line-height: line-height.$large;
+    margin-bottom: units.$large;
 }
 
 .text-primary {
-    color: colors.$color-primary;
+    color: color.$primary;
 }
 
 .text-secondary {
-    color: colors.$color-secondary;
+    color: color.$secondary;
 }
 
 .text-dark {
-    color: colors.$color-dark;
+    color: color.$dark;
 }
 
 .text-light {
-    color: colors.$color-light;
+    color: color.$light;
 }

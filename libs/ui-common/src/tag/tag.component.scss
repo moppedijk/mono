@@ -1,5 +1,5 @@
-@use '@mo/ui-base/tokens/colors';
-@use '@mo/ui-base/tokens/font-sizes';
+@use '@mo/ui-base/tokens/color';
+@use '@mo/ui-base/tokens/font-size';
 @use '@mo/ui-base/tokens/units';
 @use '@mo/ui-base/tokens/border-radius';
 @use '@mo/ui-base/tokens/line-height';
@@ -9,29 +9,29 @@
 	cursor: default;
 	display: inline-block;
 	text-decoration: none;
-	background-color: colors.$color-light;
-	color: colors.$color-dark;
-	font-size: font-sizes.$font-size-default;
-	line-height: line-height.$line-height-default;
-	padding: units.$unit-default;
-	border-radius: border-radius.$border-radius;
-	margin-bottom: units.$unit-default;
-	margin-right: units.$unit-default;
+	background-color: color.$light;
+	color: color.$dark;
+	font-size: font-size.$default;
+	line-height: line-height.$default;
+	padding: units.$default;
+	border-radius: border-radius.$default;
+	margin-bottom: units.$default;
+	margin-right: units.$default;
 	position: relative;
 }
 
 .tag--small {
-	font-size: font-sizes.$font-size-small;
-	line-height: line-height.$line-height-small;
-	padding: units.$unit-small;
-	border-radius: units.$unit-small;
-	margin-bottom: units.$unit-small;
+	font-size: font-size.$small;
+	line-height: line-height.$small;
+	padding: units.$small;
+	border-radius: units.$small;
+	margin-bottom: units.$small;
 }
 
 .tag--large {
-	font-size: font-sizes.$font-size-large;
-	line-height: line-height.$line-height-large;
-	padding: units.$unit-large;
-	border-radius: units.$unit-large;
-	margin-bottom: units.$unit-large;
+	font-size: font-size.$large;
+	line-height: line-height.$large;
+	padding: units.$large;
+	border-radius: units.$large;
+	margin-bottom: units.$large;
 }

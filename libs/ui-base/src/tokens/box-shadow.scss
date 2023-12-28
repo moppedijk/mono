@@ -1,4 +1,4 @@
-@use './colors';
+@use './color';
 @use './units';
 
-$box-shadow: 0px 0px units.$unit-default units.$unit-default rgba(colors.$color-dark, .5)
+$default: 0px 0px units.$default units.$default rgba(color.$dark, .5)

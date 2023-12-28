@@ -1,9 +1,9 @@
 @use '@mo/ui-base/tokens/units';
-@use '@mo/ui-base/tokens/colors';
+@use '@mo/ui-base/tokens/color';
 @use '@mo/ui-base/tokens/viewport';
 
 .footer {
-    background-color: colors.$color-primary;
+    background-color: color.$primary;
 }
 
 .footer__container {
@@ -16,7 +16,7 @@
 
 .footer__brand {
     flex: 1;
-    margin: 0 units.$unit-default;
+    margin: 0 units.$default;
 
     a {
         font-weight: bold;
@@ -25,21 +25,21 @@
 }
 
 .footer__icon {
-    margin-right: units.$unit-small;
+    margin-right: units.$small;
 }
 
 .footer--primary {
-    background-color: colors.$color-primary;
+    background-color: color.$primary;
 }
 
 .footer--secondary {
-    background-color: colors.$color-secondary;
+    background-color: color.$secondary;
 }
 
 .footer--dark {
-    background-color: colors.$color-dark;
+    background-color: color.$dark;
 }
 
 .footer--light {
-    background-color: colors.$color-light;
+    background-color: color.$light;
 }

@@ -1,21 +1,21 @@
-@use '../tokens/colors';
+@use '../tokens/color';
 
 .link-primary {
-	color: colors.$color-primary;
+	color: color.$primary;
 }
 
 .link-secondary {
-	color: colors.$color-secondary;
+	color: color.$secondary;
 }
 
 .link-light {
-	color: colors.$color-light;
+	color: color.$light;
 }
 
 .link-default {
-	color: colors.$color-default;
+	color: color.$default;
 }
 
 .link-dark {
-	color: colors.$color-dark;
+	color: color.$dark;
 }

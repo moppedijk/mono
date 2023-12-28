@@ -1,12 +1,12 @@
-@use '../tokens/font-sizes';
+@use '../tokens/font-size';
 
 $font-size: (
-    font-sizes.$font-size-large,
-    font-sizes.$font-size-default,
-    font-sizes.$font-size-small,
-    font-sizes.$font-size-small,
-    font-sizes.$font-size-small,
-    font-sizes.$font-size-small
+    font-size.$large,
+    font-size.$default,
+    font-size.$small,
+    font-size.$small,
+    font-size.$small,
+    font-size.$small
 );
 
 @for $i from 1 through 4 {
@@ -16,8 +16,8 @@ $font-size: (
     }
 
     .h#{$i}-small {
-        font-size: font-sizes.$font-size-small;
-        margin: font-sizes.$font-size-small 0;
+        font-size: font-size.$small;
+        margin: font-size.$small 0;
     }
     
     .h#{$i}-large {

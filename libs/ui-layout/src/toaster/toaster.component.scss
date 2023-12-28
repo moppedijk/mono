@@ -1,8 +1,8 @@
 @use '@mo/ui-base/tokens/units';
-@use '@mo/ui-base/tokens/colors';
+@use '@mo/ui-base/tokens/color';
 @use '@mo/ui-base/tokens/border-radius';
 @use '@mo/ui-base/tokens/box-shadow';
-@use '@mo/ui-base/tokens/font-sizes';
+@use '@mo/ui-base/tokens/font-size';
 
 :host {
     display: block;
@@ -14,10 +14,10 @@
 
 .toaster {
     max-width: 30rem;
-    padding: units.$unit-default;
-    margin: units.$unit-default;
-    background: colors.$color-light;
-    border-radius: border-radius.$border-radius;
-    box-shadow: box-shadow.$box-shadow;
-    font-size: font-sizes.$font-size-small;
+    padding: units.$default;
+    margin: units.$default;
+    background: color.$light;
+    border-radius: border-radius.$default;
+    box-shadow: box-shadow.$default;
+    font-size: font-size.$small;
 }

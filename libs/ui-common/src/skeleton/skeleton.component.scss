@@ -1,15 +1,15 @@
 @use '@mo/ui-base/tokens/units';
 @use '@mo/ui-base/tokens/border-radius';
-@use '@mo/ui-base/tokens/colors';
+@use '@mo/ui-base/tokens/color';
 
 :host {
-    margin-right: units.$unit-default;
-    margin-bottom: units.$unit-default;
+    margin-right: units.$default;
+    margin-bottom: units.$default;
 }
 
 .skeleton {
-    border-radius: border-radius.$border-radius;
-    background: linear-gradient(-45deg, colors.$color-dark, colors.$color-default);
+    border-radius: border-radius.$default;
+    background: linear-gradient(-45deg, color.$dark, color.$default);
     background-size: 200% 100%;
     animation: gradient 3s ease infinite;
 }

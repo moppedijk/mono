@@ -1,3 +1,5 @@
 @use './units';
 
-$border-radius: units.$unit-default;
+$small: units.$small;
+$default: units.$default;
+$large: units.$large;

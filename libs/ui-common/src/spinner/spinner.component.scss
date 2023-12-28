@@ -1,8 +1,8 @@
 
-@use '../../../../libs/ui-base/src/tokens/colors';
+@use '@mo/ui-base/tokens/color';
 
 .spinner {
-    color: colors.$color-light;
+    color: color.$light;
     width: 24px;
     height: 24px;
     overflow: hidden;

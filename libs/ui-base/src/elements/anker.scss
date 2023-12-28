@@ -1,12 +1,12 @@
 @use '../tokens/easings';
 @use '../tokens/border-radius';
-@use '../tokens/colors';
+@use '../tokens/color';
 
 a {
 	transition-property: color;
 	transition-duration: .3s;
 	transition-timing-function: easings.$ease-in-out;
-	color: colors.$color-dark;
+	color: color.$dark;
 	text-decoration: underline;
 }
 
