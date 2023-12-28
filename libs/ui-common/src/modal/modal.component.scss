@@ -3,7 +3,7 @@
 @use "@mo/ui-base/tokens/box-shadow";
 @use "@mo/ui-base/tokens/units";
 @use "@mo/ui-base/tokens/viewport";
-@use "@mo/ui-base/tools/breakpoint";
+@use "@mo/ui-base/mixins/breakpoint";
 
 .modal {
     position: fixed;
@@ -18,7 +18,7 @@
 	animation-duration: .3s;
 	animation-fill-mode: forwards;
 
-	@include breakpoint.breakpoint('large') {
+	@include breakpoint.breakTo('large') {
 		background-color: rgba(color.$light, .5);
 	}
 }
@@ -34,7 +34,7 @@
 	display: flex;
 	flex-direction: column;
 
-	@include breakpoint.breakpoint('large') {
+	@include breakpoint.breakTo('large') {
 		border-radius: border-radius.$default;
 		box-shadow: box-shadow.$default;
 		margin: units.$large auto;
@@ -51,7 +51,7 @@
     background-color: darken(color.$dark, 10%);
 	color: color.$light;
 
-	@include breakpoint.breakpoint('large') {
+	@include breakpoint.breakTo('large') {
 		border-top-left-radius: units.$large; 
     	border-top-right-radius: units.$large;
 	}

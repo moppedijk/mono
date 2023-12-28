@@ -3,57 +3,32 @@
 @use '@mo/ui-base/tokens/units';
 @use '@mo/ui-base/tokens/border-radius';
 @use '@mo/ui-base/tokens/line-height';
+@use '@mo/ui-base/mixins/button';
 
 .button-anker {
-	border: none;
-	cursor: pointer;
-	display: inline-block;
-	text-decoration: none;
-	background-color: color.$default;
-	color: color.$light;
-	font-size: font-size.$default;
-	line-height: line-height.$default;
-	padding: units.$default;
-	border-radius: border-radius.$default;
-	margin-bottom: units.$default;
-	position: relative;
-}
-
-.button-anker:disabled {
-	background-color: color.$dark;
-	cursor: not-allowed;
+	@include button.base();
 }
 
 .button-anker--small {
-	font-size: font-size.$small;
-	line-height: line-height.$small;
-	padding: units.$small;
-	border-radius: units.$small;
-	margin-bottom: units.$small;
+	@include button.small();
 }
 
 .button-anker--large {
-	font-size: font-size.$large;
-	line-height: line-height.$large;
-	padding: units.$large;
-	border-radius: units.$large;
-	margin-bottom: units.$large;
+	@include button.large();
 }
 
 .button-anker--primary {
-    background-color: color.$primary;
+    @include button.primary();
 }
 
 .button-anker--secondary {
-    background-color: color.$secondary;
-	color: color.$dark;
+    @include button.secondary();
 }
 
 .button-anker--dark {
-    background-color: color.$dark;
-    color: color.$light;
+    @include button.dark();
 }
 
 .button-anker--light {
-    background-color: color.$light;
+    @include button.light();
 }

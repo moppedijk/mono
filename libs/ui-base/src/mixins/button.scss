@@ -1,0 +1,81 @@
+@use '@mo/ui-base/tokens/color';
+@use '@mo/ui-base/tokens/font-size';
+@use '@mo/ui-base/tokens/units';
+@use '@mo/ui-base/tokens/border-radius';
+
+@mixin base() {
+    border: none;
+	cursor: pointer;
+	display: inline-block;
+	text-decoration: none;
+	background-color: color.$default;
+	color: color.$light;
+	font-size: font-size.$default;
+	line-height: font-size.$default;
+	padding: units.$default;
+	border-radius: border-radius.$default;
+	margin-bottom: units.$default;
+	position: relative;
+	transition-property: color, background-color;
+	transition-duration: .3s;
+
+	&:disabled {
+		background-color: color.$dark;
+		cursor: not-allowed;
+	}
+
+	&:hover {
+		background-color: darken(color.$default, 20%);
+	}
+}
+
+@mixin small() {
+	font-size: font-size.$small;
+	line-height: font-size.$small;
+	padding: units.$small;
+	border-radius: units.$small;
+	margin-bottom: units.$small;
+}
+
+@mixin large() {
+	font-size: font-size.$large;
+	line-height: font-size.$large;
+	padding: units.$large;
+	border-radius: units.$large;
+	margin-bottom: units.$large;
+}
+
+@mixin primary() {
+	background-color: color.$primary;
+
+	&:hover {
+		background-color: darken(color.$primary, 20%);
+	}
+}
+
+@mixin secondary() {
+	background-color: color.$secondary;
+	color: color.$dark;
+
+	&:hover {
+		background-color: darken(color.$secondary, 20%);
+	}
+}
+
+@mixin dark() {
+	background-color: color.$dark;
+    color: color.$light;
+
+	&:hover {
+		background-color: lighten(color.$dark, 20%);
+	}
+}
+
+@mixin light() {
+	background-color: color.$light;
+    color: color.$dark;
+
+	&:hover {
+		background-color: darken(color.$light, 20%);
+	}
+}

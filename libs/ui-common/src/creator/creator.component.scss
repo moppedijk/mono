@@ -1,6 +1,6 @@
 @use "@mo/ui-base/tokens/units";
 @use "@mo/ui-base/tokens/font-size";
-@use "@mo/ui-base/tools/breakpoint";
+@use "@mo/ui-base/mixins/breakpoint";
 
 $size-mobile: 4rem;
 $size-desktop: 6rem;
@@ -9,7 +9,7 @@ $size-desktop: 6rem;
     margin: units.$default;
     position: relative;
 
-    @include breakpoint.breakpoint('small') {
+    @include breakpoint.breakTo('small') {
         display: flex;
         align-items: center;
     }
@@ -27,7 +27,7 @@ $size-desktop: 6rem;
         max-width: 100%;
     }
 
-    @include breakpoint.breakpoint('small') {
+    @include breakpoint.breakTo('small') {
         margin: 0;
         position: absolute;
         top: 0;
@@ -49,7 +49,7 @@ $size-desktop: 6rem;
         font-size: font-size.$small;
     }
 
-    @include breakpoint.breakpoint('small') {
+    @include breakpoint.breakTo('small') {
         text-align: left;
         margin-left: $size-desktop;
         padding-left: units.$default;

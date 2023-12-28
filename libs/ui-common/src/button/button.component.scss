@@ -2,25 +2,34 @@
 @use '@mo/ui-base/tokens/font-size';
 @use '@mo/ui-base/tokens/units';
 @use '@mo/ui-base/tokens/border-radius';
+@use '@mo/ui-base/mixins/button';
 
 .button {
-	border: none;
-	cursor: pointer;
-	display: inline-block;
-	text-decoration: none;
-	background-color: color.$default;
-	color: color.$light;
-	font-size: font-size.$default;
-	line-height: font-size.$default;
-	padding: units.$default;
-	border-radius: border-radius.$default;
-	margin-bottom: units.$default;
-	position: relative;
+	@include button.base();
 }
 
-.button:disabled {
-	background-color: color.$dark;
-	cursor: not-allowed;
+.button--small {
+	@include button.small();
+}
+
+.button--large {
+	@include button.large();
+}
+
+.button--primary {
+    @include button.primary();
+}
+
+.button--secondary {
+    @include button.secondary();
+}
+
+.button--dark {
+    @include button.dark();
+}
+
+.button--light {
+    @include button.light();
 }
 
 .button__spinner {
@@ -37,38 +46,4 @@
 
 .button--loading .button__content {
 	visibility: hidden;
-}
-
-.button--small {
-	font-size: font-size.$small;
-	line-height: font-size.$small;
-	padding: units.$small;
-	border-radius: units.$small;
-	margin-bottom: units.$small;
-}
-
-.button--large {
-	font-size: font-size.$large;
-	line-height: font-size.$large;
-	padding: units.$large;
-	border-radius: units.$large;
-	margin-bottom: units.$large;
-}
-
-.button--primary {
-    background-color: color.$primary;
-}
-
-.button--secondary {
-    background-color: color.$secondary;
-	color: color.$dark;
-}
-
-.button--dark {
-    background-color: color.$dark;
-    color: color.$light;
-}
-
-.button--light {
-    background-color: color.$light;
 }

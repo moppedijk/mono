@@ -1,4 +1,4 @@
-@use '@mo/ui-base/tools/breakpoint';
+@use '@mo/ui-base/mixins/breakpoint';
 
 .user-profile {
     display: flex;
@@ -10,7 +10,7 @@
     text-align: right;
     display: none;
 
-    @include breakpoint.breakpoint('small') {
+    @include breakpoint.breakTo('small') {
         display: block;
     }
 }

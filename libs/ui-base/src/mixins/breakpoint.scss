@@ -1,6 +1,6 @@
 @use '../tokens/viewport';
 
-@mixin breakpoint($size) {
+@mixin breakTo($size) {
     @if $size == small {
         @media (min-width: viewport.$small) { @content; }
     }
