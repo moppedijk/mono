@@ -9,9 +9,6 @@ import { ContainerConfig } from './container.interface';
 })
 export class ContainerComponent implements OnInit {
 
-  private screensizeService = Inject(ScreensizeService);
-  private window = Inject(WINDOW);
-
   public minHeight = 'auto';
 
   @Input() config: ContainerConfig = {
@@ -24,7 +21,13 @@ export class ContainerComponent implements OnInit {
     projectLink: '',
   };
 
-  @HostListener('window:resize', ['$event']) onResize() {
+  constructor(
+    private screensizeService: ScreensizeService,
+    @Inject(WINDOW) private window: Window
+  ) {}
+
+  @HostListener('window:resize', ['$event'])
+  public onResize() {
     this.setMinHeight();
   }
 
