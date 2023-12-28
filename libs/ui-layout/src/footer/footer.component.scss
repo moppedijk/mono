@@ -1,6 +1,6 @@
-@use '../../../ui-base/src/tokens/units';
-@use '../../../ui-base/src/tokens/colors';
-@use '../../../ui-base/src/tokens/viewport';
+@use '@mo/ui-base/tokens/units';
+@use '@mo/ui-base/tokens/colors';
+@use '@mo/ui-base/tokens/viewport';
 
 .footer {
     background-color: colors.$color-primary;

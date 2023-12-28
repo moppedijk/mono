@@ -1,6 +1,6 @@
-@use "../../../ui-base/src/tokens/colors";
-@use "../../../ui-base/src/tokens/border-radius";
-@use "../../../ui-base/src/tokens/units";
+@use "@mo/ui-base/tokens/colors";
+@use "@mo/ui-base/tokens/border-radius";
+@use "@mo/ui-base/tokens/units";
 
 .input {
     border: solid 2px colors.$color-dark;

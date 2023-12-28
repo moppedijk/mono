@@ -1,7 +1,7 @@
-@use '../../../ui-base/src/tokens/colors';
-@use '../../../ui-base/src/tokens/font-sizes';
-@use '../../../ui-base/src/tokens/line-height';
-@use '../../../ui-base/src/tokens/units';
+@use '@mo/ui-base/tokens/colors';
+@use '@mo/ui-base/tokens/font-sizes';
+@use '@mo/ui-base/tokens/line-height';
+@use '@mo/ui-base/tokens/units';
 
 .text-small {
     font-size: font-sizes.$font-size-small;

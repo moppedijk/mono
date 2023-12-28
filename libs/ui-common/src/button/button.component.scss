@@ -1,8 +1,7 @@
-@use '../../../ui-base/src/tokens/colors';
-@use '../../../ui-base/src/tokens/font-sizes';
-@use '../../../ui-base/src/tokens/units';
-@use '../../../ui-base/src/tokens/border-radius';
-@use '../../../ui-base/src/tokens/line-height';
+@use '@mo/ui-base/tokens/colors';
+@use '@mo/ui-base/tokens/font-sizes';
+@use '@mo/ui-base/tokens/units';
+@use '@mo/ui-base/tokens/border-radius';
 
 .button {
 	border: none;
@@ -12,7 +11,7 @@
 	background-color: colors.$color-default;
 	color: colors.$color-light;
 	font-size: font-sizes.$font-size-default;
-	line-height: line-height.$line-height-default;
+	line-height: font-sizes.$font-size-default;
 	padding: units.$unit-default;
 	border-radius: border-radius.$border-radius;
 	margin-bottom: units.$unit-default;
@@ -42,7 +41,7 @@
 
 .button--small {
 	font-size: font-sizes.$font-size-small;
-	line-height: line-height.$line-height-small;
+	line-height: font-sizes.$font-size-small;
 	padding: units.$unit-small;
 	border-radius: units.$unit-small;
 	margin-bottom: units.$unit-small;
@@ -50,7 +49,7 @@
 
 .button--large {
 	font-size: font-sizes.$font-size-large;
-	line-height: line-height.$line-height-large;
+	line-height: font-sizes.$font-size-large;
 	padding: units.$unit-large;
 	border-radius: units.$unit-large;
 	margin-bottom: units.$unit-large;

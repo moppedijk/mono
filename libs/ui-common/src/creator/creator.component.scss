@@ -1,7 +1,7 @@
-@use "../../../ui-base/src/tokens/units";
-@use "../../../ui-base/src/tokens/colors";
-@use "../../../ui-base/src/tokens/font-sizes";
-@use "../../../ui-base/src/tools/breakpoint";
+@use "@mo/ui-base/tokens/units";
+@use "@mo/ui-base/tokens/colors";
+@use "@mo/ui-base/tokens/font-sizes";
+@use "@mo/ui-base/tools/breakpoint";
 
 $size-mobile: 4rem;
 $size-desktop: 6rem;

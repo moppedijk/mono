@@ -1,6 +1,6 @@
-@use '../../../ui-base/src/tokens/colors';
-@use '../../../ui-base/src/tokens/viewport';
-@use '../../../ui-base/src/tokens/units';
+@use '@mo/ui-base/tokens/colors';
+@use '@mo/ui-base/tokens/viewport';
+@use '@mo/ui-base/tokens/units';
 
 .header {
     background-color: colors.$color-dark;
@@ -45,7 +45,7 @@
     display: inline-block;
     margin-right: units.$unit-default;
     background-color: colors.$color-light;
-    padding: units.$unit-small / 2;
+    padding: units.$unit-small - .4rem;
     border-radius: 50%;
     text-align: center;
 
