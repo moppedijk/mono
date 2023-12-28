@@ -27,6 +27,13 @@
 	&:hover {
 		background-color: darken(color.$default, 20%);
 	}
+
+	&:focus {
+		outline-color: color.$default;
+		outline-style: solid;
+		outline-width: 1px;
+		outline-offset: units.$default;
+	}
 }
 
 @mixin small() {
@@ -51,6 +58,10 @@
 	&:hover {
 		background-color: darken(color.$primary, 20%);
 	}
+
+	&:focus {
+		outline-color: color.$primary;
+	}
 }
 
 @mixin secondary() {
@@ -59,6 +70,10 @@
 
 	&:hover {
 		background-color: darken(color.$secondary, 20%);
+	}
+
+	&:focus {
+		outline-color: color.$secondary;
 	}
 }
 
@@ -69,6 +84,10 @@
 	&:hover {
 		background-color: lighten(color.$dark, 20%);
 	}
+
+	&:focus {
+		outline-color: color.$dark;
+	}
 }
 
 @mixin light() {
@@ -77,5 +96,9 @@
 
 	&:hover {
 		background-color: darken(color.$light, 20%);
+	}
+
+	&:focus {
+		outline-color: color.$light;
 	}
 }
