@@ -4,7 +4,6 @@
 @use '@mo/ui-base/tokens/border-radius';
 
 @mixin base() {
-    border: none;
 	cursor: pointer;
 	display: inline-block;
 	text-decoration: none;
@@ -19,11 +18,17 @@
 	transition-property: color, background-color;
 	transition-duration: .3s;
 
+	border-top: none;
+	border-right: none;
+	border-bottom: solid 3px darken(color.$default, 20%);
+	border-left: none;
+
 	&:disabled {
 		background-color: color.$dark;
 		cursor: not-allowed;
 	}
 
+	&:focus,
 	&:hover {
 		background-color: darken(color.$default, 20%);
 	}
@@ -54,7 +59,9 @@
 
 @mixin primary() {
 	background-color: color.$primary;
+	border-bottom-color: darken(color.$primary, 20%);
 
+	&:focus,
 	&:hover {
 		background-color: darken(color.$primary, 20%);
 	}
@@ -67,7 +74,9 @@
 @mixin secondary() {
 	background-color: color.$secondary;
 	color: color.$dark;
+	border-bottom-color: darken(color.$secondary, 20%);
 
+	&:focus,
 	&:hover {
 		background-color: darken(color.$secondary, 20%);
 	}
@@ -80,7 +89,9 @@
 @mixin dark() {
 	background-color: color.$dark;
     color: color.$light;
+	border-bottom-color: lighten(color.$dark, 20%);
 
+	&:focus,
 	&:hover {
 		background-color: lighten(color.$dark, 20%);
 	}
@@ -93,7 +104,9 @@
 @mixin light() {
 	background-color: color.$light;
     color: color.$dark;
+	border-bottom-color: darken(color.$light, 20%);
 
+	&:focus,
 	&:hover {
 		background-color: darken(color.$light, 20%);
 	}
