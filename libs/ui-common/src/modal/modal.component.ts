@@ -8,7 +8,7 @@ import {
   Output,
   Renderer2,
 } from '@angular/core';
-import { faSlash, IconDefinition } from '@fortawesome/free-solid-svg-icons';
+import { faTimes, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { ScreensizeService } from '@mo/util-core';
 
 const BODY_CSS_CLASS = 'body-freeze';
@@ -19,7 +19,7 @@ const BODY_CSS_CLASS = 'body-freeze';
   styleUrls: ['./modal.component.scss'],
 })
 export class ModalComponent {
-  public faSlash: IconDefinition;
+  public icon: IconDefinition;
   public maxHeight!: string;
 
   @Input() title = '';
@@ -34,7 +34,7 @@ export class ModalComponent {
     @Inject(DOCUMENT) private document: Document,
     private screensizeService: ScreensizeService,
   ) {
-    this.faSlash = faSlash;
+    this.icon = faTimes;
     this.setMaxHeight();
   }
 
