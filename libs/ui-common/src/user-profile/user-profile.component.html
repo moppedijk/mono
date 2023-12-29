@@ -1,11 +1,19 @@
 <div class="user-profile">
-    <div class="user-profile__username"
-        *ngIf="creator">
+    <div class="user-profile-username">
         <strong>{{ creator }}</strong>
     </div>
-    <div class="user-profile__image">
-        <div class="user-profile__circle">
+    <div class="user-profile-image">
+        <div class="user-profile-circle"
+            (click)="isModalVisible = !isModalVisible">
             <img [src]="profileImage">
         </div>
     </div>
 </div>
+<mo-modal
+    [title]="creator"
+    *ngIf="isModalVisible"
+    (closed)="isModalVisible = false">
+    <div class="user-profile-large-image">
+        <img [src]="profileImage">
+    </div>
+</mo-modal>

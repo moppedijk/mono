@@ -1,3 +1,4 @@
+@use '@mo/ui-base/tokens/border-radius';
 @use '@mo/ui-base/mixins/breakpoint';
 
 .user-profile {
@@ -5,7 +6,7 @@
     align-items: center;
 }
 
-.user-profile__username {
+.user-profile-username {
     flex: 10;
     text-align: right;
     display: none;
@@ -15,7 +16,7 @@
     }
 }
 
-.user-profile__image {
+.user-profile-image {
     height: 3rem;
     flex: 1;
     overflow: hidden;
@@ -25,10 +26,30 @@
     }
 }
 
-.user-profile__circle {
+.user-profile-circle {
     overflow: hidden;
     border-radius: 50%;
     height: 3rem;
     width: 3rem;
     float: right;
+    cursor: pointer;
 }
+
+.user-profile-large-image {
+    width: auto;
+    margin: 0 auto;
+    border-radius: border-radius.$default;
+    overflow: hidden;
+
+    @include breakpoint.breakTo('small') {
+        width: 80%;
+    }
+    
+    @include breakpoint.breakTo('medium') {
+        width: 50%;
+    }
+
+    img {
+        max-width: 100%;
+    }
+} 
