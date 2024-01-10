@@ -25,7 +25,7 @@ All projects should be written in Typescript. To keep thing consistent.
 - English version
 - Add unit tests
 - Add e2e tests
-- Open to search index (indexable)
+- Icon bug on Windows (Chrome)
 
 ## Chores
 - Update dependencies
