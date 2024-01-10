@@ -57,7 +57,7 @@ export class AppComponent {
     title: 'Moppedijk - Landing',
     creator: '@mo',
     logoUrl: 'assets/logos/logo.svg',
-    profileImage: 'assets/profile/1000x1000.jpg',
+    profileImage: 'assets/profile/1000x1000.webp',
     organization: 'Moppedijk',
     project: 'Mono',
     projectLink: 'https://github.com/moppedijk/mono',
