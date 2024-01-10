@@ -2,7 +2,7 @@
     [moClassColor]="{ className: 'footer', color: color }">
     <div class="footer__container">
         <div class="footer__brand">
-            <a [href]="projectLink" class="link-light" target="_blank">
+            <a [href]="projectLink" class="link-light" target="_blank" [attr.aria-label]="project">
                 <fa-icon class="footer__icon" [icon]="icon"></fa-icon>{{ project }}
             </a>
         </div>

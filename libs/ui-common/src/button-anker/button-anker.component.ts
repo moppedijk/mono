@@ -10,4 +10,5 @@ export class ButtonAnkerComponent {
   @Input() size: Sizes = 'default';
   @Input() color: Colors = 'default';
   @Input() link: string = '';
+  @Input() title: string = '';
 }

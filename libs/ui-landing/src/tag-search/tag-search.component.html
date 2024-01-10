@@ -2,5 +2,5 @@
     *ngFor="let visibleTag of visibleTags">
     {{ visibleTag.name }}
 </div>
-<p class="text-light" *ngIf="!allTags">En nog {{ hiddenTags.length }} andere interesses... <a class="link-light" href="#" (click)="showAllTags()">Laat zien!</a></p>
-<p class="text-light" *ngIf="allTags"><a class="link-light" href="#" (click)="showAllTags()">Minder...</a></p>
+<p class="text-light" *ngIf="!allTags">En nog {{ hiddenTags.length }} andere interesses... <a class="link-light" href="#" (click)="showAllTags()" aria-label="Laat meer zien">Laat zien!</a></p>
+<p class="text-light" *ngIf="allTags"><a class="link-light" href="#" (click)="showAllTags()" aria-label="Laat minder zien">Minder...</a></p>

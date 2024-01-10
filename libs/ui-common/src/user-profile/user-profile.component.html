@@ -5,7 +5,7 @@
     <div class="user-profile-image">
         <div class="user-profile-circle"
             (click)="isModalVisible = !isModalVisible">
-            <img [src]="profileImage">
+            <img [src]="profileImage" [alt]="creator">
         </div>
     </div>
 </div>
@@ -14,6 +14,6 @@
     *ngIf="isModalVisible"
     (closed)="isModalVisible = false">
     <div class="user-profile-large-image">
-        <img [src]="profileImage">
+        <img [src]="profileImage" [alt]="creator">
     </div>
 </mo-modal>

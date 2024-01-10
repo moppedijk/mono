@@ -7,8 +7,10 @@ import { Component, Input } from '@angular/core';
 })
 export class NavigationListItemComponent {
   @Input() url: string;
+  @Input() title: string;
 
   constructor() {
     this.url = '';
+    this.title = '';
   }
 }

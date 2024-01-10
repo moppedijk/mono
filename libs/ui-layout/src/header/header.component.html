@@ -1,8 +1,8 @@
 <div class="header">
     <div class="header__container">
         <div class="header__brand">
-            <a routerLink="/" class="header__logo">
-                <img [src]="logoUrl">
+            <a routerLink="/" class="header__logo" [attr.aria-label]="organization">
+                <img [src]="logoUrl" [alt]="organization">
             </a>
             <strong>{{ organization }}</strong>
         </div>
