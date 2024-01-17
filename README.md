@@ -7,7 +7,7 @@ Dont think. Build.
 To start the development server run `nx serve landing`. Open your browser and navigate to http://localhost:4200/. Happy coding!
 
 ## Best practices
-- Dont think
+- Code needs to be predictable
 - It needs to be simple
 - It should be highly dynamic
 - It should be easy to build new apps
@@ -25,7 +25,6 @@ All projects should be written in Typescript. To keep thing consistent.
 - English version
 - Add unit tests
 - Add e2e tests
-- Icon bug on Windows (Chrome)
 
 ## Chores
 - Update dependencies
