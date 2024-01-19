@@ -25,6 +25,7 @@ All projects should be written in Typescript. To keep thing consistent.
 - English version
 - Add unit tests
 - Add e2e tests
+- Refactor to standalone components
 
 ## Chores
 - Update dependencies

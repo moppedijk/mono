@@ -1,13 +1,14 @@
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { FeatureContactComponent } from '@mo/feature-contact';
 import { UiCommonModule } from '@mo/ui-common';
 import { Tag, UiLandingModule } from '@mo/ui-landing';
 import { ContainerConfig, UiLayoutModule } from '@mo/ui-layout';
 
 @Component({
   standalone: true,
-  imports: [RouterModule, UiLayoutModule, UiCommonModule, NgFor, UiLandingModule],
+  imports: [RouterModule, UiLayoutModule, UiCommonModule, NgFor, UiLandingModule, FeatureContactComponent],
   selector: 'mo-root',
   templateUrl: './app.component.html',
 })
