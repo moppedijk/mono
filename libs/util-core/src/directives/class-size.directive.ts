@@ -1,6 +1,6 @@
 import { Directive, ElementRef, Input, OnChanges, OnInit, inject } from '@angular/core';
 import { Sizes } from '@mo/ui-base';
-import { generateClassList } from './class.util';
+import { generateClassList } from '../utils/class.util';
 
 @Directive({
   selector: '[moClassSize]',

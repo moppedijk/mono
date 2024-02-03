@@ -6,6 +6,8 @@ textarea {
     border: none;
     resize: none;
     font-size: font-size.$default;
+    font-family: inherit;
+    font-size: inherit;
 
     &:focus {
         outline: none;

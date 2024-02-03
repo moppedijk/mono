@@ -1,0 +1,64 @@
+{
+  "name": "landing-api",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/landing-api/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "target": "node",
+        "compiler": "tsc",
+        "outputPath": "dist/apps/landing-api",
+        "main": "apps/landing-api/src/main.ts",
+        "tsConfig": "apps/landing-api/tsconfig.app.json",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "apps/landing-api/src/assets",
+            "output": "/assets"
+          },
+          {
+            "glob": "**/*",
+            "input": "apps/landing-api/src/app/email/templates",
+            "output": "/templates"
+          }
+        ],
+        "webpackConfig": "apps/landing-api/webpack.config.js"
+      },
+      "configurations": {
+        "development": {},
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "landing-api:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "landing-api:build:development"
+        },
+        "production": {
+          "buildTarget": "landing-api:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/landing-api/jest.config.ts"
+      }
+    }
+  },
+  "tags": []
+}
