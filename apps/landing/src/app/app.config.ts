@@ -4,13 +4,14 @@ import { appRoutes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
 import { FEATURE_CONTACT_TOKEN } from '@mo/feature-contact';
 import { provideTokenValue } from '@mo/util-core';
+import { environment } from '../environment/environment';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideClientHydration(),
     provideRouter(appRoutes),
     provideTokenValue(FEATURE_CONTACT_TOKEN, {
-      apiUrl: 'http://localhost:3000',
+      apiUrl: environment.apiUrl,
       apiPrefix: 'api',
     }),
   ],
