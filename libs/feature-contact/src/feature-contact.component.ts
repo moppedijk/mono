@@ -16,12 +16,44 @@ export class FeatureContactComponent {
   public token = inject(FEATURE_CONTACT_TOKEN);
   public httpClient = inject(HttpClient);
   public form = {
-    email: 'martijn@oppedijk.online',
-    message: 'Hi!',
+    name: '',
+    email: '',
+    message: '',
+  }
+  public isLoading = false;
+  public isDisabled = false;
+  public hasError = false;
+
+  private startRequest(): void {
+    this.isDisabled = true;
+    this.isLoading = true;
+    this.hasError = false;
+  }
+  
+  private completeRequest(): void {
+    this.isDisabled = false;
+    this.isLoading = false;
+    this.hasError = false;
+    this.form = {
+      email: '',
+      message: '',
+      name: '',
+    }
   }
 
-  constructor() {
-    console.log(this.token.apiUrl);
+  private completeRequestWithError(): void {
+    this.isDisabled = false;
+    this.isLoading = false;
+    this.hasError = true;
+  }
+
+  // Add better validation
+  private isInValid(): boolean {
+    return Boolean(
+      !this.form.email ||
+      !this.form.name ||
+      !this.form.message
+    );
   }
 
   public submit(): void {
@@ -33,6 +65,15 @@ export class FeatureContactComponent {
     }
     const body = this.form;
 
-    this.httpClient.post(url, body, httpOptions).subscribe(console.log);
+    if (this.isInValid()) {
+      return;
+    }
+
+    this.startRequest();
+    this.httpClient.post(url, body, httpOptions).subscribe({
+      next: () => this.completeRequest(),
+      error: () => this.completeRequestWithError(),
+      complete: () => this.completeRequest(),
+    });
   }
 }

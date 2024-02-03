@@ -1,10 +1,14 @@
 import { Injectable } from '@nestjs/common';
-import { validator } from 'validator';
+import validator from 'validator';
 
 @Injectable()
 export class ValidatorService {
     public validateName(value: string): boolean {
         let valid = true;
+
+        if (!value) {
+            return false;
+        }
 
         // Check if value is empty
         if(validator.isEmpty(value)) {
@@ -17,7 +21,7 @@ export class ValidatorService {
         }
 
         // Check if string is longer than 2
-        if(!validator.isLength(value, {min:2, max: 1000})) {
+        if(!validator.isLength(value, { min:2, max: 1000 })) {
             valid = false;
         }
 
@@ -27,13 +31,17 @@ export class ValidatorService {
     public validateMessage(value: string): boolean {
         let valid = true;
 
+        if (!value) {
+            return false;
+        }
+
         // Check if value is empty
         if(validator.isEmpty(value)) {
             valid = false;
         }
 
         // Check if string is longer than 2 and smaller than 10000
-        if(!validator.isLength(value, {min:2, max: 10000})) {
+        if(!validator.isLength(value, { min:2, max: 10000 })) {
             valid = false;
         }
 
@@ -42,6 +50,10 @@ export class ValidatorService {
 
     public validateEmail(value: string): boolean {
         let valid = true;
+
+        if (!value) {
+            return false
+        }
 
         if(validator.isEmpty(value)) {
             valid = false;

@@ -26,6 +26,7 @@ All projects should be written in Typescript. To keep thing consistent.
 - Add unit tests
 - Add e2e tests
 - Refactor to standalone components
+- Create mock api endoint
 
 ## Chores
 - Update dependencies

@@ -1,26 +1,52 @@
 import { MailerService } from '@nestjs-modules/mailer';
 import { Injectable } from '@nestjs/common';
+import { ConfigService } from '@nestjs/config';
 
-export interface UserInterface {
-    email: '',
-    name: '',
+export interface EmailContactRequest {
+    email: string,
+    name: string,
+    message: string;
 }
 
 @Injectable()
 export class EmailService {
-    constructor(private mailerService: MailerService) {}
+    constructor(
+      private mailerService: MailerService,
+      private configService: ConfigService,
+    ) {}
 
-    async emailContact(user: UserInterface) {
-        await this.mailerService.sendMail({
-          to: user.email,
-          // from: '"Support Team" <support@example.com>', // override default from
-          subject: 'Welcome to Nice App! Confirm your Email',
-          template: './receiver', // `.hbs` extension is appended automatically
-          context: { // ✏️ filling curly brackets with content
-            name: user.name,
-            message: 'YOLO',
-            email: user.email,
-          },
-        });
+    private async sendToApplicant(request: EmailContactRequest) {
+      await this.mailerService.sendMail({
+        to: request.email,
+        subject: 'Hi! From Martijn',
+        template: './applicant',
+        context: {
+          name: request.name,
+          message: request.message,
+          email: request.email,
+        },
+      });
+    }
+    
+    private async sendToOwner(request: EmailContactRequest) {
+      await this.mailerService.sendMail({
+        to: this.configService.get('MAIL_USER'),
+        subject: 'New message from www.moppedijk.nl',
+        template: './owner',
+        context: {
+          name: request.name,
+          message: request.message,
+          email: request.email,
+        },
+      });
+    }
+
+    public async emailContact(request: EmailContactRequest) {
+        await this.sendToApplicant(request);
+        await this.sendToOwner(request);
+    }
+    
+    public async fakeAsync(request: EmailContactRequest) {
+        await setTimeout(() => request, 3000);
     }
 }

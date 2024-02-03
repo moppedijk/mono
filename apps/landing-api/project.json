@@ -15,8 +15,16 @@
         "main": "apps/landing-api/src/main.ts",
         "tsConfig": "apps/landing-api/tsconfig.app.json",
         "assets": [
-          "apps/landing-api/src/assets",
-          "apps/landing-api/src/app/email/templates"
+          {
+            "glob": "**/*",
+            "input": "apps/landing-api/src/assets",
+            "output": "/assets"
+          },
+          {
+            "glob": "**/*",
+            "input": "apps/landing-api/src/app/email/templates",
+            "output": "/templates"
+          }
         ],
         "webpackConfig": "apps/landing-api/webpack.config.js"
       },
