@@ -1,9 +1,13 @@
-import { Body, Controller, Get, Post } from '@nestjs/common';
+import { Controller, Get, Post } from '@nestjs/common';
 import { AppService } from './app.service';
+import { EmailService } from './email/email.service';
 
 @Controller()
 export class AppController {
-  constructor(private readonly appService: AppService) {}
+  constructor(
+    private readonly appService: AppService,
+    private readonly emailService: EmailService,
+  ) {}
 
   @Get()
   getData() {
@@ -11,10 +15,7 @@ export class AppController {
   }
   
   @Post('/contact')
-  postCV(@Body() body) {
-    console.log(body);
-    return {
-      message: 'Send a mail to get in contact'
-    };
+  postContact() {
+    return this.emailService.emailContact();
   }
 }

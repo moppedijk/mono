@@ -8,7 +8,14 @@ import { ContainerConfig, UiLayoutModule } from '@mo/ui-layout';
 
 @Component({
   standalone: true,
-  imports: [RouterModule, UiLayoutModule, UiCommonModule, NgFor, UiLandingModule, FeatureContactComponent],
+  imports: [
+    RouterModule,
+    UiLayoutModule,
+    UiCommonModule,
+    NgFor,
+    UiLandingModule,
+    FeatureContactComponent,
+  ],
   selector: 'mo-root',
   templateUrl: './app.component.html',
 })

@@ -1,1 +1,2 @@
-export * from './lib/feature-contact/feature-contact.component';
+export * from './feature-contact.token';
+export * from './feature-contact.component';

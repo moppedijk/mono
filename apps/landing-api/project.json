@@ -14,7 +14,10 @@
         "outputPath": "dist/apps/landing-api",
         "main": "apps/landing-api/src/main.ts",
         "tsConfig": "apps/landing-api/tsconfig.app.json",
-        "assets": ["apps/landing-api/src/assets"],
+        "assets": [
+          "apps/landing-api/src/assets",
+          "apps/landing-api/src/app/email/templates"
+        ],
         "webpackConfig": "apps/landing-api/webpack.config.js"
       },
       "configurations": {
