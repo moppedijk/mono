@@ -21,7 +21,11 @@ export class AppController {
 
   private onError(error, response: Response): void {
     Logger.log(error);
-    response.status(500).send({ message: 'Something went wrong...'});
+    console.log(error);
+    response.status(500).send({
+      message: 'Something went wrong...',
+      error
+    });
   }
   
   @Post('/contact')

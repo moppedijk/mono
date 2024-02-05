@@ -1,4 +1,5 @@
 export const environment = {
     production: true,
-    apiUrl: 'api.moppedijk.nl',
+    // Should be: api.moppedijk.nl
+    apiUrl: 'https://moppedijk-api.onrender.com',
 }
