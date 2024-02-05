@@ -8,6 +8,7 @@ To start the development server run `nx serve landing`. Open your browser and na
 
 ## Best practices
 - Code needs to be predictable
+- Code needs to be configurable
 - It needs to be simple
 - It should be highly dynamic
 - It should be easy to build new apps
