@@ -43,6 +43,7 @@ export class AppComponent implements OnInit {
     { name: 'NX', priority: 1 },
     { name: 'Visual Studio Code', priority: 1 },
     { name: 'SCSS', priority: 1 },
+    { name: 'Design Systems', priority: 1 },
     { name: 'Visual Design', priority: 2 },
     { name: 'Crypto', priority: 2 },
     { name: 'Scrum', priority: 2 },
@@ -65,6 +66,7 @@ export class AppComponent implements OnInit {
     { name: 'Fontawesome', priority: 2 },
     { name: 'Actionscript 3', priority: 2 },
     { name: 'Flash', priority: 2 },
+    { name: 'Jest', priority: 2 },
   ];
 
   public config: ContainerConfig = {

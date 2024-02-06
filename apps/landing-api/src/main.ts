@@ -14,6 +14,7 @@ async function bootstrap() {
   const origin = process.env.API_ORIGIN;
 
   app.setGlobalPrefix(globalPrefix);
+  // Strict origin checking - remove trailing slash on origin
   app.enableCors({ origin });
 
   await app.listen(port);
