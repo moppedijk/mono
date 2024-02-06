@@ -1,10 +1,11 @@
-import { NgFor } from '@angular/common';
-import { Component } from '@angular/core';
+import { AsyncPipe, NgFor, NgIf } from '@angular/common';
+import { Component, OnInit, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FeatureContactComponent } from '@mo/feature-contact';
 import { UiCommonModule } from '@mo/ui-common';
 import { Tag, UiLandingModule } from '@mo/ui-landing';
 import { ContainerConfig, UiLayoutModule } from '@mo/ui-layout';
+import { FeatureToggleService } from '@mo/util-core';
 
 @Component({
   standalone: true,
@@ -15,11 +16,16 @@ import { ContainerConfig, UiLayoutModule } from '@mo/ui-layout';
     NgFor,
     UiLandingModule,
     FeatureContactComponent,
+    AsyncPipe,
+    NgIf
   ],
   selector: 'mo-root',
   templateUrl: './app.component.html',
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+  private featureToggleService = inject(FeatureToggleService);
+
+  public enabledFeature$ = this.featureToggleService.enabledFeature$;
 
   public interests: Tag[] = [
     { name: 'Javascript', priority: 1 },
@@ -69,5 +75,11 @@ export class AppComponent {
     organization: 'Moppedijk',
     project: 'Mono',
     projectLink: 'https://github.com/moppedijk/mono',
+  }
+
+  public ngOnInit(): void {
+    this.featureToggleService.watch({
+      contact: false,
+    });
   }
 }

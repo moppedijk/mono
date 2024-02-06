@@ -16,7 +16,9 @@ To start the development server run `nx serve landing`. Open your browser and na
 - Libraries should be build to reuse
 - Limit variables to a few options; small, default, large
 - Use good defaults, things should work 'out of the box'
+- Finish features before starting something new
 - Always up to date
+- On thing at a time
 
 ## Technology
 
@@ -30,6 +32,9 @@ All projects should be written in Typescript. To keep thing consistent.
 - Create mock api endoint
 - Floating footer bug
 - Added detailed logging to api
+- Add proper error handling in api
+- Rename projects to moppedijk, moppedijk-api
+- Refactor libs structure to client, server, shared
 
 ## Chores
 - Update dependencies
