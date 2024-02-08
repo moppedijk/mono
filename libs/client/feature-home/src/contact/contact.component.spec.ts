@@ -1,24 +1,24 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { FeatureContactComponent } from './feature-contact.component';
+import { ContactComponent } from './contact.component';
 import { provideTokenValue } from '@mo/client/util-core';
-import { FEATURE_CONTACT_TOKEN } from './feature-contact.token';
+import { FEATURE_HOME_TOKEN } from '../feature-home.token';
 
-describe('FeatureContactComponent', () => {
-  let component: FeatureContactComponent;
-  let fixture: ComponentFixture<FeatureContactComponent>;
+describe('ContactComponent', () => {
+  let component: ContactComponent;
+  let fixture: ComponentFixture<ContactComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FeatureContactComponent],
+      imports: [ContactComponent],
       providers: [
-        provideTokenValue(FEATURE_CONTACT_TOKEN, {
+        provideTokenValue(FEATURE_HOME_TOKEN, {
           apiUrl: 'http://api.url',
           apiPrefix: 'api',
         }),
       ]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(FeatureContactComponent);
+    fixture = TestBed.createComponent(ContactComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -2,10 +2,10 @@ import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ButtonComponent, ErrorComponent, InputComponent, TextareaComponent } from '@mo/client/ui-common';
 import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http';
-import { FEATURE_CONTACT_TOKEN } from './feature-contact.token';
+import { API_URL_TOKEN } from '@mo/client/util-core';
 
 @Component({
-  selector: 'mo-feature-contact',
+  selector: 'mo-contact',
   standalone: true,
   imports: [
     CommonModule,
@@ -15,12 +15,11 @@ import { FEATURE_CONTACT_TOKEN } from './feature-contact.token';
     ErrorComponent,
     ButtonComponent,
   ],
-  templateUrl: './feature-contact.component.html',
-  styleUrl: './feature-contact.component.scss',
+  templateUrl: './contact.component.html',
   providers: [HttpClient]
 })
-export class FeatureContactComponent {
-  public token = inject(FEATURE_CONTACT_TOKEN);
+export class ContactComponent {
+  public apiUrl = inject(API_URL_TOKEN);
   public httpClient = inject(HttpClient);
   public form = {
     name: '',
@@ -64,7 +63,7 @@ export class FeatureContactComponent {
   }
 
   public submit(): void {
-    const url = `${this.token.apiUrl}/api/contact`;
+    const url = `${this.apiUrl}/api/contact`;
     const httpOptions = {
       headers: new HttpHeaders({
         'Content-Type': 'application/json',

@@ -32,7 +32,6 @@ All projects should be written in Typescript. To keep thing consistent.
 - English version
 - Add unit tests
 - Add e2e tests
-- Refactor to standalone components
 - Create mock api endoint
 - Floating footer bug
 - Add detailed logging to api
