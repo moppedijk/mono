@@ -1,7 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ErrorComponent } from './error.component';
-import { UiCommonModule } from '../ui-common.module';
 
 describe('ErrorComponent', () => {
   let component: ErrorComponent;
@@ -9,7 +8,7 @@ describe('ErrorComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [UiCommonModule],
+      imports: [ErrorComponent],
     }).compileComponents();
   });
 

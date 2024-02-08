@@ -1,12 +1,13 @@
-import { Component, Input, SimpleChanges } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { CodeService } from './code.service';
 
 @Component({
   selector: 'mo-code',
   templateUrl: './code.component.html',
   styleUrls: ['./code.component.scss'],
+  standalone: true,
 })
-export class CodeComponent {
+export class CodeComponent implements OnChanges {
   public value!: string;
 
   constructor(private codeService: CodeService) {}

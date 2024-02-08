@@ -1,13 +1,20 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { UiCommonModule } from '@mo/client/ui-common';
+import { ButtonComponent, ErrorComponent, InputComponent, TextareaComponent } from '@mo/client/ui-common';
 import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http';
 import { FEATURE_CONTACT_TOKEN } from './feature-contact.token';
 
 @Component({
   selector: 'mo-feature-contact',
   standalone: true,
-  imports: [CommonModule, UiCommonModule, HttpClientModule],
+  imports: [
+    CommonModule,
+    HttpClientModule,
+    InputComponent,
+    TextareaComponent,
+    ErrorComponent,
+    ButtonComponent,
+  ],
   templateUrl: './feature-contact.component.html',
   styleUrl: './feature-contact.component.scss',
   providers: [HttpClient]

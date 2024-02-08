@@ -2,22 +2,36 @@ import { AsyncPipe, NgFor, NgIf } from '@angular/common';
 import { Component, OnInit, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FeatureContactComponent } from '@mo/client/feature-contact';
-import { UiCommonModule } from '@mo/client/ui-common';
-import { Tag, UiLandingModule } from '@mo/client/ui-landing';
-import { ContainerConfig, UiLayoutModule } from '@mo/client/ui-layout';
+import {
+  ButtonAnkerComponent,
+  ButtonComponent,
+  ColComponent,
+  ContainerComponent,
+  ContainerConfig,
+  IntrodctionComponent,
+  RowComponent,
+  SectionComponent,
+  Tag,
+  TagSearchComponent,
+} from '@mo/client/ui-common';
 import { FeatureToggleService } from '@mo/client/util-core';
 
 @Component({
   standalone: true,
   imports: [
     RouterModule,
-    UiLayoutModule,
-    UiCommonModule,
     NgFor,
-    UiLandingModule,
     FeatureContactComponent,
     AsyncPipe,
-    NgIf
+    NgIf,
+    ButtonComponent,
+    ButtonAnkerComponent,
+    ColComponent,
+    RowComponent,
+    IntrodctionComponent,
+    TagSearchComponent,
+    SectionComponent,
+    ContainerComponent
   ],
   selector: 'mo-root',
   templateUrl: './app.component.html',

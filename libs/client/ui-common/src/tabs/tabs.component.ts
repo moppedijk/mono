@@ -6,11 +6,15 @@ import {
 } from '@angular/core';
 import { TabsContentComponent } from './tabs-content/tabs-content.component';
 import { TabInterface } from './tabs.interface';
+import { ButtonComponent } from '../button/button.component';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'mo-tabs',
   templateUrl: './tabs.component.html',
   styleUrls: ['./tabs.component.scss'],
+  imports: [ButtonComponent, NgFor],
+  standalone: true
 })
 export class TabsComponent implements AfterViewInit {
   @ContentChildren(TabsContentComponent)

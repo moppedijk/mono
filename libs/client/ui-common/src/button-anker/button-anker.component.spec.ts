@@ -1,7 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ButtonAnkerComponent } from './button-anker.component';
-import { UiCommonModule } from '../ui-common.module';
 
 describe('ButtonAnkerComponent', () => {
   let component: ButtonAnkerComponent;
@@ -9,7 +8,7 @@ describe('ButtonAnkerComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [UiCommonModule],
+      imports: [ButtonAnkerComponent],
     }).compileComponents();
   });
 

@@ -5,11 +5,15 @@ import {
   HostListener,
   Inject,
   Input,
+  OnDestroy,
+  OnInit,
   Output,
   Renderer2,
 } from '@angular/core';
 import { faTimes, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { ScreensizeService } from '@mo/client/util-core';
+import { ButtonComponent } from '../button/button.component';
+import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 
 const BODY_CSS_CLASS = 'body-freeze';
 
@@ -17,8 +21,10 @@ const BODY_CSS_CLASS = 'body-freeze';
   selector: 'mo-modal',
   templateUrl: './modal.component.html',
   styleUrls: ['./modal.component.scss'],
+  standalone: true,
+  imports: [ButtonComponent, FaIconComponent]
 })
-export class ModalComponent {
+export class ModalComponent implements OnInit, OnDestroy {
   public icon: IconDefinition;
   public maxHeight!: string;
 

@@ -1,7 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SkeletonComponent } from './skeleton.component';
-import { UiCommonModule } from '../ui-common.module';
 
 describe('SkeletonComponent', () => {
   let component: SkeletonComponent;
@@ -9,7 +8,7 @@ describe('SkeletonComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [UiCommonModule],
+      imports: [SkeletonComponent],
     }).compileComponents();
   });
 

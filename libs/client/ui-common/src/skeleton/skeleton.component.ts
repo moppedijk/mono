@@ -4,6 +4,7 @@ import { Component, HostBinding, Input } from '@angular/core';
   selector: 'mo-skeleton',
   templateUrl: './skeleton.component.html',
   styleUrls: ['./skeleton.component.scss'],
+  standalone: true,
 })
 export class SkeletonComponent {
   @Input() width = '100%';

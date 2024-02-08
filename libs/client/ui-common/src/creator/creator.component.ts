@@ -4,6 +4,7 @@ import { Component, Input } from '@angular/core';
   selector: 'mo-creator',
   templateUrl: './creator.component.html',
   styleUrls: ['./creator.component.scss'],
+  standalone: true,
 })
 export class CreatorComponent {
   @Input() creator?: {

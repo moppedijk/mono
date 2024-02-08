@@ -1,8 +1,7 @@
-import { RouterTestingModule } from '@angular/router/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NavigationListItemComponent } from './navigation-list-item.component';
-import { UiCommonModule } from '../../ui-common.module';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('NavigationListItemComponent', () => {
   let component: NavigationListItemComponent;
@@ -10,7 +9,7 @@ describe('NavigationListItemComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [UiCommonModule, RouterTestingModule],
+      imports: [NavigationListItemComponent, RouterTestingModule],
     }).compileComponents();
   });
 
