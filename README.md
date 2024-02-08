@@ -24,6 +24,10 @@ To start the development server run `nx serve landing`. Open your browser and na
 
 All projects should be written in Typescript. To keep thing consistent.
 
+## Environment
+- Server environment variables can be found in .env
+- Client environment variables can be found in environment files
+
 ## Todo
 - English version
 - Add unit tests
@@ -34,7 +38,6 @@ All projects should be written in Typescript. To keep thing consistent.
 - Add detailed logging to api
 - Add proper error handling in api
 - Rename projects to moppedijk, and moppedijk-api
-- Refactor libs structure to client, server, shared
 
 ## Chores
 - Update dependencies

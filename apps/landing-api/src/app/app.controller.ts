@@ -2,12 +2,14 @@ import { Controller, Logger, Post, Req, Res } from '@nestjs/common';
 import { EmailService } from './email/email.service';
 import { Response } from 'express';
 import { ValidatorService } from './validator/validator.service';
+import { AppService } from './app.service';
 
 @Controller()
 export class AppController {
   constructor(
     private readonly emailService: EmailService,
     private readonly validatorService: ValidatorService,
+    private readonly appService: AppService,
   ) {}
 
   private onSuccess(response: Response): void {
@@ -55,5 +57,10 @@ export class AppController {
     })
     .then(() => this.onSuccess(response))
     .catch((error) => this.onError(error, response));
+  }
+
+  // For testing
+  public getData() {
+    return this.appService.getData();
   }
 }

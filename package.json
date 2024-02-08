@@ -45,7 +45,7 @@
     "@angular/cli": "17.0.9",
     "@angular/compiler-cli": "17.0.8",
     "@angular/language-service": "17.0.8",
-    "@mo/ui-base": "libs/ui-base/src",
+    "@mo/ui-base": "libs/client/ui-base/src",
     "@nestjs/schematics": "^10.0.1",
     "@nestjs/testing": "^10.0.2",
     "@nx/cypress": "17.2.8",

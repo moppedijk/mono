@@ -15,12 +15,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@mo/feature-contact": ["libs/feature-contact/src/index.ts"],
-      "@mo/ui-base": ["libs/ui-base/src/index.ts"],
-      "@mo/ui-common": ["libs/ui-common/src/index.ts"],
-      "@mo/ui-landing": ["libs/ui-landing/src/index.ts"],
-      "@mo/ui-layout": ["libs/ui-layout/src/index.ts"],
-      "@mo/util-core": ["libs/util-core/src/index.ts"]
+      "@mo/client/feature-contact": ["libs/client/feature-contact/src/index.ts"],
+      "@mo/client/ui-base": ["libs/client/ui-base/src/index.ts"],
+      "@mo/client/ui-common": ["libs/client/ui-common/src/index.ts"],
+      "@mo/client/ui-landing": ["libs/client/ui-landing/src/index.ts"],
+      "@mo/client/ui-layout": ["libs/client/ui-layout/src/index.ts"],
+      "@mo/client/util-core": ["libs/client/util-core/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
