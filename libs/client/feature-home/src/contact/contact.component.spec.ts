@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ContactComponent } from './contact.component';
-import { provideTokenValue } from '@mo/client/util-core';
-import { FEATURE_HOME_TOKEN } from '../feature-home.token';
+import { API_URL_TOKEN, provideTokenValue } from '@mo/client/util-core';
+import { provideHttpClient } from '@angular/common/http';
 
 describe('ContactComponent', () => {
   let component: ContactComponent;
@@ -11,10 +11,8 @@ describe('ContactComponent', () => {
     await TestBed.configureTestingModule({
       imports: [ContactComponent],
       providers: [
-        provideTokenValue(FEATURE_HOME_TOKEN, {
-          apiUrl: 'http://api.url',
-          apiPrefix: 'api',
-        }),
+        provideTokenValue(API_URL_TOKEN, ''),
+        provideHttpClient()
       ]
     }).compileComponents();
 

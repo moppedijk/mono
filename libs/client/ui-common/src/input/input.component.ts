@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
   imports: [FormsModule]
 })
 export class InputComponent {
+  @Input() isLoading = true;
   @Input() placeholder = '';
   @Input() value: string | undefined = '';
   @Output() valueChange = new EventEmitter<string>();

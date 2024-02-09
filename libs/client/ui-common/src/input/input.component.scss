@@ -1,11 +1,9 @@
-@use "@mo/ui-base/tokens/color";
-@use "@mo/ui-base/tokens/border-radius";
-@use "@mo/ui-base/tokens/units";
+@use "@mo/ui-base/mixins/input";
 
 .input {
-    border: solid 2px color.$dark;
-    border-radius: border-radius.$default;
-    padding: units.$default;
-    margin-bottom: units.$default;
-    background-color: color.$light;
+    @include input.base();
+}
+
+.input-loading {
+    @include input.loading();
 }

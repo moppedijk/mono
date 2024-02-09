@@ -1,0 +1,19 @@
+@use "../tokens/color";
+@use "../tokens/border";
+@use "../tokens/border-radius";
+@use "../tokens/units";
+
+@mixin base() {
+    border: border.$default;
+    border-radius: border-radius.$default;
+    padding: units.$default;
+    margin-bottom: units.$default;
+    background-color: color.$light;
+}
+
+@mixin loading() {
+    border-color: lighten(color.$dark, 20%);
+    border-style: dashed;
+    color: lighten(color.$dark, 20%);
+    font-style: italic;
+}

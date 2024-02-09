@@ -1,5 +1,6 @@
-<mo-input [(value)]="form.name" placeholder="Naam"></mo-input>
-<mo-input [(value)]="form.email" placeholder="email@adres.hier"></mo-input>
-<mo-textarea [(value)]="form.message" placeholder="Laat hier een leuk bericht achter..."></mo-textarea>
+<mo-input [isLoading]="isLoading" [(value)]="form.name" placeholder="Naam"></mo-input>
+<mo-input [isLoading]="isLoading" [(value)]="form.email" placeholder="email@adres.hier"></mo-input>
+<mo-textarea [isLoading]="isLoading" [(value)]="form.message" placeholder="Laat hier een leuk bericht achter..."></mo-textarea>
 <mo-error *ngIf="hasError" [errors]="['Er is iets misgegaan... Probeer het opnieuw.']"></mo-error>
+<p *ngIf="hasSucces">Leuk! Ik neem zo snel mogelijk contact met je op.</p>
 <mo-button [loading]="isLoading" [disabled]="isDisabled" color="dark" (click)="submit()">Contact</mo-button>

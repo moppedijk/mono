@@ -19,6 +19,7 @@ To start the development server run `nx serve landing`. Open your browser and na
 - Finish features before starting something new
 - Always up to date
 - One thing at a time
+- If you reuse it make it reusable; don't over engineer
 
 ## Technology
 
@@ -37,6 +38,9 @@ All projects should be written in Typescript. To keep thing consistent.
 - Add detailed logging to api
 - Add proper error handling in api
 - Rename projects to moppedijk, and moppedijk-api
+- Add design tokens structure with primitives, semantic, and component
+- Consider renaming ui-common to ui-components
+- Consider renaming ui-base to ui-foundation
 
 ## Chores
 - Update dependencies

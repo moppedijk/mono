@@ -1,4 +1,6 @@
 @use './color';
 @use './units';
 
-$default: 0px 0px units.$default units.$default rgba(color.$dark, .5)
+$small: 0px 0px units.$small units.$small rgba(color.$dark, .2);
+$default: 0px 0px units.$default units.$default rgba(color.$dark, .2);
+$large: 0px 0px units.$large units.$large rgba(color.$dark, .2);

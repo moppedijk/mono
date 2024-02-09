@@ -20,23 +20,20 @@
             </mo-col>
         </mo-row>
     </mo-section>
-    <!-- TODO: Create better feature toggle -->
-    <ng-container *ngIf="(enabledFeature$ | async) as enabledFeature">
-        <mo-section color="light" *ngIf="enabledFeature?.['contact']">
-            <mo-row>
-                <mo-col>
-                    <h2>Contact</h2>
-                    <p>Vraag een CV aan via het onderstaande formulier</p>
-                    <mo-contact></mo-contact>
-                </mo-col>
-            </mo-row>
-        </mo-section>
-    </ng-container>
     <mo-section color="light">
         <mo-row>
             <mo-col>
+                <h2>Contact</h2>
+                <p>Koffie drinken? Neem contact op via onderstaande forumulier.</p>
+                <mo-contact></mo-contact>
+            </mo-col>
+        </mo-row>
+    </mo-section>
+    <mo-section>
+        <mo-row>
+            <mo-col>
                 <h2>Sociaal</h2>
-                <mo-button-anker color="primary" link="https://www.linkedin.com/in/martijnoppedijk" title="Ga naar Linkedin">Linkedin</mo-button-anker>
+                <mo-button-anker color="light" link="https://www.linkedin.com/in/martijnoppedijk" title="Ga naar Linkedin">Linkedin</mo-button-anker>
             </mo-col>
         </mo-row>
     </mo-section>

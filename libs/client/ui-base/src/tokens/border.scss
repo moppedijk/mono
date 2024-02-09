@@ -1,0 +1,5 @@
+@use './color';
+
+$small: solid 1px color.$dark;
+$default: solid 2px color.$dark;
+$large: solid 3px color.$dark;

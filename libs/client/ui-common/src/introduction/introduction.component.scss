@@ -11,13 +11,13 @@
     border-bottom: solid 2px color.$default;
 
     @include breakpoint.breakTo('small') {
-        margin: units.$small;
-        padding: units.$small;
+        margin: units.$default 0;
+        padding: units.$default 0;
     }
     
     @include breakpoint.breakTo('medium') {
-        margin: units.$default;
-        padding: units.$default;
+        margin: units.$large 0;
+        padding: units.$large 0;
     }
 }
 

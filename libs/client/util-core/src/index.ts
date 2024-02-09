@@ -1,6 +1,7 @@
 export * from './utils/array.util';
 export * from './directives/class-color.directive';
 export * from './directives/class-size.directive';
+export * from './services/http.service';
 export * from './services/feature-toggle.service';
 export * from './services/loader.service';
 export * from './tokens/api-url.token';
