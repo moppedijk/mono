@@ -1,7 +1,11 @@
 <div class="introduction">
-    <h1 class="introduction-title">{{ title }}</h1>
-    <p class="introduction-lead">{{ lead }}</p>
-    <p class="introduction-summary">
+    <div class="introduction-title">
+        <ng-content select="[title]"></ng-content>
+    </div>
+    <div class="introduction-lead">
+        <ng-content select="[lead]"></ng-content>
+    </div>
+    <div class="introduction-summary">
         <ng-content></ng-content>
-    </p>
+    </div>
 </div>

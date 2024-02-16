@@ -70,7 +70,8 @@
       "unitTestRunner": "jest"
     },
     "@nx/angular:component": {
-      "style": "scss"
+      "style": "scss",
+      "prefix": "mo"
     }
   },
   "nxCloudAccessToken": "ODE0YjI5MzYtMzNiNS00ZGNiLTk3MmMtZDg5YjY5Njg3MTdkfHJlYWQtd3JpdGU="

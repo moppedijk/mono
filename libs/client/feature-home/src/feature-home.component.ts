@@ -10,6 +10,7 @@ import {
   IntrodctionComponent,
   RowComponent,
   SectionComponent,
+  ShowTagsEnun,
   Tag,
   TagSearchComponent,
 } from '@mo/client/ui-common';
@@ -31,7 +32,7 @@ import { ContactComponent } from './contact/contact.component';
     TagSearchComponent,
     SectionComponent,
     ContainerComponent,
-    ContactComponent
+    ContactComponent,
   ],
   selector: 'mo-feature-home',
   templateUrl: './feature-home.component.html',
@@ -40,6 +41,8 @@ export class FeatureHomeComponent implements OnInit {
   private featureToggleService = inject(FeatureToggleService);
 
   public enabledFeature$ = this.featureToggleService.enabledFeature$;
+  public showTags = ShowTagsEnun.Default;
+  public showTagsEnun = ShowTagsEnun;
 
   public interests: Tag[] = [
     { name: 'Javascript', priority: 1 },
@@ -84,7 +87,7 @@ export class FeatureHomeComponent implements OnInit {
   ];
 
   public config: ContainerConfig = {
-    title: 'Moppedijk - Landing',
+    title: 'Martijn Oppedijk - Frontend developer',
     creator: '@mo',
     logoUrl: 'assets/logos/logo.svg',
     profileImage: 'assets/profile/1000x1000.webp',

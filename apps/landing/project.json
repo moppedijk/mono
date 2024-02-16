@@ -5,11 +5,18 @@
   "prefix": "mono",
   "sourceRoot": "apps/landing/src",
   "tags": [],
+  "i18n": {
+    "sourceLocale": "nl",
+    "locales": {
+      "en": "apps/landing/src/locale/messages.en.xlf"
+    }
+  },
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
+        "localize": ["en"],
         "outputPath": "dist/apps/landing/browser",
         "index": "apps/landing/src/index.html",
         "main": "apps/landing/src/main.ts",

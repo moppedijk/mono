@@ -21,7 +21,10 @@
     }
 }
 
-.introduction-title {
+// Consider finding other solution for ::ng-deep
+.introduction-title ::ng-deep h1,
+.introduction-title ::ng-deep h2,
+.introduction-title ::ng-deep h3 {
     font-size: font-size.$large;
     margin-top: 0;
 
@@ -34,7 +37,7 @@
     }
 }
 
-.introduction-lead {
+.introduction-lead ::ng-deep p {
     font-weight: bold;
     font-size: font-size.$default;
     line-height: line-height.$default;
@@ -51,7 +54,7 @@
     }
 }
 
-.introduction-summary {
+.introduction-summary ::ng-deep p {
     color: lighten(color.$dark, 15%);
     font-size: font-size.$default - .4;
     line-height: line-height.$default - .4;

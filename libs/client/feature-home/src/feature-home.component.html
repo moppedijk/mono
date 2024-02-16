@@ -2,10 +2,14 @@
     <mo-section color="light">
         <mo-row>
             <mo-col>
-                <mo-introduction
-                    title="Martijn Oppedijk"
-                    lead="Frontend developer met een achtergrond in digital advertisement en software development.">
-                    Martijn is leergierig, resultaatgericht en houdt van problemen oplossen. Door zijn achtergrond (werkervaring en studie) heeft hij kennis van digitale producten met een sterke focus op Javascript.
+                <mo-introduction>
+                    <ng-container title>
+                        <h1 i18n>Martijn Oppedijk</h1>
+                    </ng-container>
+                    <ng-container lead>
+                        <p i18n>Frontend developer met een achtergrond in digital advertisement en software development.</p>
+                    </ng-container>
+                    <p i18n>Martijn is leergierig, resultaatgericht en houdt van problemen oplossen. Door zijn achtergrond (werkervaring en studie) heeft hij kennis van digitale producten met een sterke focus op Javascript.</p>
                 </mo-introduction>
             </mo-col>
         </mo-row>
@@ -13,9 +17,20 @@
     <mo-section color="primary">
         <mo-row>
             <mo-col>
-                <h2 class="text-light">Interesses</h2>
-                <mo-tag-search 
-                    [tags]="interests">
+                <h2 class="text-light" i18n>Interesses</h2>
+                <mo-tag-search
+                    [tags]="interests"
+                    [showTags]="showTags">
+                    <ng-container showAll>
+                        <mo-button i18n size="small" color="light" (click)="showTags = showTagsEnun.All">
+                            Laat meer zien!
+                        </mo-button>
+                    </ng-container>
+                    <ng-container showDefault>
+                        <mo-button i18n size="small" color="light" (click)="showTags = showTagsEnun.Default">
+                            Laat minder zien...
+                        </mo-button>
+                    </ng-container>
                 </mo-tag-search>
             </mo-col>
         </mo-row>
@@ -23,8 +38,8 @@
     <mo-section color="light">
         <mo-row>
             <mo-col>
-                <h2>Contact</h2>
-                <p>Koffie drinken? Neem contact op via onderstaande formulier.</p>
+                <h2 i18n>Contact</h2>
+                <p i18n>Koffie drinken? Neem contact op via onderstaande formulier.</p>
                 <mo-contact></mo-contact>
             </mo-col>
         </mo-row>
@@ -32,9 +47,15 @@
     <mo-section>
         <mo-row>
             <mo-col>
-                <h2>Sociaal</h2>
-                <mo-button-anker color="light" link="https://www.linkedin.com/in/martijnoppedijk" title="Ga naar Linkedin">Linkedin</mo-button-anker>
+                <h2 i18n>Sociaal</h2>
+                <mo-button-anker
+                    i18n
+                    color="light"
+                    link="https://www.linkedin.com/in/martijnoppedijk"
+                    title="Linkedin">
+                    Linkedin
+                </mo-button-anker>
             </mo-col>
         </mo-row>
     </mo-section>
-</mo-container> 
+</mo-container>

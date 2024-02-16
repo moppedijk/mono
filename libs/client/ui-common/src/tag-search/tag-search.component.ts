@@ -1,6 +1,10 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { Tag } from './tag';
 import { NgFor, NgIf } from '@angular/common';
+
+export enum ShowTagsEnun {
+  All, Default
+}
 
 @Component({
   selector: 'mo-tag-search',
@@ -9,9 +13,10 @@ import { NgFor, NgIf } from '@angular/common';
   standalone: true,
   imports: [NgFor, NgIf]
 })
-export class TagSearchComponent implements OnInit {
+export class TagSearchComponent implements OnInit, OnChanges {
   
   @Input() tags: Tag[] = [];
+  @Input() showTags = ShowTagsEnun.Default;
   
   public allTags = false;
   public visibleTags: Tag[] = [];
@@ -21,15 +26,21 @@ export class TagSearchComponent implements OnInit {
     this.filterTags();
   }
 
-  public showAllTags(): boolean {
-    
-    if (!this.allTags) {
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes && changes['showTags']) {
+      this.showAllTags(changes['showTags'].currentValue);
+    }
+  }
+
+  public showAllTags(showTags: ShowTagsEnun): boolean {
+    if (showTags === ShowTagsEnun.All) {
       this.visibleTags = this.tags;
+      this.allTags = true;
     } else {
       this.filterTags();
+      this.allTags = false;
     }
 
-    this.allTags = !this.allTags;
     return false;
   }
 

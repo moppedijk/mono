@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'mo-introduction',
@@ -6,7 +6,4 @@ import { Component, Input } from '@angular/core';
   styleUrl: './introduction.component.scss',
   standalone: true
 })
-export class IntrodctionComponent {
-  @Input() title = '';
-  @Input() lead = '';
-}
+export class IntrodctionComponent {}
