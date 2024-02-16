@@ -6,7 +6,6 @@ export interface EmailContactRequest {
     email: string,
     name: string,
     message: string;
-    language: 'nl' | 'en';
 }
 
 @Injectable()
