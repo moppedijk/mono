@@ -29,6 +29,7 @@
       },
       "configurations": {
         "production": {
+          "localize": true,
           "budgets": [
             {
               "type": "initial",
@@ -99,6 +100,7 @@
       "dependsOn": ["build"],
       "executor": "@angular-devkit/build-angular:server",
       "options": {
+        "localize": true,
         "outputPath": "dist/apps/landing/server",
         "main": "apps/landing/server.ts",
         "tsConfig": "apps/landing/tsconfig.server.json",
