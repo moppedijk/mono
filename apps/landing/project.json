@@ -150,6 +150,16 @@
         }
       },
       "defaultConfiguration": "production"
+    },
+    "build-netlify": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "npx nx run landing:prerender",
+          "cp -r apps/landing/src/functions dist/apps/landing/browser"
+        ],
+        "parallel": false
+      }
     }
   }
 }
