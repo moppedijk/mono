@@ -156,7 +156,7 @@
       "options": {
         "commands": [
           "npx nx run landing:prerender",
-          "cp -r apps/landing/src/functions dist/apps/landing/browser"
+          "cp -r apps/landing/_redirects dist/apps/landing/browser"
         ],
         "parallel": false
       }
