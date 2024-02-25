@@ -30,7 +30,6 @@ All projects should be written in Typescript. To keep thing consistent.
 - Client environment variables can be found in environment files
 
 ## Todo
-- English version
 - Add unit tests
 - Add e2e tests
 - Create mock api endoint

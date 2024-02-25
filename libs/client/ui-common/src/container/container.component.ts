@@ -1,6 +1,5 @@
 import { Component, HostListener, Inject, Input, OnInit } from '@angular/core';
 import { ScreensizeService, WINDOW } from '@mo/client/util-core';
-import { ContainerConfig } from './container.interface';
 import { LoaderComponent } from '../loader/loader.component';
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
@@ -17,15 +16,11 @@ export class ContainerComponent implements OnInit {
 
   public minHeight = 'auto';
 
-  @Input() config: ContainerConfig = {
-    title: '',
-    organization: '',
-    creator: '',
-    logoUrl: '',
-    profileImage: '',
-    project: '',
-    projectLink: '',
-  };
+  @Input() organizationName = '';
+  @Input() logoUrl = '';
+  @Input() profileImage = '';
+  @Input() projectName = '';
+  @Input() projectLink = '';
 
   constructor(
     private screensizeService: ScreensizeService,

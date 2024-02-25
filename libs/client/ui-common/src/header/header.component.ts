@@ -12,8 +12,7 @@ import { RouterModule } from '@angular/router';
 export class HeaderComponent {
   public isAuthenticated = false;
 
-  @Input() organization = '';
-  @Input() creator = '';
+  @Input() organizationName = '';
   @Input() logoUrl = '';
   @Input() profileImage = '';
 }

@@ -1,61 +1,115 @@
-<mo-container [config]="config">
-    <mo-section color="light">
-        <mo-row>
-            <mo-col>
-                <mo-introduction>
-                    <ng-container title>
-                        <h1 i18n>Martijn Oppedijk</h1>
-                    </ng-container>
-                    <ng-container lead>
-                        <p i18n>Frontend developer met een achtergrond in digital advertisement en software development.</p>
-                    </ng-container>
-                    <p i18n>Martijn is leergierig, resultaatgericht en houdt van problemen oplossen. Door zijn achtergrond (werkervaring en studie) heeft hij kennis van digitale producten met een sterke focus op Javascript.</p>
-                </mo-introduction>
-            </mo-col>
-        </mo-row>
-    </mo-section>
-    <mo-section color="primary">
-        <mo-row>
-            <mo-col>
-                <h2 class="text-light" i18n>Interesses</h2>
-                <mo-tag-search
-                    [tags]="interests"
-                    [showTags]="showTags">
-                    <ng-container showAll>
-                        <mo-button i18n size="small" color="light" (click)="showTags = showTagsEnun.All">
-                            Laat meer zien!
-                        </mo-button>
-                    </ng-container>
-                    <ng-container showDefault>
-                        <mo-button i18n size="small" color="light" (click)="showTags = showTagsEnun.Default">
-                            Laat minder zien...
-                        </mo-button>
-                    </ng-container>
-                </mo-tag-search>
-            </mo-col>
-        </mo-row>
-    </mo-section>
-    <mo-section color="light">
-        <mo-row>
-            <mo-col>
-                <h2 i18n>Contact</h2>
-                <p i18n>Koffie drinken? Neem contact op via onderstaande formulier.</p>
-                <mo-contact></mo-contact>
-            </mo-col>
-        </mo-row>
-    </mo-section>
-    <mo-section>
-        <mo-row>
-            <mo-col>
-                <h2 i18n>Sociaal</h2>
-                <mo-button-anker
-                    i18n
-                    color="light"
-                    link="https://www.linkedin.com/in/martijnoppedijk"
-                    title="Linkedin">
-                    Linkedin
-                </mo-button-anker>
-            </mo-col>
-        </mo-row>
-    </mo-section>
-</mo-container>
+<mo-page
+    i18n-pageTitle
+    i18n-description
+    pageTitle="Martijn Oppedijk - Frontend developer"
+    description="Frontend developer met een achtergrond in digital advertisement en software development."
+    creator="Martijn Oppedijk"
+    url="https://moppedijk.nl">
+    <mo-container
+        [logoUrl]="logoUrl"
+        [profileImage]="profileImage"
+        [organizationName]="organizationName"
+        [projectName]="projectName"
+        [projectLink]="projectLink">
+        <mo-section color="light">
+            <mo-row>
+                <mo-col>
+                    <mo-introduction>
+                        <ng-container title>
+                            <h1 i18n>Martijn Oppedijk</h1>
+                        </ng-container>
+                        <ng-container lead>
+                            <p i18n>Frontend developer met een achtergrond in digital advertisement en software development.</p>
+                        </ng-container>
+                        <p i18n>Martijn is leergierig, resultaatgericht en houdt van problemen oplossen. Door zijn achtergrond (werkervaring en studie) heeft hij kennis van digitale producten met een sterke focus op Javascript.</p>
+                    </mo-introduction>
+                </mo-col>
+            </mo-row>
+        </mo-section>
+        <mo-section color="primary">
+            <mo-row>
+                <mo-col>
+                    <h2 class="text-light" i18n>Interesses</h2>
+                    <mo-tag-search
+                        [showTags]="showTags"
+                        [tags]="[
+                            { name: 'Javascript', priority: 1 },
+                            { name: 'HTML', priority: 1 },
+                            { name: 'CSS', priority: 1 },
+                            { name: 'Nodejs', priority: 1 },
+                            { name: 'Angular', priority: 1 },
+                            { name: 'Typescript', priority: 1 },
+                            { name: 'RXJS', priority: 1 },
+                            { name: 'Unit testing', priority: 1 },
+                            { name: 'Visual Design', priority: 1 },
+                            { name: 'UX Design', priority: 1 },
+                            { name: 'DevOps', priority: 1 },
+                            { name: 'Storybook', priority: 1 },
+                            { name: 'NX', priority: 1 },
+                            { name: 'Visual Studio Code', priority: 1 },
+                            { name: 'SCSS', priority: 1 },
+                            { name: 'Design Systems', priority: 1 },
+                            { name: 'Visual Design', priority: 2 },
+                            { name: 'Crypto', priority: 2 },
+                            { name: 'Scrum', priority: 2 },
+                            { name: 'Web 3.0', priority: 2 },
+                            { name: 'SOLID', priority: 2 },
+                            { name: 'DRY', priority: 2 },
+                            { name: 'Frontend', priority: 2 },
+                            { name: 'StencilJS', priority: 2 },
+                            { name: 'ng-mocks', priority: 2 },
+                            { name: 'Jira', priority: 2 },
+                            { name: 'Gitlab', priority: 2 },
+                            { name: 'Github', priority: 2 },
+                            { name: '11ty', priority: 2 },
+                            { name: '<web-components />', priority: 2 },
+                            { name: 'Git', priority: 2 },
+                            { name: 'Monorepo', priority: 2 },
+                            { name: 'CI/CD', priority: 2 },
+                            { name: 'git rebase --contine', priority: 2 },
+                            { name: 'Trunkbased', priority: 2 },
+                            { name: 'Fontawesome', priority: 2 },
+                            { name: 'Actionscript 3', priority: 2 },
+                            { name: 'Flash', priority: 2 },
+                            { name: 'Jest', priority: 2 },
+                        ]">
+                        <ng-container showAll>
+                            <mo-button i18n size="small" color="light" (click)="showTags = showTagsEnun.All">
+                                Laat meer zien!
+                            </mo-button>
+                        </ng-container>
+                        <ng-container showDefault>
+                            <mo-button i18n size="small" color="light" (click)="showTags = showTagsEnun.Default">
+                                Laat minder zien...
+                            </mo-button>
+                        </ng-container>
+                    </mo-tag-search>
+                </mo-col>
+            </mo-row>
+        </mo-section>
+        <mo-section color="light">
+            <mo-row>
+                <mo-col>
+                    <h2 i18n>Contact</h2>
+                    <p i18n>Koffie drinken? Neem contact op via onderstaande formulier.</p>
+                    <mo-contact></mo-contact>
+                </mo-col>
+            </mo-row>
+        </mo-section>
+        <mo-section>
+            <mo-row>
+                <mo-col>
+                    <h2 i18n>Sociaal</h2>
+                    <mo-button-anker
+                        i18n
+                        i18n-title
+                        color="light"
+                        link="https://www.linkedin.com/in/martijnoppedijk"
+                        title="LinkedIn">
+                        LinkedIn
+                    </mo-button-anker>
+                </mo-col>
+            </mo-row>
+        </mo-section>
+    </mo-container>
+</mo-page>

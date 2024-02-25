@@ -13,7 +13,7 @@ import { ClassColorDirective } from '@mo/client/util-core';
   imports: [ClassColorDirective, FaIconComponent]
 })
 export class FooterComponent {
-  @Input() project = '';
+  @Input() projectName = '';
   @Input() projectLink = '';
   @Input() color: Colors = 'default';
 

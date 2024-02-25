@@ -51,7 +51,27 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/client/feature-home/src/feature-home.component.html</context>
-          <context context-type="linenumber">41</context>
+          <context context-type="linenumber">93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4117012431190042580" datatype="html">
+        <source>Martijn Oppedijk - Frontend developer</source>
+        <target>Martijn Oppedijk - Frontend developer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/client/feature-home/src/feature-home.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6040498381816011320" datatype="html">
+        <source>Frontend developer met een achtergrond in digital advertisement en software development.</source>
+        <target>Front End developer with a background in digital advertising and software development.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/client/feature-home/src/feature-home.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/client/feature-home/src/feature-home.component.html</context>
+          <context context-type="linenumber">22</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5777569982371689052" datatype="html">
@@ -59,15 +79,7 @@
         <target>Martijn Oppedijk</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/client/feature-home/src/feature-home.component.html</context>
-          <context context-type="linenumber">7</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="6040498381816011320" datatype="html">
-        <source>Frontend developer met een achtergrond in digital advertising en software development.</source>
-        <target>Front End developer with a background in digital advertising and software development.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">libs/client/feature-home/src/feature-home.component.html</context>
-          <context context-type="linenumber">10</context>
+          <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7595035576142154528" datatype="html">
@@ -75,7 +87,7 @@
         <target>Martijn is eager to learn, results-oriented and loves solving problems. Due to his background (work experience and studies), he has knowledge of digital products with a strong focus on Javascript.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/client/feature-home/src/feature-home.component.html</context>
-          <context context-type="linenumber">12</context>
+          <context context-type="linenumber">24</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7855671987027114506" datatype="html">
@@ -83,7 +95,7 @@
         <target>Interests</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/client/feature-home/src/feature-home.component.html</context>
-          <context context-type="linenumber">20</context>
+          <context context-type="linenumber">32</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1610206614531537499" datatype="html">
@@ -91,7 +103,7 @@
         <target> Show more! </target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/client/feature-home/src/feature-home.component.html</context>
-          <context context-type="linenumber">25,27</context>
+          <context context-type="linenumber">77,79</context>
         </context-group>
       </trans-unit>
       <trans-unit id="979740783841990228" datatype="html">
@@ -99,7 +111,7 @@
         <target> Show less... </target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/client/feature-home/src/feature-home.component.html</context>
-          <context context-type="linenumber">30,32</context>
+          <context context-type="linenumber">82,84</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6713572826849343639" datatype="html">
@@ -107,7 +119,7 @@
         <target>Coffee? Contact me using the form below.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/client/feature-home/src/feature-home.component.html</context>
-          <context context-type="linenumber">42</context>
+          <context context-type="linenumber">94</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3135438651371118916" datatype="html">
@@ -115,15 +127,23 @@
         <target>Social</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/client/feature-home/src/feature-home.component.html</context>
-          <context context-type="linenumber">50</context>
+          <context context-type="linenumber">102</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="5119869306965831161" datatype="html">
-        <source> Linkedin </source>
-        <target> Linkedin </target>
+      <trans-unit id="4440081753597585133" datatype="html">
+        <source>LinkedIn</source>
+        <target>LinkedIn</target>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/client/feature-home/src/feature-home.component.html</context>
-          <context context-type="linenumber">55,57</context>
+          <context context-type="linenumber">108</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1246318489169528173" datatype="html">
+        <source> LinkedIn </source>
+        <target> LinkedIn </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/client/feature-home/src/feature-home.component.html</context>
+          <context context-type="linenumber">108,110</context>
         </context-group>
       </trans-unit>
     </body>

@@ -6,16 +6,21 @@ import {
   ButtonComponent,
   ColComponent,
   ContainerComponent,
-  ContainerConfig,
   IntrodctionComponent,
+  PageComponent,
   RowComponent,
   SectionComponent,
   ShowTagsEnun,
-  Tag,
   TagSearchComponent,
 } from '@mo/client/ui-common';
-import { FeatureToggleService } from '@mo/client/util-core';
 import { ContactComponent } from './contact/contact.component';
+import {
+  APP_LOGO_URL_TOKEN,
+  APP_ORGANIZATION_NAME_TOKEN,
+  APP_PROFILE_IMAGE_TOKEN,
+  APP_PROJECT_LINK_TOKEN,
+  APP_PROJECT_NAME_TOKEN,
+} from '@mo/client/util-core';
 
 @Component({
   standalone: true,
@@ -33,72 +38,18 @@ import { ContactComponent } from './contact/contact.component';
     SectionComponent,
     ContainerComponent,
     ContactComponent,
+    PageComponent,
   ],
   selector: 'mo-feature-home',
   templateUrl: './feature-home.component.html',
 })
-export class FeatureHomeComponent implements OnInit {
-  private featureToggleService = inject(FeatureToggleService);
-
-  public enabledFeature$ = this.featureToggleService.enabledFeature$;
+export class FeatureHomeComponent {
   public showTags = ShowTagsEnun.Default;
   public showTagsEnun = ShowTagsEnun;
 
-  public interests: Tag[] = [
-    { name: 'Javascript', priority: 1 },
-    { name: 'HTML', priority: 1 },
-    { name: 'CSS', priority: 1 },
-    { name: 'Nodejs', priority: 1 },
-    { name: 'Angular', priority: 1 },
-    { name: 'Typescript', priority: 1 },
-    { name: 'RXJS', priority: 1 },
-    { name: 'Unit testing', priority: 1 },
-    { name: 'Visual Design', priority: 1 },
-    { name: 'UX Design', priority: 1 },
-    { name: 'DevOps', priority: 1 },
-    { name: 'Storybook', priority: 1 },
-    { name: 'NX', priority: 1 },
-    { name: 'Visual Studio Code', priority: 1 },
-    { name: 'SCSS', priority: 1 },
-    { name: 'Design Systems', priority: 1 },
-    { name: 'Visual Design', priority: 2 },
-    { name: 'Crypto', priority: 2 },
-    { name: 'Scrum', priority: 2 },
-    { name: 'Web 3.0', priority: 2 },
-    { name: 'SOLID', priority: 2 },
-    { name: 'DRY', priority: 2 },
-    { name: 'Frontend', priority: 2 },
-    { name: 'StencilJS', priority: 2 },
-    { name: 'ng-mocks', priority: 2 },
-    { name: 'Jira', priority: 2 },
-    { name: 'Gitlab', priority: 2 },
-    { name: 'Github', priority: 2 },
-    { name: '11ty', priority: 2 },
-    { name: '<web-components />', priority: 2 },
-    { name: 'Git', priority: 2 },
-    { name: 'Monorepo', priority: 2 },
-    { name: 'CI/CD', priority: 2 },
-    { name: 'git rebase --contine', priority: 2 },
-    { name: 'Trunkbased', priority: 2 },
-    { name: 'Fontawesome', priority: 2 },
-    { name: 'Actionscript 3', priority: 2 },
-    { name: 'Flash', priority: 2 },
-    { name: 'Jest', priority: 2 },
-  ];
-
-  public config: ContainerConfig = {
-    title: 'Martijn Oppedijk - Frontend developer',
-    creator: '@mo',
-    logoUrl: 'assets/logos/logo.svg',
-    profileImage: 'assets/profile/1000x1000.webp',
-    organization: 'Moppedijk',
-    project: 'Mono',
-    projectLink: 'https://github.com/moppedijk/mono',
-  }
-
-  public ngOnInit(): void {
-    this.featureToggleService.watch({
-      contact: false,
-    });
-  }
+  public logoUrl = inject(APP_LOGO_URL_TOKEN);
+  public profileImage = inject(APP_PROFILE_IMAGE_TOKEN);
+  public organizationName = inject(APP_ORGANIZATION_NAME_TOKEN);
+  public projectName = inject(APP_PROJECT_NAME_TOKEN);
+  public projectLink = inject(APP_PROJECT_LINK_TOKEN);
 }
