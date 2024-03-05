@@ -7,10 +7,12 @@ async function bootstrap() {
   const sourceFile = 'apps/landing/src/locale/messages.xlf';
   const target = 'apps/landing/src/locale/messages.en.xlf';
   const messages = await readMessagesFromFile({ sourceFile });
-  const translations = await translateMessages({ messages, debug: true });
+  const translations = await translateMessages({ messages, debug: false });
   const targetFile = await generateMessagesFile({ sourceFile, translations });
 
-  writeMessagesFile({ targetFile, target }).then(() => console.log('success'));
+  writeMessagesFile({ targetFile, target }).then(() =>
+    console.log('Writing file:', target),
+  );
 }
 
 bootstrap();

@@ -6,46 +6,46 @@
         <source>Naam</source>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/client/feature-home/src/contact/contact.component.html</context>
-          <context context-type="linenumber">1</context>
+          <context context-type="linenumber">5</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8298244636376912506" datatype="html">
         <source>email@adres.hier</source>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/client/feature-home/src/contact/contact.component.html</context>
-          <context context-type="linenumber">2</context>
+          <context context-type="linenumber">11</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2504590208561079852" datatype="html">
         <source>Laat hier een leuk bericht achter...</source>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/client/feature-home/src/contact/contact.component.html</context>
-          <context context-type="linenumber">3</context>
+          <context context-type="linenumber">17</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6195512985048423953" datatype="html">
         <source>Er is iets misgegaan... Probeer het opnieuw</source>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/client/feature-home/src/contact/contact.component.html</context>
-          <context context-type="linenumber">4</context>
+          <context context-type="linenumber">20</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5309747517527173425" datatype="html">
         <source>Leuk! Ik neem zo snel mogelijk contact met je op.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/client/feature-home/src/contact/contact.component.html</context>
-          <context context-type="linenumber">5</context>
+          <context context-type="linenumber">22</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7922989125096435449" datatype="html">
         <source>Contact</source>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/client/feature-home/src/contact/contact.component.html</context>
-          <context context-type="linenumber">6</context>
+          <context context-type="linenumber">29</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/client/feature-home/src/feature-home.component.html</context>
-          <context context-type="linenumber">93</context>
+          <context context-type="linenumber">113</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4117012431190042580" datatype="html">
@@ -61,72 +61,75 @@
           <context context-type="sourcefile">libs/client/feature-home/src/feature-home.component.html</context>
           <context context-type="linenumber">5</context>
         </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">libs/client/feature-home/src/feature-home.component.html</context>
-          <context context-type="linenumber">22</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="5777569982371689052" datatype="html">
         <source>Martijn Oppedijk</source>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/client/feature-home/src/feature-home.component.html</context>
-          <context context-type="linenumber">19</context>
+          <context context-type="linenumber">21</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="7595035576142154528" datatype="html">
-        <source>Martijn is leergierig, resultaatgericht en houdt van problemen oplossen. Door zijn achtergrond (werkervaring en studie) heeft hij kennis van digitale producten met een sterke focus op Javascript.</source>
+      <trans-unit id="4065120380093263936" datatype="html">
+        <source> Frontend developer met een achtergrond in digital advertisement en software development. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/client/feature-home/src/feature-home.component.html</context>
-          <context context-type="linenumber">24</context>
+          <context context-type="linenumber">24,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8695718453168030501" datatype="html">
+        <source> Martijn is leergierig, resultaatgericht en houdt van problemen oplossen. Door zijn achtergrond (werkervaring en studie) heeft hij kennis van digitale producten met een sterke focus op Javascript. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/client/feature-home/src/feature-home.component.html</context>
+          <context context-type="linenumber">29,33</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7855671987027114506" datatype="html">
         <source>Interesses</source>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/client/feature-home/src/feature-home.component.html</context>
-          <context context-type="linenumber">32</context>
+          <context context-type="linenumber">41</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1610206614531537499" datatype="html">
         <source> Laat meer zien! </source>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/client/feature-home/src/feature-home.component.html</context>
-          <context context-type="linenumber">77,79</context>
+          <context context-type="linenumber">92,94</context>
         </context-group>
       </trans-unit>
       <trans-unit id="979740783841990228" datatype="html">
         <source> Laat minder zien... </source>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/client/feature-home/src/feature-home.component.html</context>
-          <context context-type="linenumber">82,84</context>
+          <context context-type="linenumber">102,104</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="6713572826849343639" datatype="html">
-        <source>Koffie drinken? Neem contact op via onderstaande formulier.</source>
+      <trans-unit id="8031188872689857930" datatype="html">
+        <source> Koffie drinken? Neem contact op via onderstaande formulier. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/client/feature-home/src/feature-home.component.html</context>
-          <context context-type="linenumber">94</context>
+          <context context-type="linenumber">114,116</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3135438651371118916" datatype="html">
         <source>Sociaal</source>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/client/feature-home/src/feature-home.component.html</context>
-          <context context-type="linenumber">102</context>
+          <context context-type="linenumber">124</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4440081753597585133" datatype="html">
         <source>LinkedIn</source>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/client/feature-home/src/feature-home.component.html</context>
-          <context context-type="linenumber">108</context>
+          <context context-type="linenumber">130</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1246318489169528173" datatype="html">
         <source> LinkedIn </source>
         <context-group purpose="location">
           <context context-type="sourcefile">libs/client/feature-home/src/feature-home.component.html</context>
-          <context context-type="linenumber">108,110</context>
+          <context context-type="linenumber">131,133</context>
         </context-group>
       </trans-unit>
     </body>
