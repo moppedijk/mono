@@ -3,13 +3,13 @@
 @use '../tokens/color';
 
 a {
-	transition-property: color;
-	transition-duration: .3s;
-	transition-timing-function: easings.$ease-in-out;
-	color: color.$dark;
-	text-decoration: underline;
+  transition-property: color;
+  transition-duration: 0.3s;
+  transition-timing-function: easings.$ease-in-out;
+  color: color.$dark;
+  text-decoration: underline;
 }
 
 a:hover {
-	text-decoration: none;
+  text-decoration: none;
 }

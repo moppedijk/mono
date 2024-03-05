@@ -7,7 +7,7 @@ import { faSlash, IconDefinition } from '@fortawesome/free-solid-svg-icons';
   templateUrl: './spinner.component.html',
   styleUrls: ['./spinner.component.scss'],
   standalone: true,
-  imports: [FaIconComponent]
+  imports: [FaIconComponent],
 })
 export class SpinnerComponent {
   public faSlash: IconDefinition;

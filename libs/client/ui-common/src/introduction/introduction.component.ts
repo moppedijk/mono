@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
   selector: 'mo-introduction',
   templateUrl: './introduction.component.html',
   styleUrl: './introduction.component.scss',
-  standalone: true
+  standalone: true,
 })
 export class IntrodctionComponent {}

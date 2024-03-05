@@ -7,7 +7,7 @@ import { ClassColorDirective } from '@mo/client/util-core';
   templateUrl: './section.component.html',
   styleUrls: ['./section.component.scss'],
   standalone: true,
-  imports: [ClassColorDirective]
+  imports: [ClassColorDirective],
 })
 export class SectionComponent {
   @Input() color: Colors = 'default';

@@ -2,10 +2,10 @@
 @use '@mo/ui-base/mixins/breakpoint';
 
 :host {
-    display: block;
-    margin-bottom: units.$default;
-    
-    @include breakpoint.breakTo('small') {
-        display: flex;
-    }
+  display: block;
+  margin-bottom: units.$default;
+
+  @include breakpoint.breakTo('small') {
+    display: flex;
+  }
 }

@@ -10,7 +10,7 @@ import { ClassColorDirective } from '@mo/client/util-core';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss'],
   standalone: true,
-  imports: [ClassColorDirective, FaIconComponent]
+  imports: [ClassColorDirective, FaIconComponent],
 })
 export class FooterComponent {
   @Input() projectName = '';

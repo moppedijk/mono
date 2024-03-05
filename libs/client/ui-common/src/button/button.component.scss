@@ -5,45 +5,45 @@
 @use '@mo/ui-base/mixins/button';
 
 .button {
-	@include button.base();
+  @include button.base();
 }
 
 .button--small {
-	@include button.small();
+  @include button.small();
 }
 
 .button--large {
-	@include button.large();
+  @include button.large();
 }
 
 .button--primary {
-    @include button.primary();
+  @include button.primary();
 }
 
 .button--secondary {
-    @include button.secondary();
+  @include button.secondary();
 }
 
 .button--dark {
-    @include button.dark();
+  @include button.dark();
 }
 
 .button--light {
-    @include button.light();
+  @include button.light();
 }
 
 .button__spinner {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	visibility: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
 }
 
 .button--loading .button__spinner {
-	visibility: visible;
+  visibility: visible;
 }
 
 .button--loading .button__content {
-	visibility: hidden;
+  visibility: hidden;
 }

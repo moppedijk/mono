@@ -1,3 +1,9 @@
 <div class="input" [class.input-loading]="isLoading">
-    <input type="text" [ngModel]="value" (ngModelChange)="valueChange.emit($event)" [placeholder]="placeholder" [disabled]="isLoading">
+  <input
+    type="text"
+    [ngModel]="value"
+    (ngModelChange)="valueChange.emit($event)"
+    [placeholder]="placeholder"
+    [disabled]="isLoading"
+  />
 </div>

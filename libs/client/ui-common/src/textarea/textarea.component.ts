@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './textarea.component.html',
   styleUrls: ['./textarea.component.scss'],
   standalone: true,
-  imports: [FormsModule]
+  imports: [FormsModule],
 })
 export class TextareaComponent {
   @Input() isLoading = true;

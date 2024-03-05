@@ -8,7 +8,7 @@ describe('ToasterComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ToasterComponent]
+      imports: [ToasterComponent],
     }).compileComponents();
   });
 

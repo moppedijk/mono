@@ -5,19 +5,19 @@
 @use '@mo/ui-base/tokens/font-size';
 
 :host {
-    display: block;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    z-index: 200;
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 200;
 }
 
 .toaster {
-    max-width: 30rem;
-    padding: units.$default;
-    margin: units.$default;
-    background: color.$light;
-    border-radius: border-radius.$default;
-    box-shadow: box-shadow.$default;
-    font-size: font-size.$small;
+  max-width: 30rem;
+  padding: units.$default;
+  margin: units.$default;
+  background: color.$light;
+  border-radius: border-radius.$default;
+  box-shadow: box-shadow.$default;
+  font-size: font-size.$small;
 }

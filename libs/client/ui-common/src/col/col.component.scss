@@ -1,13 +1,13 @@
 @use '@mo/ui-base/tokens/units';
 
 :host {
-    display: block;
-    flex: 1;
-    margin: 0 units.$default;
+  display: block;
+  flex: 1;
+  margin: 0 units.$default;
 }
 
 @for $i from 1 through 12 {
-    :host(.col--#{$i}) {
-        flex: #{$i};
-    }
+  :host(.col--#{$i}) {
+    flex: #{$i};
+  }
 }

@@ -1,19 +1,19 @@
-@use "@mo/ui-base/tokens/units";
-@use "@mo/ui-base/tokens/color";
+@use '@mo/ui-base/tokens/units';
+@use '@mo/ui-base/tokens/color';
 
 .tabs {
-    margin-bottom: units.$default;
+  margin-bottom: units.$default;
 }
 
 .tabs__header {
-    border-bottom: solid 2px color.$default;
+  border-bottom: solid 2px color.$default;
 }
 
 .tabs__button {
-    display: inline-block;
-    margin-left: units.$default;
+  display: inline-block;
+  margin-left: units.$default;
 }
 
 .tabs__content {
-    margin: units.$default 0;
+  margin: units.$default 0;
 }

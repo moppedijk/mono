@@ -18,7 +18,7 @@ async function bootstrap() {
   app.enableCors({ origin });
 
   await app.listen(port);
-  
+
   Logger.log(`🚀 Application is running on: ${host}:${port}/${globalPrefix}`);
 }
 

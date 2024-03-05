@@ -1,10 +1,9 @@
-<div class="tag-search-item"
-    *ngFor="let visibleTag of visibleTags">
-    {{ visibleTag.name }}
+<div class="tag-search-item" *ngFor="let visibleTag of visibleTags">
+  {{ visibleTag.name }}
 </div>
 <p class="text-light" *ngIf="!allTags">
-    <ng-content select="[showAll]"></ng-content>
+  <ng-content select="[showAll]"></ng-content>
 </p>
 <p class="text-light" *ngIf="allTags">
-    <ng-content select="[showDefault]"></ng-content>
+  <ng-content select="[showDefault]"></ng-content>
 </p>

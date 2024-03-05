@@ -3,7 +3,7 @@
 @use '../tokens/line-height';
 
 p {
-    font-size: font-size.$default;
-    line-height: line-height.$default;
-    margin-bottom: units.$default;
+  font-size: font-size.$default;
+  line-height: line-height.$default;
+  margin-bottom: units.$default;
 }

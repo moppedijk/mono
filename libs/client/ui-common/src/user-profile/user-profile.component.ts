@@ -7,7 +7,7 @@ import { NgIf } from '@angular/common';
   templateUrl: './user-profile.component.html',
   styleUrls: ['./user-profile.component.scss'],
   standalone: true,
-  imports: [ModalComponent, NgIf]
+  imports: [ModalComponent, NgIf],
 })
 export class UserProfileComponent {
   public isModalVisible = false;

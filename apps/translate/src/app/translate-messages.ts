@@ -10,12 +10,12 @@ const target = 'en';
 // Translates the text into the target language. "text" can be a string for
 // translating a single piece of text, or an array of strings for translating
 // multiple texts.
-async function translateMessages(props: { messages: any[], debug: boolean }) {
+async function translateMessages(props: { messages: any[]; debug: boolean }) {
   const { messages, debug } = props;
   const text: string[] = messages.map((message) => message.source);
   const translatedMessages = [];
-  
-  if(debug) {
+
+  if (debug) {
     console.info('Debug mode');
     return translatedMessagesMock;
   }
@@ -23,14 +23,14 @@ async function translateMessages(props: { messages: any[], debug: boolean }) {
   console.info(`Translating ${messages.length} messages.`);
 
   // Get translations
-  let [ translations ] = await translate.translate(text, target);
+  let [translations] = await translate.translate(text, target);
   translations = Array.isArray(translations) ? translations : [translations];
 
   translations.forEach((translation, i) => {
     translatedMessages.push({
       ...messages[i],
       target: translation,
-    })
+    });
   });
 
   console.info(`Translating done.`);

@@ -2,54 +2,54 @@
 @use '@mo/ui-base/mixins/breakpoint';
 
 .user-profile {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .user-profile-username {
-    flex: 10;
-    text-align: right;
-    display: none;
+  flex: 10;
+  text-align: right;
+  display: none;
 
-    @include breakpoint.breakTo('small') {
-        display: block;
-    }
+  @include breakpoint.breakTo('small') {
+    display: block;
+  }
 }
 
 .user-profile-image {
-    height: 3rem;
-    flex: 1;
-    overflow: hidden;
+  height: 3rem;
+  flex: 1;
+  overflow: hidden;
 
-    img {
-        max-height: 100%;
-    }
+  img {
+    max-height: 100%;
+  }
 }
 
 .user-profile-circle {
-    overflow: hidden;
-    border-radius: 50%;
-    height: 3rem;
-    width: 3rem;
-    float: right;
-    cursor: pointer;
+  overflow: hidden;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  float: right;
+  cursor: pointer;
 }
 
 .user-profile-large-image {
-    width: auto;
-    margin: 0 auto;
-    border-radius: border-radius.$default;
-    overflow: hidden;
+  width: auto;
+  margin: 0 auto;
+  border-radius: border-radius.$default;
+  overflow: hidden;
 
-    @include breakpoint.breakTo('small') {
-        width: 80%;
-    }
-    
-    @include breakpoint.breakTo('medium') {
-        width: 50%;
-    }
+  @include breakpoint.breakTo('small') {
+    width: 80%;
+  }
 
-    img {
-        max-width: 100%;
-    }
-} 
+  @include breakpoint.breakTo('medium') {
+    width: 50%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}

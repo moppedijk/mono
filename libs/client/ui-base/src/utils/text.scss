@@ -4,28 +4,28 @@
 @use '@mo/ui-base/tokens/units';
 
 .text-small {
-    font-size: font-size.$small;
-    line-height: line-height.$small;
+  font-size: font-size.$small;
+  line-height: line-height.$small;
 }
 
 .text-large {
-    font-size: font-size.$large;
-    line-height: line-height.$large;
-    margin-bottom: units.$large;
+  font-size: font-size.$large;
+  line-height: line-height.$large;
+  margin-bottom: units.$large;
 }
 
 .text-primary {
-    color: color.$primary;
+  color: color.$primary;
 }
 
 .text-secondary {
-    color: color.$secondary;
+  color: color.$secondary;
 }
 
 .text-dark {
-    color: color.$dark;
+  color: color.$dark;
 }
 
 .text-light {
-    color: color.$light;
+  color: color.$light;
 }

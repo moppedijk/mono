@@ -8,7 +8,7 @@ import { SpinnerComponent } from '../spinner/spinner.component';
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.scss'],
   standalone: true,
-  imports: [ClassSizeDirective, ClassColorDirective, SpinnerComponent]
+  imports: [ClassSizeDirective, ClassColorDirective, SpinnerComponent],
 })
 export class ButtonComponent {
   @Input() loading = false;

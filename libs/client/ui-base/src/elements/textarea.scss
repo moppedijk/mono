@@ -1,17 +1,17 @@
 @use '../tokens/font-size';
 
 textarea {
-    background: transparent;
-    width: 100%;
-    border: none;
-    resize: none;
-    font-size: font-size.$default;
-    font-family: inherit;
-    font-size: inherit;
-    font-style: inherit;
-    color: inherit;
+  background: transparent;
+  width: 100%;
+  border: none;
+  resize: none;
+  font-size: font-size.$default;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  color: inherit;
 
-    &:focus {
-        outline: none;
-    }
+  &:focus {
+    outline: none;
+  }
 }

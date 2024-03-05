@@ -7,7 +7,7 @@ import { ClassColorDirective, ClassSizeDirective } from '@mo/client/util-core';
   templateUrl: './button-anker.component.html',
   styleUrls: ['./button-anker.component.scss'],
   standalone: true,
-  imports: [ClassSizeDirective, ClassColorDirective]
+  imports: [ClassSizeDirective, ClassColorDirective],
 })
 export class ButtonAnkerComponent {
   @Input() size: Sizes = 'default';

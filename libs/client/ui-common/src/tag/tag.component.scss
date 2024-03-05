@@ -5,33 +5,33 @@
 @use '@mo/ui-base/tokens/line-height';
 
 .tag {
-	border: none;
-	cursor: default;
-	display: inline-block;
-	text-decoration: none;
-	background-color: color.$light;
-	color: color.$dark;
-	font-size: font-size.$default;
-	line-height: line-height.$default;
-	padding: units.$default;
-	border-radius: border-radius.$default;
-	margin-bottom: units.$default;
-	margin-right: units.$default;
-	position: relative;
+  border: none;
+  cursor: default;
+  display: inline-block;
+  text-decoration: none;
+  background-color: color.$light;
+  color: color.$dark;
+  font-size: font-size.$default;
+  line-height: line-height.$default;
+  padding: units.$default;
+  border-radius: border-radius.$default;
+  margin-bottom: units.$default;
+  margin-right: units.$default;
+  position: relative;
 }
 
 .tag--small {
-	font-size: font-size.$small;
-	line-height: line-height.$small;
-	padding: units.$small;
-	border-radius: units.$small;
-	margin-bottom: units.$small;
+  font-size: font-size.$small;
+  line-height: line-height.$small;
+  padding: units.$small;
+  border-radius: units.$small;
+  margin-bottom: units.$small;
 }
 
 .tag--large {
-	font-size: font-size.$large;
-	line-height: line-height.$large;
-	padding: units.$large;
-	border-radius: units.$large;
-	margin-bottom: units.$large;
+  font-size: font-size.$large;
+  line-height: line-height.$large;
+  padding: units.$large;
+  border-radius: units.$large;
+  margin-bottom: units.$large;
 }

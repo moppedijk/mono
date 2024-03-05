@@ -7,7 +7,7 @@ import { ToasterService } from '@mo/client/util-core';
   templateUrl: './toaster.component.html',
   styleUrls: ['./toaster.component.scss'],
   standalone: true,
-  imports: [NgFor]
+  imports: [NgFor],
 })
 export class ToasterComponent {
   private timeout = 2000;

@@ -1,27 +1,28 @@
 @use '../tokens/font-size';
 
 $font-size: (
-    font-size.$large,
-    font-size.$default,
-    font-size.$small,
-    font-size.$small,
-    font-size.$small,
-    font-size.$small
+  font-size.$large,
+  font-size.$default,
+  font-size.$small,
+  font-size.$small,
+  font-size.$small,
+  font-size.$small
 );
 
 @for $i from 1 through 4 {
-    h#{$i}, .h#{$i} {
-        font-size: nth($font-size, $i);
-        margin: nth($font-size, $i) 0;
-    }
+  h#{$i},
+  .h#{$i} {
+    font-size: nth($font-size, $i);
+    margin: nth($font-size, $i) 0;
+  }
 
-    .h#{$i}-small {
-        font-size: font-size.$small;
-        margin: font-size.$small 0;
-    }
-    
-    .h#{$i}-large {
-        font-size: nth($font-size, $i) * 2;
-        margin: nth($font-size, $i) * 2 0;
-    }
+  .h#{$i}-small {
+    font-size: font-size.$small;
+    margin: font-size.$small 0;
+  }
+
+  .h#{$i}-large {
+    font-size: nth($font-size, $i) * 2;
+    margin: nth($font-size, $i) * 2 0;
+  }
 }

@@ -8,7 +8,7 @@ describe('ColComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ColComponent]
+      imports: [ColComponent],
     }).compileComponents();
   });
 

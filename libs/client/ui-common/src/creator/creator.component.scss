@@ -1,57 +1,57 @@
-@use "@mo/ui-base/tokens/units";
-@use "@mo/ui-base/tokens/font-size";
-@use "@mo/ui-base/mixins/breakpoint";
+@use '@mo/ui-base/tokens/units';
+@use '@mo/ui-base/tokens/font-size';
+@use '@mo/ui-base/mixins/breakpoint';
 
 $size-mobile: 4rem;
 $size-desktop: 6rem;
 
 .creator {
-    margin: units.$default;
-    position: relative;
+  margin: units.$default;
+  position: relative;
 
-    @include breakpoint.breakTo('small') {
-        display: flex;
-        align-items: center;
-    }
+  @include breakpoint.breakTo('small') {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .creator__profile {
-    width: $size-mobile;
-    height: $size-mobile;
-    overflow: hidden;
-    border-radius: 50%;
-    position: relative;
-    margin: 0 auto;
+  width: $size-mobile;
+  height: $size-mobile;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto;
 
-    img {
-        max-width: 100%;
-    }
+  img {
+    max-width: 100%;
+  }
 
-    @include breakpoint.breakTo('small') {
-        margin: 0;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: $size-desktop;
-        height: $size-desktop;
-    }
+  @include breakpoint.breakTo('small') {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $size-desktop;
+    height: $size-desktop;
+  }
 }
 
 .creator__display-name {
-    text-align: center;
+  text-align: center;
 
-    h1 {
-        margin: 0;
-    }
+  h1 {
+    margin: 0;
+  }
 
-    p {
-        margin: 0;
-        font-size: font-size.$small;
-    }
+  p {
+    margin: 0;
+    font-size: font-size.$small;
+  }
 
-    @include breakpoint.breakTo('small') {
-        text-align: left;
-        margin-left: $size-desktop;
-        padding-left: units.$default;
-    }
+  @include breakpoint.breakTo('small') {
+    text-align: left;
+    margin-left: $size-desktop;
+    padding-left: units.$default;
+  }
 }

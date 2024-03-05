@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
   templateUrl: './navigation-list-item.component.html',
   styleUrls: ['./navigation-list-item.component.scss'],
   standalone: true,
-  imports: [RouterModule]
+  imports: [RouterModule],
 })
 export class NavigationListItemComponent {
   @Input() url: string;

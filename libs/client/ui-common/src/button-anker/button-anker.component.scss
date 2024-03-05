@@ -6,29 +6,29 @@
 @use '@mo/ui-base/mixins/button';
 
 .button-anker {
-	@include button.base();
+  @include button.base();
 }
 
 .button-anker--small {
-	@include button.small();
+  @include button.small();
 }
 
 .button-anker--large {
-	@include button.large();
+  @include button.large();
 }
 
 .button-anker--primary {
-    @include button.primary();
+  @include button.primary();
 }
 
 .button-anker--secondary {
-    @include button.secondary();
+  @include button.secondary();
 }
 
 .button-anker--dark {
-    @include button.dark();
+  @include button.dark();
 }
 
 .button-anker--light {
-    @include button.light();
+  @include button.light();
 }

@@ -1,132 +1,131 @@
-@use "@mo/ui-base/tokens/color";
-@use "@mo/ui-base/tokens/border-radius";
-@use "@mo/ui-base/tokens/box-shadow";
-@use "@mo/ui-base/tokens/units";
-@use "@mo/ui-base/tokens/viewport";
-@use "@mo/ui-base/mixins/breakpoint";
+@use '@mo/ui-base/tokens/color';
+@use '@mo/ui-base/tokens/border-radius';
+@use '@mo/ui-base/tokens/box-shadow';
+@use '@mo/ui-base/tokens/units';
+@use '@mo/ui-base/tokens/viewport';
+@use '@mo/ui-base/mixins/breakpoint';
 
 .modal {
-    position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-color: color.$dark;
-    z-index: 100;
-    opacity: 0; // initial animation state
-	animation-name: fade-in;
-	animation-duration: .3s;
-	animation-fill-mode: forwards;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: color.$dark;
+  z-index: 100;
+  opacity: 0; // initial animation state
+  animation-name: fade-in;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
 
-	@include breakpoint.breakTo('large') {
-		background-color: rgba(color.$light, .5);
-	}
+  @include breakpoint.breakTo('large') {
+    background-color: rgba(color.$light, 0.5);
+  }
 }
 
 .modal__container {
-    background-color: color.$dark;
-    transform: scale(0); // initial animation state
-	animation: scale-in .3s .3s;
-	animation-name: scale-in;
-	animation-duration: .3s;
-	animation-fill-mode: forwards;
-	margin: 0;
-	display: flex;
-	flex-direction: column;
+  background-color: color.$dark;
+  transform: scale(0); // initial animation state
+  animation: scale-in 0.3s 0.3s;
+  animation-name: scale-in;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 
-	@include breakpoint.breakTo('large') {
-		border-radius: border-radius.$default;
-		box-shadow: box-shadow.$default;
-		margin: units.$large auto;
-		max-width: viewport.$large;
-		width: 100%;
-    }
+  @include breakpoint.breakTo('large') {
+    border-radius: border-radius.$default;
+    box-shadow: box-shadow.$default;
+    margin: units.$large auto;
+    max-width: viewport.$large;
+    width: 100%;
+  }
 }
 
 .modal__header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: units.$large;
-    background-color: darken(color.$dark, 10%);
-	color: color.$light;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: units.$large;
+  background-color: darken(color.$dark, 10%);
+  color: color.$light;
 
-	@include breakpoint.breakTo('large') {
-		border-top-left-radius: units.$large; 
-    	border-top-right-radius: units.$large;
-	}
+  @include breakpoint.breakTo('large') {
+    border-top-left-radius: units.$large;
+    border-top-right-radius: units.$large;
+  }
 }
 
 .modal__title {
-    flex: 1;
+  flex: 1;
 }
 
 .modal__close {
-    flex: 1;
-    text-align: right;
+  flex: 1;
+  text-align: right;
 }
 
 .modal__close ::ng-deep button {
-    margin: 0;
+  margin: 0;
 }
 
 .modal__content {
-	margin: units.$default;
-	overflow-y: scroll;
+  margin: units.$default;
+  overflow-y: scroll;
 }
 
 // TODO: Move to more generic place
 @keyframes fade-in {
-	0% {
-		opacity: 0;
-	}
+  0% {
+    opacity: 0;
+  }
 
-	100% {
-		opacity: 1;
-	}
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes scale-in {
-	0% {
-		transform: scale(0);
-	}
+  0% {
+    transform: scale(0);
+  }
 
-	100% {
-		transform: scale(1);
-	}
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes bounce {
+  0% {
+    transform: scaleX(1) scaleY(1);
+  }
 
-	0% {
-		transform: scaleX(1) scaleY(1);
-	}
-	
-	86% {
-		transform: scaleX(1) scaleY(1);
-	}
+  86% {
+    transform: scaleX(1) scaleY(1);
+  }
 
-	90% {
-		transform: scaleX(.85) scaleY(.85);
-	}
-	
-	92% {
-		transform: scaleX(1.1) scaleY(1.1);
-	}
+  90% {
+    transform: scaleX(0.85) scaleY(0.85);
+  }
 
-	94% {
-		transform: scaleX(.9) scaleY(.9);
-	}
+  92% {
+    transform: scaleX(1.1) scaleY(1.1);
+  }
 
-	96% {
-		transform: scaleX(1.05) scaleY(1.05);
-	}
+  94% {
+    transform: scaleX(0.9) scaleY(0.9);
+  }
 
-	98% {
-		transform: scaleX(.95) scaleY(.95);
-	}
+  96% {
+    transform: scaleX(1.05) scaleY(1.05);
+  }
 
-	100% {
-		transform: scaleX(1) scaleY(1);
-	}
+  98% {
+    transform: scaleX(0.95) scaleY(0.95);
+  }
+
+  100% {
+    transform: scaleX(1) scaleY(1);
+  }
 }

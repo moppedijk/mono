@@ -3,27 +3,27 @@
 @use '@mo/ui-base/tokens/viewport';
 
 .section {
-    padding: units.$default 0;
-    background-color: color.$default;
+  padding: units.$default 0;
+  background-color: color.$default;
 }
 
 .section--primary {
-    background-color: color.$primary;
+  background-color: color.$primary;
 }
 
 .section--secondary {
-    background-color: color.$secondary;
+  background-color: color.$secondary;
 }
 
 .section--dark {
-    background-color: color.$dark;
+  background-color: color.$dark;
 }
 
 .section--light {
-    background-color: color.$light;
+  background-color: color.$light;
 }
 
 .section__container {
-    max-width: viewport.$max-screen;
-    margin: 0 auto;
+  max-width: viewport.$max-screen;
+  margin: 0 auto;
 }

@@ -1,9 +1,9 @@
 <div class="textarea" [class.textarea-loading]="isLoading">
-    <textarea
-        rows="6"
-        [ngModel]="value"
-        (ngModelChange)="valueChange.emit($event)"
-        [placeholder]="placeholder"
-        [disabled]="isLoading"
-    ></textarea>
+  <textarea
+    rows="6"
+    [ngModel]="value"
+    (ngModelChange)="valueChange.emit($event)"
+    [placeholder]="placeholder"
+    [disabled]="isLoading"
+  ></textarea>
 </div>

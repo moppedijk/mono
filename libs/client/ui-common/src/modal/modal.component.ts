@@ -22,7 +22,7 @@ const BODY_CSS_CLASS = 'body-freeze';
   templateUrl: './modal.component.html',
   styleUrls: ['./modal.component.scss'],
   standalone: true,
-  imports: [ButtonComponent, FaIconComponent]
+  imports: [ButtonComponent, FaIconComponent],
 })
 export class ModalComponent implements OnInit, OnDestroy {
   public icon: IconDefinition;

@@ -1,6 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ButtonComponent, ErrorComponent, InputComponent, TextareaComponent } from '@mo/client/ui-common';
+import {
+  ButtonComponent,
+  ErrorComponent,
+  InputComponent,
+  TextareaComponent,
+} from '@mo/client/ui-common';
 import { HttpService } from '@mo/client/util-core';
 
 @Component({
@@ -11,9 +16,9 @@ import { HttpService } from '@mo/client/util-core';
     InputComponent,
     TextareaComponent,
     ErrorComponent,
-    ButtonComponent
+    ButtonComponent,
   ],
-  templateUrl: './contact.component.html'
+  templateUrl: './contact.component.html',
 })
 export class ContactComponent {
   public httpService = inject(HttpService);
@@ -21,7 +26,7 @@ export class ContactComponent {
     name: '',
     email: '',
     message: '',
-  }
+  };
   public isLoading = false;
   public isDisabled = false;
   public hasError = false;
@@ -33,7 +38,7 @@ export class ContactComponent {
     this.hasSucces = false;
     this.hasError = false;
   }
-  
+
   private completeRequest(): void {
     this.isDisabled = false;
     this.isLoading = false;
@@ -43,7 +48,7 @@ export class ContactComponent {
       email: '',
       message: '',
       name: '',
-    }
+    };
   }
 
   private completeRequestWithError(): void {
@@ -55,11 +60,7 @@ export class ContactComponent {
 
   // Add better validation
   private isInValid(): boolean {
-    return Boolean(
-      !this.form.email ||
-      !this.form.name ||
-      !this.form.message
-    );
+    return Boolean(!this.form.email || !this.form.name || !this.form.message);
   }
 
   public submit(): void {

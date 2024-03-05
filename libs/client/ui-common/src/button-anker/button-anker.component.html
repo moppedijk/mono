@@ -1,8 +1,12 @@
-<a [href]="link" class="button-anker" target="_blank" [attr.aria-label]="title"
-    [moClassSize]="{ className: 'button-anker', size: size }"
-    [moClassColor]="{ className: 'button-anker', color: color }"
+<a
+  [href]="link"
+  class="button-anker"
+  target="_blank"
+  [attr.aria-label]="title"
+  [moClassSize]="{ className: 'button-anker', size: size }"
+  [moClassColor]="{ className: 'button-anker', color: color }"
 >
-    <span class="button-anker__content">
-        <ng-content></ng-content>
-    </span>
+  <span class="button-anker__content">
+    <ng-content></ng-content>
+  </span>
 </a>

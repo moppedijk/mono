@@ -1,15 +1,22 @@
 <div class="header">
-    <div class="header__container">
-        <div class="header__brand">
-            <a routerLink="/" class="header__logo" [attr.aria-label]="organizationName">
-                <img [src]="logoUrl" [alt]="organizationName" width="30px" height="30px">
-            </a>
-            <strong>{{ organizationName }}</strong>
-        </div>
-        <div class="header__login">
-            <mo-user-profile
-                [profileImage]="profileImage">
-            </mo-user-profile>
-        </div>
+  <div class="header__container">
+    <div class="header__brand">
+      <a
+        routerLink="/"
+        class="header__logo"
+        [attr.aria-label]="organizationName"
+      >
+        <img
+          [src]="logoUrl"
+          [alt]="organizationName"
+          width="30px"
+          height="30px"
+        />
+      </a>
+      <strong>{{ organizationName }}</strong>
     </div>
+    <div class="header__login">
+      <mo-user-profile [profileImage]="profileImage"> </mo-user-profile>
+    </div>
+  </div>
 </div>

@@ -4,114 +4,114 @@
 @use '@mo/ui-base/tokens/border-radius';
 
 @mixin base() {
-	cursor: pointer;
-	display: inline-block;
-	text-decoration: none;
-	background-color: color.$default;
-	color: color.$light;
-	font-size: font-size.$default;
-	line-height: font-size.$default;
-	padding: units.$default;
-	border-radius: border-radius.$default;
-	margin-bottom: units.$default;
-	position: relative;
-	transition-property: color, background-color;
-	transition-duration: .3s;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  background-color: color.$default;
+  color: color.$light;
+  font-size: font-size.$default;
+  line-height: font-size.$default;
+  padding: units.$default;
+  border-radius: border-radius.$default;
+  margin-bottom: units.$default;
+  position: relative;
+  transition-property: color, background-color;
+  transition-duration: 0.3s;
 
-	border-top: none;
-	border-right: none;
-	border-bottom: solid 3px darken(color.$default, 20%);
-	border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: solid 3px darken(color.$default, 20%);
+  border-left: none;
 
-	&:disabled {
-		background-color: color.$dark;
-		cursor: not-allowed;
-	}
+  &:disabled {
+    background-color: color.$dark;
+    cursor: not-allowed;
+  }
 
-	&:focus,
-	&:hover {
-		background-color: darken(color.$default, 20%);
-	}
+  &:focus,
+  &:hover {
+    background-color: darken(color.$default, 20%);
+  }
 
-	&:focus {
-		outline-color: color.$default;
-		outline-style: solid;
-		outline-width: 1px;
-		outline-offset: units.$default;
-	}
+  &:focus {
+    outline-color: color.$default;
+    outline-style: solid;
+    outline-width: 1px;
+    outline-offset: units.$default;
+  }
 }
 
 @mixin small() {
-	font-size: font-size.$small;
-	line-height: font-size.$small;
-	padding: units.$small;
-	border-radius: units.$small;
-	margin-bottom: units.$small;
+  font-size: font-size.$small;
+  line-height: font-size.$small;
+  padding: units.$small;
+  border-radius: units.$small;
+  margin-bottom: units.$small;
 }
 
 @mixin large() {
-	font-size: font-size.$large;
-	line-height: font-size.$large;
-	padding: units.$large;
-	border-radius: units.$large;
-	margin-bottom: units.$large;
+  font-size: font-size.$large;
+  line-height: font-size.$large;
+  padding: units.$large;
+  border-radius: units.$large;
+  margin-bottom: units.$large;
 }
 
 @mixin primary() {
-	background-color: color.$primary;
-	border-bottom-color: darken(color.$primary, 20%);
+  background-color: color.$primary;
+  border-bottom-color: darken(color.$primary, 20%);
 
-	&:focus,
-	&:hover {
-		background-color: darken(color.$primary, 20%);
-	}
+  &:focus,
+  &:hover {
+    background-color: darken(color.$primary, 20%);
+  }
 
-	&:focus {
-		outline-color: color.$primary;
-	}
+  &:focus {
+    outline-color: color.$primary;
+  }
 }
 
 @mixin secondary() {
-	background-color: color.$secondary;
-	color: color.$dark;
-	border-bottom-color: darken(color.$secondary, 20%);
+  background-color: color.$secondary;
+  color: color.$dark;
+  border-bottom-color: darken(color.$secondary, 20%);
 
-	&:focus,
-	&:hover {
-		background-color: darken(color.$secondary, 20%);
-	}
+  &:focus,
+  &:hover {
+    background-color: darken(color.$secondary, 20%);
+  }
 
-	&:focus {
-		outline-color: color.$secondary;
-	}
+  &:focus {
+    outline-color: color.$secondary;
+  }
 }
 
 @mixin dark() {
-	background-color: color.$dark;
-    color: color.$light;
-	border-bottom-color: lighten(color.$dark, 20%);
+  background-color: color.$dark;
+  color: color.$light;
+  border-bottom-color: lighten(color.$dark, 20%);
 
-	&:focus,
-	&:hover {
-		background-color: lighten(color.$dark, 20%);
-	}
+  &:focus,
+  &:hover {
+    background-color: lighten(color.$dark, 20%);
+  }
 
-	&:focus {
-		outline-color: color.$dark;
-	}
+  &:focus {
+    outline-color: color.$dark;
+  }
 }
 
 @mixin light() {
-	background-color: color.$light;
-    color: color.$dark;
-	border-bottom-color: darken(color.$light, 20%);
+  background-color: color.$light;
+  color: color.$dark;
+  border-bottom-color: darken(color.$light, 20%);
 
-	&:focus,
-	&:hover {
-		background-color: darken(color.$light, 20%);
-	}
+  &:focus,
+  &:hover {
+    background-color: darken(color.$light, 20%);
+  }
 
-	&:focus {
-		outline-color: color.$light;
-	}
+  &:focus {
+    outline-color: color.$light;
+  }
 }

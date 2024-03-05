@@ -11,10 +11,7 @@ describe('AppController', () => {
 
   beforeAll(async () => {
     app = await Test.createTestingModule({
-      imports: [
-        EmailModule,
-        ConfigModule.forRoot({ isGlobal: true }),
-      ],
+      imports: [EmailModule, ConfigModule.forRoot({ isGlobal: true })],
       controllers: [AppController],
       providers: [AppService, ValidatorService],
     }).compile();

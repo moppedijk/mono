@@ -3,45 +3,45 @@
 @use '@mo/ui-base/tokens/viewport';
 
 .footer {
-    background-color: color.$primary;
+  background-color: color.$primary;
 }
 
 .footer__container {
-    margin: 0 auto;
-    max-width: viewport.$max-screen;
-    display: flex;
-    align-items: center;
-    height: 60px; // sticky footer
+  margin: 0 auto;
+  max-width: viewport.$max-screen;
+  display: flex;
+  align-items: center;
+  height: 60px; // sticky footer
 }
 
 .footer__brand {
-    flex: 1;
-    margin: 0 units.$default;
+  flex: 1;
+  margin: 0 units.$default;
 
-    a {
-        font-weight: bold;
-        text-decoration: none;
-    }
+  a {
+    font-weight: bold;
+    text-decoration: none;
+  }
 }
 
 .footer__icon {
-    margin-right: units.$small;
-    max-width: 10.2rem;
-    display: inline-block;
+  margin-right: units.$small;
+  max-width: 10.2rem;
+  display: inline-block;
 }
 
 .footer--primary {
-    background-color: color.$primary;
+  background-color: color.$primary;
 }
 
 .footer--secondary {
-    background-color: color.$secondary;
+  background-color: color.$secondary;
 }
 
 .footer--dark {
-    background-color: color.$dark;
+  background-color: color.$dark;
 }
 
 .footer--light {
-    background-color: color.$light;
+  background-color: color.$light;
 }

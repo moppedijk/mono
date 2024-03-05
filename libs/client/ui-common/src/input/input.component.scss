@@ -1,9 +1,9 @@
-@use "@mo/ui-base/mixins/input";
+@use '@mo/ui-base/mixins/input';
 
 .input {
-    @include input.base();
+  @include input.base();
 }
 
 .input-loading {
-    @include input.loading();
+  @include input.loading();
 }

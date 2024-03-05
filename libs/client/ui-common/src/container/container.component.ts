@@ -10,10 +10,14 @@ import { ToasterComponent } from '../toaster/toaster.component';
   templateUrl: './container.component.html',
   styleUrls: ['./container.component.scss'],
   standalone: true,
-  imports: [LoaderComponent, HeaderComponent, FooterComponent, ToasterComponent]
+  imports: [
+    LoaderComponent,
+    HeaderComponent,
+    FooterComponent,
+    ToasterComponent,
+  ],
 })
 export class ContainerComponent implements OnInit {
-
   public minHeight = 'auto';
 
   @Input() organizationName = '';
@@ -24,7 +28,7 @@ export class ContainerComponent implements OnInit {
 
   constructor(
     private screensizeService: ScreensizeService,
-    @Inject(WINDOW) private window: Window
+    @Inject(WINDOW) private window: Window,
   ) {}
 
   @HostListener('window:resize', ['$event'])

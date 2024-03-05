@@ -1,17 +1,17 @@
 @use '../tokens/font-size';
 
 input {
-    background: transparent;
-    border: 0;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    font-family: inherit;
-    font-size: font-size.$default;
-    font-style: inherit;
-    color: inherit;
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: font-size.$default;
+  font-style: inherit;
+  color: inherit;
 }
 
 input:focus {
-    outline: none;
+  outline: none;
 }

@@ -1,4 +1,4 @@
 export interface Tag {
-    name: string;
-    priority: 1 | 2;    
+  name: string;
+  priority: 1 | 2;
 }

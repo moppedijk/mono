@@ -14,7 +14,7 @@ import { NgFor } from '@angular/common';
   templateUrl: './tabs.component.html',
   styleUrls: ['./tabs.component.scss'],
   imports: [ButtonComponent, NgFor],
-  standalone: true
+  standalone: true,
 })
 export class TabsComponent implements AfterViewInit {
   @ContentChildren(TabsContentComponent)

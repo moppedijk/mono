@@ -3,31 +3,31 @@
 @use '@mo/ui-base/tokens/units';
 @use '@mo/ui-base/tokens/border-radius';
 @use '@mo/ui-base/tokens/line-height';
-@use "@mo/ui-base/mixins/breakpoint";
+@use '@mo/ui-base/mixins/breakpoint';
 
 .tag-search-item {
-    border: none;
-	cursor: default;
-	display: inline-block;
-	text-decoration: none;
-	background-color: color.$light;
-	color: color.$dark;
-	line-height: line-height.$default;
-	border-radius: border-radius.$default;
-	position: relative;
-	padding: units.$small;
-	margin-bottom: units.$small;
-	margin-right: units.$small;
-    font-size: font-size.$default;
+  border: none;
+  cursor: default;
+  display: inline-block;
+  text-decoration: none;
+  background-color: color.$light;
+  color: color.$dark;
+  line-height: line-height.$default;
+  border-radius: border-radius.$default;
+  position: relative;
+  padding: units.$small;
+  margin-bottom: units.$small;
+  margin-right: units.$small;
+  font-size: font-size.$default;
 
-    @include breakpoint.breakTo('small') {
-        padding: units.$default;
-        margin-bottom: units.$default;
-        margin-right: units.$default;
-    }
-    
-    @include breakpoint.breakTo('medium') {
-        margin-bottom: units.$large;
-        margin-right: units.$large;
-    }
+  @include breakpoint.breakTo('small') {
+    padding: units.$default;
+    margin-bottom: units.$default;
+    margin-right: units.$default;
+  }
+
+  @include breakpoint.breakTo('medium') {
+    margin-bottom: units.$large;
+    margin-right: units.$large;
+  }
 }

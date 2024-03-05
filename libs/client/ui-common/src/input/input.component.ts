@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './input.component.html',
   styleUrls: ['./input.component.scss'],
   standalone: true,
-  imports: [FormsModule]
+  imports: [FormsModule],
 })
 export class InputComponent {
   @Input() isLoading = true;

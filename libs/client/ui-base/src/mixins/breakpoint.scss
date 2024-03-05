@@ -1,13 +1,19 @@
 @use '../tokens/viewport';
 
 @mixin breakTo($size) {
-    @if $size == small {
-        @media (min-width: viewport.$small) { @content; }
+  @if $size == small {
+    @media (min-width: viewport.$small) {
+      @content;
     }
-    @if $size == medium {
-        @media (min-width: viewport.$medium) { @content; }
+  }
+  @if $size == medium {
+    @media (min-width: viewport.$medium) {
+      @content;
     }
-    @if $size == large {
-        @media (min-width: viewport.$large) { @content; }
+  }
+  @if $size == large {
+    @media (min-width: viewport.$large) {
+      @content;
     }
+  }
 }

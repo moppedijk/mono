@@ -1,12 +1,12 @@
 import { promises as fs } from 'fs';
-import { XMLParser } from "fast-xml-parser";
+import { XMLParser } from 'fast-xml-parser';
 
 function parseXML(XMLdata) {
   const parser = new XMLParser({
     ignoreAttributes: false,
     attributeNamePrefix: '',
   });
-  
+
   return parser.parse(XMLdata);
 }
 
@@ -14,12 +14,12 @@ function mapToTranslationObject(jObj) {
   const translations = [];
 
   if (jObj.xliff.file.body) {
-    jObj.xliff.file.body['trans-unit'].forEach(transUnit => {
+    jObj.xliff.file.body['trans-unit'].forEach((transUnit) => {
       translations.push({
         id: transUnit.id,
         source: transUnit.source,
         target: '',
-      })
+      });
     });
   }
 

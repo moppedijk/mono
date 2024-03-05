@@ -8,7 +8,7 @@ describe('TagSearchComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TagSearchComponent]
+      imports: [TagSearchComponent],
     }).compileComponents();
   });
 

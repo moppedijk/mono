@@ -7,7 +7,7 @@ import { RouterModule } from '@angular/router';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
   standalone: true,
-  imports: [UserProfileComponent, RouterModule]
+  imports: [UserProfileComponent, RouterModule],
 })
 export class HeaderComponent {
   public isAuthenticated = false;

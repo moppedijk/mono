@@ -10,8 +10,7 @@ async function bootstrap() {
   const translations = await translateMessages({ messages, debug: true });
   const targetFile = await generateMessagesFile({ sourceFile, translations });
 
-  writeMessagesFile({ targetFile, target })
-    .then(() => console.log('success'));
+  writeMessagesFile({ targetFile, target }).then(() => console.log('success'));
 }
 
 bootstrap();

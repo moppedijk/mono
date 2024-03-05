@@ -1,9 +1,9 @@
-@use "@mo/ui-base/mixins/input";
+@use '@mo/ui-base/mixins/input';
 
 .textarea {
-    @include input.base();
+  @include input.base();
 }
 
 .textarea-loading {
-    @include input.loading();
+  @include input.loading();
 }

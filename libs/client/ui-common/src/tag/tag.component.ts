@@ -7,7 +7,7 @@ import { ClassColorDirective, ClassSizeDirective } from '@mo/client/util-core';
   templateUrl: './tag.component.html',
   styleUrls: ['./tag.component.scss'],
   standalone: true,
-  imports: [ClassColorDirective, ClassSizeDirective]
+  imports: [ClassColorDirective, ClassSizeDirective],
 })
 export class TagComponent {
   @Input() size: Sizes = 'default';

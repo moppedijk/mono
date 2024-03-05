@@ -7,6 +7,7 @@ Dont think. Build.
 To start the development server run `nx serve landing`. Open your browser and navigate to http://localhost:4200/. Happy coding!
 
 ## Best practices
+
 - Code needs to be predictable
 - Code needs to be configurable
 - It needs to be simple
@@ -26,10 +27,12 @@ To start the development server run `nx serve landing`. Open your browser and na
 All projects should be written in Typescript. To keep thing consistent.
 
 ## Environment
+
 - Server environment variables can be found in .env
 - Client environment variables can be found in environment files
 
 ## Todo
+
 - Add unit tests
 - Add e2e tests
 - Create mock api endoint
@@ -42,4 +45,5 @@ All projects should be written in Typescript. To keep thing consistent.
 - Run linter and tests on merge, push or commit (local or in pipeline)
 
 ## Chores
+
 - Update dependencies

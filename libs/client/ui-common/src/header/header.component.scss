@@ -3,53 +3,53 @@
 @use '@mo/ui-base/tokens/units';
 
 .header {
-    background-color: color.$dark;
-    color: color.$light;
+  background-color: color.$dark;
+  color: color.$light;
 }
 
 .header__container {
-    margin: 0 auto;
-    max-width: viewport.$max-screen;
-    display: flex;
-    align-items: center;
-    height: 60px; // sticky footer
+  margin: 0 auto;
+  max-width: viewport.$max-screen;
+  display: flex;
+  align-items: center;
+  height: 60px; // sticky footer
 }
 
 .header__brand {
-    flex: 1;
-    margin: 0 units.$default;
-    display: flex;
-    align-items: center;
-    
-    a {
-        color: color.$light;
-        text-decoration: none;
-    }
+  flex: 1;
+  margin: 0 units.$default;
+  display: flex;
+  align-items: center;
+
+  a {
+    color: color.$light;
+    text-decoration: none;
+  }
 }
 
 .header__login {
-    flex: 1;
-    text-align: right;
-    margin: 0 units.$default;
+  flex: 1;
+  text-align: right;
+  margin: 0 units.$default;
 }
 
 // Little hack for button margin in header.
 .header__login ::ng-deep .button {
-    margin: 0;
+  margin: 0;
 }
 
 .header__logo {
-    height: 3rem;
-    width: 3rem;
-    overflow: hidden;
-    display: inline-block;
-    margin-right: units.$default;
-    background-color: color.$light;
-    padding: units.$small - .4rem;
-    border-radius: 50%;
-    text-align: center;
+  height: 3rem;
+  width: 3rem;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: units.$default;
+  background-color: color.$light;
+  padding: units.$small - 0.4rem;
+  border-radius: 50%;
+  text-align: center;
 
-    img {
-        max-height: 100%;
-    }
+  img {
+    max-height: 100%;
+  }
 }

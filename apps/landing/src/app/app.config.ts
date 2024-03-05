@@ -24,6 +24,9 @@ export const appConfig: ApplicationConfig = {
     provideTokenValue(APP_PROFILE_IMAGE_TOKEN, 'assets/profile/1000x1000.webp'),
     provideTokenValue(APP_ORGANIZATION_NAME_TOKEN, 'Moppedijk'),
     provideTokenValue(APP_PROJECT_NAME_TOKEN, 'Mono'),
-    provideTokenValue(APP_PROJECT_LINK_TOKEN, 'https://github.com/moppedijk/mono'),
+    provideTokenValue(
+      APP_PROJECT_LINK_TOKEN,
+      'https://github.com/moppedijk/mono',
+    ),
   ],
 };

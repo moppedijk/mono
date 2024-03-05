@@ -3,70 +3,70 @@
 @use '@mo/ui-base/tokens/units';
 @use '@mo/ui-base/tokens/border-radius';
 @use '@mo/ui-base/tokens/line-height';
-@use "@mo/ui-base/mixins/breakpoint";
+@use '@mo/ui-base/mixins/breakpoint';
 
 .introduction {
-    margin: units.$small 0;
-    padding: units.$small 0;
-    border-bottom: solid 2px color.$default;
+  margin: units.$small 0;
+  padding: units.$small 0;
+  border-bottom: solid 2px color.$default;
 
-    @include breakpoint.breakTo('small') {
-        margin: units.$default 0;
-        padding: units.$default 0;
-    }
-    
-    @include breakpoint.breakTo('medium') {
-        margin: units.$large 0;
-        padding: units.$large 0;
-    }
+  @include breakpoint.breakTo('small') {
+    margin: units.$default 0;
+    padding: units.$default 0;
+  }
+
+  @include breakpoint.breakTo('medium') {
+    margin: units.$large 0;
+    padding: units.$large 0;
+  }
 }
 
 // Consider finding other solution for ::ng-deep
 .introduction-title ::ng-deep h1,
 .introduction-title ::ng-deep h2,
 .introduction-title ::ng-deep h3 {
-    font-size: font-size.$large;
-    margin-top: 0;
+  font-size: font-size.$large;
+  margin-top: 0;
 
-    @include breakpoint.breakTo('small') {
-        font-size: font-size.$large + .4;
-    }
-    
-    @include breakpoint.breakTo('medium') {
-        font-size: font-size.$large + .8;
-    }
+  @include breakpoint.breakTo('small') {
+    font-size: font-size.$large + 0.4;
+  }
+
+  @include breakpoint.breakTo('medium') {
+    font-size: font-size.$large + 0.8;
+  }
 }
 
 .introduction-lead ::ng-deep p {
-    font-weight: bold;
-    font-size: font-size.$default;
-    line-height: line-height.$default;
-    margin-top: 0;
+  font-weight: bold;
+  font-size: font-size.$default;
+  line-height: line-height.$default;
+  margin-top: 0;
 
-    @include breakpoint.breakTo('small') {
-        font-size: font-size.$default + .4;
-        line-height: line-height.$default + .4;
-    }
-    
-    @include breakpoint.breakTo('medium') {
-        font-size: font-size.$default + .8;
-        line-height: line-height.$default + .8;
-    }
+  @include breakpoint.breakTo('small') {
+    font-size: font-size.$default + 0.4;
+    line-height: line-height.$default + 0.4;
+  }
+
+  @include breakpoint.breakTo('medium') {
+    font-size: font-size.$default + 0.8;
+    line-height: line-height.$default + 0.8;
+  }
 }
 
 .introduction-summary ::ng-deep p {
-    color: lighten(color.$dark, 15%);
-    font-size: font-size.$default - .4;
-    line-height: line-height.$default - .4;
-    margin-top: 0;
+  color: lighten(color.$dark, 15%);
+  font-size: font-size.$default - 0.4;
+  line-height: line-height.$default - 0.4;
+  margin-top: 0;
 
-    @include breakpoint.breakTo('small') {
-        font-size: font-size.$default;
-        line-height: line-height.$default;
-    }
-    
-    @include breakpoint.breakTo('medium') {
-        font-size: font-size.$default + .4;
-        line-height: line-height.$default + .4;
-    }
+  @include breakpoint.breakTo('small') {
+    font-size: font-size.$default;
+    line-height: line-height.$default;
+  }
+
+  @include breakpoint.breakTo('medium') {
+    font-size: font-size.$default + 0.4;
+    line-height: line-height.$default + 0.4;
+  }
 }
