@@ -8,7 +8,15 @@
   "i18n": {
     "sourceLocale": "nl",
     "locales": {
-      "en": "apps/landing/src/locale/messages.en.xlf"
+      "de": "apps/landing/src/locale/messages.de.xlf",
+      "el": "apps/landing/src/locale/messages.el.xlf",
+      "en": "apps/landing/src/locale/messages.en.xlf",
+      "es": "apps/landing/src/locale/messages.es.xlf",
+      "fy": "apps/landing/src/locale/messages.fy.xlf",
+      "it": "apps/landing/src/locale/messages.it.xlf",
+      "no": "apps/landing/src/locale/messages.no.xlf",
+      "pt": "apps/landing/src/locale/messages.pt.xlf",
+      "sv": "apps/landing/src/locale/messages.sv.xlf"
     }
   },
   "targets": {
@@ -16,7 +24,7 @@
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "localize": ["en"],
+        "localize": ["nl"],
         "outputPath": "dist/apps/landing/browser",
         "index": "apps/landing/src/index.html",
         "main": "apps/landing/src/main.ts",

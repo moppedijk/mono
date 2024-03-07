@@ -2,10 +2,10 @@ import { promises as fs } from 'fs';
 
 async function writeMessagesFile(props: {
   targetFile: string;
-  target: string;
+  data: string;
 }): Promise<void> {
-  const { targetFile, target } = props;
-  return await fs.writeFile(target, targetFile);
+  const { data, targetFile } = props;
+  return await fs.writeFile(targetFile, data);
 }
 
 export { writeMessagesFile };

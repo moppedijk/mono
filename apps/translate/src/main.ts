@@ -2,17 +2,24 @@ import { writeMessagesFile } from './app/write-messages-file';
 import { generateMessagesFile } from './app/generate-messages-file';
 import { readMessagesFromFile } from './app/read-messages-from-file';
 import { translateMessages } from './app/translate-messages';
+import { LanguageCodeEnum } from './enums/language-code.enum';
 
-async function bootstrap() {
+async function initialize() {
+  const languageCode = LanguageCodeEnum.Swedish;
+  const targetLanguage = languageCode.toLowerCase();
   const sourceFile = 'apps/landing/src/locale/messages.xlf';
-  const target = 'apps/landing/src/locale/messages.en.xlf';
+  const targetFile = `apps/landing/src/locale/messages.${targetLanguage}.xlf`;
   const messages = await readMessagesFromFile({ sourceFile });
-  const translations = await translateMessages({ messages, debug: false });
-  const targetFile = await generateMessagesFile({ sourceFile, translations });
+  const translations = await translateMessages({
+    messages,
+    targetLanguage,
+    debug: false,
+  });
+  const data = await generateMessagesFile({ sourceFile, translations });
 
-  writeMessagesFile({ targetFile, target }).then(() =>
-    console.log('Writing file:', target),
+  writeMessagesFile({ targetFile, data }).then(() =>
+    console.log('Writing file:', targetFile),
   );
 }
 
-bootstrap();
+initialize();
