@@ -36,7 +36,6 @@ async function readMessagesFromFile(props: {
 }): Promise<TranslateMessageInterface[]> {
   const { sourceFile } = props;
   const data = await fs.readFile(sourceFile, 'utf-8');
-  console.info('Reading file:', sourceFile);
   return mapToTranslationObject(parseXML(data));
 }
 

@@ -168,6 +168,14 @@
         ],
         "parallel": false
       }
+    },
+    "translate": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "npx nx run translate:xlf --args=config=apps/landing/translate.config.json"
+        ]
+      }
     }
   }
 }

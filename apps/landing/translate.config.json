@@ -1,0 +1,15 @@
+{
+  "$schema": "../translate/src/schema/translate-schema.json",
+  "sourceLocaleFile": "apps/landing/src/locale/messages.xlf",
+  "locales": {
+    "de": "apps/landing/src/locale/messages.de.xlf",
+    "el": "apps/landing/src/locale/messages.el.xlf",
+    "en": "apps/landing/src/locale/messages.en.xlf",
+    "es": "apps/landing/src/locale/messages.es.xlf",
+    "fy": "apps/landing/src/locale/messages.fy.xlf",
+    "it": "apps/landing/src/locale/messages.it.xlf",
+    "no": "apps/landing/src/locale/messages.no.xlf",
+    "pt": "apps/landing/src/locale/messages.pt.xlf",
+    "sv": "apps/landing/src/locale/messages.sv.xlf"
+  }
+}

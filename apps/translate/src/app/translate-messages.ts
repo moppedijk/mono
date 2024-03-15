@@ -23,7 +23,9 @@ async function translateMessages(props: {
     return translatedMessagesMock;
   }
 
-  console.info(`Translating ${messages.length} messages.`);
+  console.info(
+    `Translating ${messages.length} messages to => ${targetLanguage}.`,
+  );
 
   // Get translations
   let [translations] = await translate.translate(text, targetLanguage);
@@ -35,8 +37,6 @@ async function translateMessages(props: {
       target: translation,
     });
   });
-
-  console.info(`Translating done.`);
 
   return translatedMessages;
 }
