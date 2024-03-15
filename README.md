@@ -42,7 +42,6 @@ All projects should be written in Typescript. To keep thing consistent.
 - Add design tokens structure with primitives, semantic, and component
 - Consider renaming ui-common to ui-components
 - Consider renaming ui-base to ui-foundation
-- Run linter and tests on merge, push or commit (local or in pipeline)
 
 ## Chores
 
