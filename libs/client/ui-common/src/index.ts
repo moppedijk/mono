@@ -11,6 +11,7 @@ export * from './header/header.component';
 export * from './introduction/introduction.component';
 export * from './loader/loader.component';
 export * from './input/input.component';
+export * from './input-number/input-number.component';
 export * from './modal/modal.component';
 export * from './navigation-list/navigation-list-item/navigation-list-item.component';
 export * from './navigation-list/navigation-list.component';

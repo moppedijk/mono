@@ -1,0 +1,93 @@
+<mo-page
+  pageTitle="Does it compound?"
+  description="Compound Interest Calculator"
+  creator="Mo"
+  url="https://compound.it"
+>
+  <mo-container
+    [logoUrl]="logoUrl"
+    [profileImage]="profileImage"
+    [organizationName]="organizationName"
+    [projectName]="projectName"
+    [projectLink]="projectLink"
+  >
+    <mo-section color="light">
+      <mo-row>
+        <mo-col>
+          <mo-introduction>
+            <ng-container title>
+              <h1>Compound interest calculator</h1>
+            </ng-container>
+            <ng-container lead>
+              <p>Does it compound?</p>
+            </ng-container>
+            <p>That's the question.</p>
+          </mo-introduction>
+        </mo-col>
+      </mo-row>
+    </mo-section>
+    <mo-section>
+      <mo-row>
+        <mo-col>
+          <p>Inital Investment</p>
+          <mo-input-number
+            [isLoading]="isLoading"
+            [(value)]="form.initialInvestment"
+            placeholder="1000"
+            (valueChange)="calculate()"
+          >
+          </mo-input-number>
+          <p>Annual addition</p>
+          <mo-input-number
+            [isLoading]="isLoading"
+            [(value)]="form.annualAddition"
+            placeholder="1200"
+            (valueChange)="calculate()"
+          >
+          </mo-input-number>
+          <p>Interest Rate (per year)</p>
+          <mo-input-number
+            [isLoading]="isLoading"
+            [(value)]="form.interestRate"
+            placeholder="7"
+            (valueChange)="calculate()"
+          ></mo-input-number>
+          <p>Years of investment</p>
+          <mo-input-number
+            [isLoading]="isLoading"
+            [(value)]="form.years"
+            placeholder="20"
+            (valueChange)="calculate()"
+          >
+          </mo-input-number>
+        </mo-col>
+        <mo-col>
+          <h2>
+            Compound interest calculation for
+            {{ form.years ? form.years : 0 }} years
+          </h2>
+          <hr />
+          <p>In {{ form.years }} years it wil be: &euro; {{ outcome }}.-</p>
+          <hr />
+          <mo-row>
+            <mo-col class="text-small">Year</mo-col>
+            <mo-col class="text-small">Interest</mo-col>
+            <mo-col class="text-small align-right">Amount</mo-col>
+          </mo-row>
+          <ng-container *ngFor="let result of calculation">
+            <mo-row>
+              <mo-col class="text-small">{{ result.year }}</mo-col>
+              <mo-col class="text-small"
+                >&euro; {{ result.interest | number: '0.0-2' }}</mo-col
+              >
+              <mo-col class="text-small align-right"
+                >&euro; {{ result.amount | number: '0.0-2' }}</mo-col
+              >
+            </mo-row>
+            <hr />
+          </ng-container>
+        </mo-col>
+      </mo-row>
+    </mo-section>
+  </mo-container>
+</mo-page>

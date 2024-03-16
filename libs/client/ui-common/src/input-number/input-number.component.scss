@@ -1,0 +1,9 @@
+@use '@mo/ui-base/mixins/input';
+
+.input {
+  @include input.base();
+}
+
+.input-loading {
+  @include input.loading();
+}
