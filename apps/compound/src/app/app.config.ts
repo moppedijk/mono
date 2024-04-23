@@ -11,6 +11,7 @@ import {
   APP_PROJECT_NAME_TOKEN,
   provideTokenValue,
 } from '@mo/client/util-core';
+import { provideCharts, withDefaultRegisterables } from 'ng2-charts';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -22,5 +23,8 @@ export const appConfig: ApplicationConfig = {
     provideTokenValue(APP_ORGANIZATION_NAME_TOKEN, 'Compound'),
     provideTokenValue(APP_PROJECT_NAME_TOKEN, 'Compound'),
     provideTokenValue(APP_PROJECT_LINK_TOKEN, ''),
+    // Alternatively, include a minimal configuration to reduce the bundle size,
+    // eg: BarController, Legend, Colors
+    provideCharts(withDefaultRegisterables()),
   ],
 };

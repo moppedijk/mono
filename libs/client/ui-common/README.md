@@ -11,3 +11,5 @@ Run `nx test ui-common` to execute the unit tests.
 - Content should be added via slots, configuration via inputs
 - Add limited sematic value, semantics should me added in implementation
 - Only input and output
+- Components can not depend on each other
+- Components should have minimal to no dependencies

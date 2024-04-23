@@ -1,3 +1,4 @@
+export * from './bar-chart/bar-chart.component';
 export * from './button/button.component';
 export * from './button-anker/button-anker.component';
 export * from './code/code.component';

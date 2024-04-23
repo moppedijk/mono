@@ -62,12 +62,12 @@
           </mo-input-number>
         </mo-col>
         <mo-col>
-          <h2>
-            Compound interest calculation for
-            {{ form.years ? form.years : 0 }} years
-          </h2>
-          <hr />
-          <p>In {{ form.years }} years it wil be: &euro; {{ outcome }}.-</p>
+          <mo-row>
+            <p>In {{ form.years }} years it wil be: &euro; {{ outcome }}.-</p>
+          </mo-row>
+          <mo-row>
+            <mo-bar-chart [chartData]="chartData"></mo-bar-chart>
+          </mo-row>
           <hr />
           <mo-row>
             <mo-col class="text-small">Year</mo-col>

@@ -1,6 +1,9 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, OnInit, ViewChild, inject } from '@angular/core';
 import { CommonModule, DecimalPipe } from '@angular/common';
+import { BaseChartDirective } from 'ng2-charts';
+import { ChartConfiguration, ChartData } from 'chart.js';
 import {
+  BarChartComponent,
   ColComponent,
   ContainerComponent,
   InputComponent,
@@ -18,6 +21,11 @@ import {
   APP_PROJECT_NAME_TOKEN,
 } from '@mo/client/util-core';
 
+interface ChartDateSetInterface {
+  data: number[];
+  label: string;
+}
+
 @Component({
   selector: 'mo-feature-calculator',
   standalone: true,
@@ -32,6 +40,8 @@ import {
     InputComponent,
     InputNumberComponent,
     DecimalPipe,
+    BaseChartDirective,
+    BarChartComponent,
   ],
   templateUrl: './feature-calculator.component.html',
 })
@@ -58,13 +68,16 @@ export class FeatureCalculatorComponent implements OnInit {
     interest: number;
   }[] = [];
 
-  ngOnInit(): void {
-    this.calculate();
+  public chartData: ChartData<'bar'> = {
+    labels: [0],
+    datasets: [],
+  };
+
+  private setInitialOutcome() {
+    this.outcome = this.form.initialInvestment;
   }
 
-  public calculate() {
-    // Start with the initial investment
-    this.outcome = this.form.initialInvestment;
+  private setInitialCalculation() {
     this.calculation = [
       {
         year: 0,
@@ -72,24 +85,53 @@ export class FeatureCalculatorComponent implements OnInit {
         interest: 0,
       },
     ];
+  }
+
+  private updateChart(
+    chartDataLabels: number[],
+    chartDataSet: ChartDateSetInterface,
+  ): void {
+    this.chartData.labels = chartDataLabels;
+    this.chartData.datasets = [];
+    this.chartData.datasets?.push(chartDataSet);
+  }
+
+  public ngOnInit(): void {
+    this.calculate();
+  }
+
+  public calculate() {
+    const chartDataSet = { data: [0], label: 'Years' };
+    const chartDataLabels: number[] = [];
+
+    // Start with the initial outcome and calculation
+    this.setInitialOutcome();
+    this.setInitialCalculation();
 
     // Every 12 months add:
-    for (let index = 0; index < this.form.years; index++) {
+    for (let year = 0; year < this.form.years; year++) {
+      const interest = (this.outcome * this.form.interestRate) / 100;
       // Add the annual addition
       this.outcome += this.form.annualAddition;
       // Add the interest rate
-      this.outcome += (this.outcome * this.form.interestRate) / 100;
+      this.outcome += interest;
 
       // Create a new object for the calculation
       // This is not part of the calculation, but is used to display the results
       this.calculation.push({
-        year: index + 1,
+        year: year + 1,
         amount: this.outcome,
-        interest: (this.outcome * this.form.interestRate) / 100,
+        interest,
       });
+
+      chartDataLabels.push(year + 1);
+      chartDataSet.data?.push(this.outcome);
     }
 
     // Round to the nearest currency unit
     this.outcome = Math.round(this.outcome);
+
+    // Update the chart data
+    this.updateChart(chartDataLabels, chartDataSet);
   }
 }
