@@ -15,13 +15,13 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@mo/client/feature-calculator": [
+        "libs/client/feature-calculator/src/index.ts"
+      ],
       "@mo/client/feature-home": ["libs/client/feature-home/src/index.ts"],
       "@mo/client/ui-base": ["libs/client/ui-base/src/index.ts"],
       "@mo/client/ui-common": ["libs/client/ui-common/src/index.ts"],
-      "@mo/client/util-core": ["libs/client/util-core/src/index.ts"],
-      "@mo/client/feature-calculator": [
-        "libs/client/feature-calculator/src/index.ts"
-      ]
+      "@mo/client/util-core": ["libs/client/util-core/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

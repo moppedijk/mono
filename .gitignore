@@ -39,5 +39,9 @@ testem.log
 Thumbs.db
 
 .nx/cache
+.nx/workspace-data
 .angular
 .env
+
+#nx
+migrations.json
