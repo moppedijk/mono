@@ -91,5 +91,6 @@
       "style": "scss",
       "prefix": "mo"
     }
-  }
+  },
+  "neverConnectToCloud": true
 }
