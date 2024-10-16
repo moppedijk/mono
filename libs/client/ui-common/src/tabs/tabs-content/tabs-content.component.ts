@@ -1,4 +1,3 @@
-import { NgIf } from '@angular/common';
 import { Component, Input, OnChanges } from '@angular/core';
 import { Subject } from 'rxjs';
 
@@ -6,7 +5,7 @@ import { Subject } from 'rxjs';
   selector: 'mo-tabs-content',
   templateUrl: './tabs-content.component.html',
   styleUrls: ['./tabs-content.component.scss'],
-  imports: [NgIf],
+  imports: [],
   standalone: true,
 })
 export class TabsContentComponent implements OnChanges {

@@ -1,3 +1,5 @@
-<div class="toaster" *ngFor="let message of messages">
-  {{ message }}
-</div>
+@for (message of messages; track message) {
+  <div class="toaster">
+    {{ message }}
+  </div>
+}

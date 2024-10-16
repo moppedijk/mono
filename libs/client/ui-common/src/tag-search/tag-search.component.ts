@@ -6,7 +6,6 @@ import {
   SimpleChanges,
 } from '@angular/core';
 import { Tag } from './tag';
-import { NgFor, NgIf } from '@angular/common';
 
 export enum ShowTagsEnun {
   All,
@@ -18,7 +17,7 @@ export enum ShowTagsEnun {
   templateUrl: './tag-search.component.html',
   styleUrl: './tag-search.component.scss',
   standalone: true,
-  imports: [NgFor, NgIf],
+  imports: [],
 })
 export class TagSearchComponent implements OnInit, OnChanges {
   @Input() tags: Tag[] = [];

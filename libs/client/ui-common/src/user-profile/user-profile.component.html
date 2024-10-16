@@ -8,12 +8,10 @@
     </div>
   </div>
 </div>
-<mo-modal
-  [title]="creator"
-  *ngIf="isModalVisible"
-  (closed)="isModalVisible = false"
->
-  <div class="user-profile-large-image">
-    <img [src]="profileImage" [alt]="creator" />
-  </div>
-</mo-modal>
+@if (isModalVisible) {
+  <mo-modal [title]="creator" (closed)="isModalVisible = false">
+    <div class="user-profile-large-image">
+      <img [src]="profileImage" [alt]="creator" />
+    </div>
+  </mo-modal>
+}

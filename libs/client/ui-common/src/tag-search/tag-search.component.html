@@ -1,9 +1,15 @@
-<div class="tag-search-item" *ngFor="let visibleTag of visibleTags">
-  {{ visibleTag.name }}
-</div>
-<p class="text-light" *ngIf="!allTags">
-  <ng-content select="[showAll]"></ng-content>
-</p>
-<p class="text-light" *ngIf="allTags">
-  <ng-content select="[showDefault]"></ng-content>
-</p>
+@for (visibleTag of visibleTags; track visibleTag) {
+  <div class="tag-search-item">
+    {{ visibleTag.name }}
+  </div>
+}
+@if (!allTags) {
+  <p class="text-light">
+    <ng-content select="[showAll]"></ng-content>
+  </p>
+}
+@if (allTags) {
+  <p class="text-light">
+    <ng-content select="[showDefault]"></ng-content>
+  </p>
+}

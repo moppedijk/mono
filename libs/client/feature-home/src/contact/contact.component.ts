@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import {
   ButtonComponent,
   ErrorComponent,
@@ -11,13 +11,7 @@ import { HttpService } from '@mo/client/util-core';
 @Component({
   selector: 'mo-contact',
   standalone: true,
-  imports: [
-    CommonModule,
-    InputComponent,
-    TextareaComponent,
-    ErrorComponent,
-    ButtonComponent,
-  ],
+  imports: [InputComponent, TextareaComponent, ErrorComponent, ButtonComponent],
   templateUrl: './contact.component.html',
 })
 export class ContactComponent {

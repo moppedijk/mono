@@ -74,7 +74,7 @@
             <mo-col class="text-small">Interest</mo-col>
             <mo-col class="text-small align-right">Amount</mo-col>
           </mo-row>
-          <ng-container *ngFor="let result of calculation">
+          @for (result of calculation; track result) {
             <mo-row>
               <mo-col class="text-small">{{ result.year }}</mo-col>
               <mo-col class="text-small"
@@ -85,7 +85,7 @@
               >
             </mo-row>
             <hr />
-          </ng-container>
+          }
         </mo-col>
       </mo-row>
     </mo-section>

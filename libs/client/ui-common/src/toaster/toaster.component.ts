@@ -1,4 +1,3 @@
-import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { ToasterService } from '@mo/client/util-core';
 
@@ -7,7 +6,7 @@ import { ToasterService } from '@mo/client/util-core';
   templateUrl: './toaster.component.html',
   styleUrls: ['./toaster.component.scss'],
   standalone: true,
-  imports: [NgFor],
+  imports: [],
 })
 export class ToasterComponent {
   private timeout = 2000;

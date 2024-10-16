@@ -16,10 +16,12 @@
   [(value)]="form.message"
   placeholder="Laat hier een leuk bericht achter..."
 ></mo-textarea>
-<mo-error i18n *ngIf="hasError"
-  >Er is iets misgegaan... Probeer het opnieuw</mo-error
->
-<p i18n *ngIf="hasSucces">Leuk! Ik neem zo snel mogelijk contact met je op.</p>
+@if (hasError) {
+  <mo-error i18n>Er is iets misgegaan... Probeer het opnieuw</mo-error>
+}
+@if (hasSucces) {
+  <p i18n>Leuk! Ik neem zo snel mogelijk contact met je op.</p>
+}
 <mo-button
   i18n
   [loading]="isLoading"

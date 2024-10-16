@@ -1,4 +1,4 @@
-import { AsyncPipe, NgFor, NgIf } from '@angular/common';
+import { AsyncPipe } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import {
@@ -26,9 +26,7 @@ import {
   standalone: true,
   imports: [
     RouterModule,
-    NgFor,
     AsyncPipe,
-    NgIf,
     ButtonComponent,
     ButtonAnkerComponent,
     ColComponent,
