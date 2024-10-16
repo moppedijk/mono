@@ -84,7 +84,8 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "landing:build"
+        "buildTarget": "landing:build",
+        "outputPath": "apps/landing/src/locale"
       }
     },
     "lint": {
