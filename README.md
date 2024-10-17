@@ -21,6 +21,7 @@ To start the development server run `nx serve landing`. Open your browser and na
 - If you reuse it make it reusable; don't overengineer
 - Always up to date
 - One thing at a time
+- No premature optimization
 
 ## Technology
 
