@@ -12,6 +12,8 @@ async function bootstrap() {
   const port = process.env.PORT || 3000;
   const host = process.env.API_HOST;
   const origin = process.env.API_ORIGIN;
+  const isLocal = process.env.NODE_ENV === 'local';
+  const url = isLocal ? `${host}:${port}` : `https://${host}`;
 
   app.setGlobalPrefix(globalPrefix);
   // Strict origin checking - remove trailing slash on origin
@@ -19,7 +21,7 @@ async function bootstrap() {
 
   await app.listen(port);
 
-  Logger.log(`🚀 Application is running on: ${host}:${port}/${globalPrefix}`);
+  Logger.log(`🚀 Application is running on: ${url}`);
 }
 
 bootstrap();
