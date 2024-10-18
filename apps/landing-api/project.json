@@ -44,7 +44,8 @@
           "buildTarget": "landing-api:build:development"
         },
         "production": {
-          "buildTarget": "landing-api:build:production"
+          "buildTarget": "landing-api:build:production",
+          "inspect": "false"
         }
       }
     },
